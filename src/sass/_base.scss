@@ -1,0 +1,76 @@
+// reset styles
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+// colors
+$main-bg-color: #84a178;
+$accent-bg-color: #ffffff;
+$products-bg-color-green: #aec6a5;
+$products-bg-color-yellow: #efd478;
+$products-bg-color-coffee: #d6936d;
+$link-bg-color: #f8d24e;
+
+$title-color-white: #fcfcfc;
+$title-color-black: #131313;
+
+$main-text-color: #fcfcfc;
+$secondary-text-color: #131313;
+
+$map-link-color: #d6936d;
+$time-color: #ababab;
+$copyright-color: #7a7a7a;
+
+// fonts
+$primary-fonts: 'Montserrat';
+$title-fonts: 'Seymour One';
+
+// common
+body {
+  background: $main-bg-color;
+  color: $main-text-color;
+  font-family: $primary-fonts, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+// container
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+// hide unnecessary headers
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
