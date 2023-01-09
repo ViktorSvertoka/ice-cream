@@ -51,11 +51,21 @@ $title-fonts: 'Seymour One';
 
 // common
 body {
-  background: $main-bg-color;
   color: $main-text-color;
   font-family: $primary-fonts, sans-serif;
   font-style: normal;
   letter-spacing: 0.04em;
+  background-image: url(../images/background-mobile-1x.png);
+  background-size: contain;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background-tablet-1x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background-desktop-1x.png);
+  }
 }
 
 // container
@@ -73,4 +83,49 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+// mixins
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin tel {
+  @media screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
 }
