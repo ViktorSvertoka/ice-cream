@@ -48,4 +48,73 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.products {
+  display: block;
+  text-align: center;
+  padding: 60px 0;
+  background-image: url(../images/bg_mobile_1x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/bg_mobile_2x.jpg);
+  }
+}
+@media screen and (min-width: 767px) {
+  .products {
+    background-image: url(../images/bg_tablet_1x.jpg);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/bg_tablet_2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url(../images/bg_desktop_1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/bg_desktop_2x.jpg);
+  }
+}
+
+.products__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #131313;
+  text-transform: uppercase;
+}
+
+.products__titel {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  color: #131313;
+  text-transform: uppercase;
+}
+
+.products__item {
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.products__item--green {
+  background-color: #aec6a5;
+}
+
+.products__item--yellow {
+  background-color: #efd478;
+}
+
+.products__item--coffee {
+  background-color: #d6936d;
 }/*# sourceMappingURL=index.css.map */
