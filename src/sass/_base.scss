@@ -51,11 +51,21 @@ $title-fonts: 'Seymour One';
 
 // common
 body {
-  background: $main-bg-color;
   color: $main-text-color;
   font-family: $primary-fonts, sans-serif;
   font-style: normal;
   letter-spacing: 0.04em;
+  background-image: url(../images/background-mobile-1x.png);
+  background-size: contain;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background-tablet-1x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background-desktop-1x.png);
+  }
 }
 
 // container
