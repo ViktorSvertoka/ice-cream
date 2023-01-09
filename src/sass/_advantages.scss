@@ -1,0 +1,21 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide {
+  color: black;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: cyan;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}

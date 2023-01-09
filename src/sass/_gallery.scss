@@ -1,0 +1,31 @@
+.gallery__container {
+  text-align: center;
+  transform: translateY(-32px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-122px);
+  }
+}
+
+.gallery__img {
+  border-radius: 8px;
+
+  @media screen and (max-width: 479px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    border-radius: 8px;
+    width: 440px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    width: 704px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+    width: 1014px;
+  }
+}
