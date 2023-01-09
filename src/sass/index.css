@@ -66,6 +66,8 @@ body {
   display: block;
   text-align: center;
   padding: 60px 0;
+
+
   background-image: url(../images/bg_mobile_1x.jpg);
   background-position: center;
   background-size: cover;
@@ -94,6 +96,7 @@ body {
   .products {
     background-image: url(../images/bg_desktop_2x.jpg);
   }
+
 }
 
 .products__label {
@@ -117,16 +120,17 @@ body {
 
 .products__item {
   position: relative;
-  border-radius: 20px;
+
+  align-items: center;
+  border-radius: 24px;
   min-width: 250px;
   min-height: 420px;
-  padding: 120px 40px 20px 16px;
+  padding: 123px 40px 20px 16px;
 }
 
-.products__item::before {
+.products__item--green::before {
   content: "";
   position: absolute;
-  background-image: url(../images/products_img_cream_1x.png);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -134,9 +138,106 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.products__item--green::after {
+
+  border-radius: 20px;
+  min-width: 250px;
+  min-height: 420px;
+  padding: 120px 40px 20px 16px;
+}
+
+.products__item::before {
+
+  content: "";
+  position: absolute;
+  background-image: url(../images/products_img_cream_1x.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+
+  top: -11px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item--green::after {
+    background-image: url(../images/products_img_cream_2x.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.products__item--coffee::before {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
+
+
+.products__item--coffee::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/products_img_coffee_1x.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  top: -11px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item--coffee::after {
+    background-image: url(../images/products_img_coffee_2x.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.products__item--milkshakes::before {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.products__item--milkshakes::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/products_img_milkshakes_1x.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  top: -11px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item--milkshakes::after {
+    background-image: url(../images/products_img_milkshakes_2x.png);
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item::before {
     background-position-y: 50px;
@@ -156,11 +257,11 @@ body {
   background-color: #aec6a5;
 }
 
-.products__item--yellow {
+.products__item--coffee {
   background-color: #efd478;
 }
 
-.products__item--coffee {
+.products__item--milkshakes {
   background-color: #d6936d;
 }
 
@@ -184,10 +285,17 @@ body {
 .products__btn {
   background-color: transparent;
   border: none;
+
+  width: 40px;
+  height: 16px;
+
 }
 
 .products__icon {
   margin-bottom: 0;
+
+
   background-color: transparent;
+
   fill: #131313;
 }/*# sourceMappingURL=index.css.map */
