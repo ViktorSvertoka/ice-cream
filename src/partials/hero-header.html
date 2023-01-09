@@ -1,6 +1,6 @@
 <header class="header" id="home">
   <div class="container">
-    <a href="##"><img src="./images/logo.png" alt="logo"/></a>
+    <a href="##"><img src="./images/logo.png" alt="logo" /></a>
     <!-- кнопки мобильного меню -->
     <!-- <button type="button" class="menu-button menu-button__position" data-modal-open>
       <svg width="32" height="32">
@@ -13,23 +13,52 @@
           <a href="#home" data-modal-close class="nav-header__link">Home</a>
         </li>
         <li class="nav-header__item">
-          <a href="#how-its-made" data-modal-close class="nav-header__link">How it’s made?</a>
+          <a href="#how-its-made" data-modal-close class="nav-header__link"
+            >How it’s made?</a
+          >
         </li>
         <li class="nav-header__item">
-          <a href="#products" data-modal-close class="nav-header__link">Our products</a>
+          <a href="#products" data-modal-close class="nav-header__link"
+            >Our products</a
+          >
         </li>
         <li class="nav-header__item">
-          <a href="#locations" data-modal-close class="nav-header__link">Contact</a>
+          <a href="#locations" data-modal-close class="nav-header__link"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
     <!-- кнопка buy noy -->
-    <button class="tab-desk__button button js-open-modal" type="button" data-modal="Modal">
+    <button
+      class="tab-desk__button button js-open-modal"
+      type="button"
+      data-modal="1"
+    >
       Buy now
       <!-- стрілка в кнопці -->
       <svg width="5" height="8">
         <use href="images/symbol-defs.svg#icon-arrow-right-bold"></use>
       </svg>
     </button>
+    <!-- Элементы для вызова модальных окон, могут быть любые -->
+
+    <!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
+
+    <!-- Несколько модальных окон -->
+
+    <div class="modal" data-modal="1">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <p class="modal__title">Заголовок окна 1</p>
+    </div>
   </div>
 </header>
