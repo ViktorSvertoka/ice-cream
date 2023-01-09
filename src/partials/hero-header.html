@@ -1,3 +1,35 @@
-<header>
-  <a href="##"><img src="./images/logo.png" alt="logo" /></a>
+<header class="header" id="home">
+  <div class="container">
+    <a href="##"><img src="./images/logo.png" alt="logo"/></a>
+    <!-- кнопки мобильного меню -->
+    <!-- <button type="button" class="menu-button menu-button__position" data-modal-open>
+      <svg width="32" height="32">
+        <use href="images/symbol-defs.svg#icon-menu_32px"></use>
+      </svg>
+    </button> -->
+    <nav>
+      <ul class="nav-header__list">
+        <li class="nav-header__item">
+          <a href="#home" data-modal-close class="nav-header__link">Home</a>
+        </li>
+        <li class="nav-header__item">
+          <a href="#how-its-made" data-modal-close class="nav-header__link">How it’s made?</a>
+        </li>
+        <li class="nav-header__item">
+          <a href="#products" data-modal-close class="nav-header__link">Our products</a>
+        </li>
+        <li class="nav-header__item">
+          <a href="#locations" data-modal-close class="nav-header__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- кнопка buy noy -->
+    <button class="tab-desk__button button js-open-modal" type="button" data-modal="Modal">
+      Buy now
+      <!-- стрілка в кнопці -->
+      <svg width="5" height="8">
+        <use href="images/symbol-defs.svg#icon-arrow-right-bold"></use>
+      </svg>
+    </button>
+  </div>
 </header>
