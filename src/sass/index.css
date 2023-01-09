@@ -150,7 +150,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item--green::after {
     background-image: url(../images/products_img_cream_2x.png);
     background-position: center;
@@ -184,7 +184,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item--coffee::after {
     background-image: url(../images/products_img_coffee_2x.png);
     background-position: center;
@@ -218,7 +218,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item--milkshakes::after {
     background-image: url(../images/products_img_milkshakes_2x.png);
     background-position: center;
@@ -283,4 +283,41 @@ body {
   width: 40px;
   height: 16px;
   margin-bottom: 0;
+}
+
+.gallery__container {
+  text-align: center;
+  transform: translateY(-32px);
+}
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    transform: translateY(-122px);
+  }
+}
+
+.gallery__img {
+  border-radius: 8px;
+}
+@media screen and (max-width: 479px) {
+  .gallery__img {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .gallery__img {
+    border-radius: 8px;
+    width: 440px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    border-radius: 18px;
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img {
+    border-radius: 24px;
+    width: 1014px;
+  }
 }/*# sourceMappingURL=index.css.map */
