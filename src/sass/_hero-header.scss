@@ -1,0 +1,136 @@
+.header {
+  padding-top: 20px;
+  background-color: $main-bg-color;
+  align-items: center;
+}
+
+.header__logo-destop {
+    @media (max-width: 767px) {
+            display: none;
+        }
+}
+
+.header__logo-tablet {
+    @media (min-width: 768px) {
+            display: none;
+        }
+}
+
+.header__nav {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+// .mobil-icon {
+//     fill: #000000;
+    
+// }
+
+.header__menu-button {
+    width: 32px;
+    height: 32px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 32px;
+    background-color: $main-bg-color;
+
+    @media (max-width: 480px) {
+            
+            margin-right: 0px;
+        }
+
+    @media (min-width: 767px) {
+        display: none;
+    }
+}
+
+.tab-desk__button {
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+    background-color: #F8D24E;
+    width: 152px;
+    height: 42px;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 10px;
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.tab-desk__button:hover {
+    background: #0A8817;
+}
+
+.tab-desk__button:focus {
+    background: #0A8817;
+    color: #ffff;
+}
+
+.header__icon-arrow {
+    fill: currentColor;
+    margin-left: 5px;
+}
+
+.nav-header__link {
+  display: inline-block;
+}
+
+.nav-header__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.nav-header__link {
+  // text-decoration: none;
+  color: #fcfcfc;
+  // background-color: #F8D24E;
+}
+
+.nav-header__link:hover {
+  color: #f8d24e;
+}
+
+.nav-header__link:focus {
+  color: #f8d24e;
+}
+
+.header__mobil-menu {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.23;
+    @media (max-width: 480px) {
+            font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+        }
+
+}

@@ -9,11 +9,11 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button type="button" class="products__btn btn">
-          <svg class="products__icon" width="40" height="16">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
+        <button
+          type="button"
+          class="products__btn btn js-open-modal"
+          data-modal="products"
+        ></button>
       </li>
       <li class="products__item item products__item--coffee">
         <h3 class="products__name"><span>ice coffee</span></h3>
@@ -21,11 +21,11 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button type="button" class="products__btn btn">
-          <svg class="products__icon" width="40" height="16">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
+        <button
+          type="button"
+          class="products__btn btn js-open-modal"
+          data-modal="products"
+        ></button>
       </li>
       <li class="products__item item products__item--milkshakes">
         <h3 class="products__name"><span>milkshakes</span></h3>
@@ -33,12 +33,82 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button type="button" class="products__btn btn">
-          <svg class="products__icon" width="40" height="16">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
+        <button
+          type="button"
+          class="products__btn btn js-open-modal"
+          data-modal="products"
+        ></button>
       </li>
     </ul>
+    <div class="modal" data-modal="products">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="11"
+        height="11"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <h2 class="modal__titel"><span>Chololate icecream</span></h2>
+      <div class="modal__pic"></div>
+      <ul class="modal__items">
+        <li class="modal__item"></li>
+        <li class="modal__item"></li>
+        <li class="modal__item"></li>
+        <li class="modal__item"></li>
+      </ul>
+      <h3 class="modal__ingredients-titel"></h3>
+      <ul class="modal__ingregients-list">
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Milk</p>
+          <p class="modal__ingredients-text">100ml</p>
+        </li>
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Belgian chocolate</p>
+          <p class="modal__ingredients-text">20g</p>
+        </li>
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Cream</p>
+          <p class="modal__ingredients-text">150 ml</p>
+        </li>
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Cocoa powder</p>
+          <p class="modal__ingredients-text">30g</p>
+        </li>
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Sugar</p>
+          <p class="modal__ingredients-text">40g</p>
+        </li>
+        <li class="modal__ingredients-item">
+          <p class="modal__ingredients-text">Vanilla sugar</p>
+          <p class="modal__ingredients-text">10g</p>
+        </li>
+      </ul>
+      <form class="form">
+        <ul class="form__list">
+          <li class="form__item">
+            <input type="text" class="form__input" placeholder="Name" />
+          </li>
+          <li class="form__item">
+            <input type="tel" class="form__input" placeholder="Phone" />
+          </li>
+          <li class="form__item">
+            <textarea
+              type="text"
+              class="form__textarea"
+              placeholder="Comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+            />
+          </li>
+        </ul>
+        <button type="submit" class="close-btn"></button>
+      </form>
+    </div>
   </div>
 </section>
