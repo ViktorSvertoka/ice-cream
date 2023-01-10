@@ -12,6 +12,13 @@
   line-height: 1.22;
   color: $title-color-black;
   text-transform: uppercase;
+  margin-bottom: 12px;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
 }
 .products__titel {
   font-family: $title-fonts;
@@ -22,6 +29,17 @@
   color: $title-color-black;
   text-transform: uppercase;
   margin-bottom: 140px;
+  @include tablet {
+    font-size: 34px;
+    line-height: 1.26;
+    margin-bottom: 186px;
+  }
+  @include desktop {
+    margin-bottom: 278px;
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
 }
 .products__list {
   @include flex-align;
@@ -35,6 +53,9 @@
 
 .products__item {
   position: relative;
+  @include flex-align;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 24px;
   padding: 123px 25px 16px;
   @media screen and (max-width: 767px) {
@@ -44,8 +65,10 @@
   @include tablet {
     width: 224px;
     height: 428px;
+    padding: 108px 26px 12px;
   }
   @include desktop {
+    padding: 165px 63px 60px;
     width: 370px;
     height: 536px;
   }
@@ -68,6 +91,10 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item--green::after {
@@ -89,6 +116,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item--coffee::before {
@@ -108,6 +139,10 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item--coffee::after {
@@ -129,6 +164,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item--milkshakes::before {
@@ -148,6 +187,10 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item--milkshakes::after {
@@ -169,6 +212,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  @include desktop {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .products__item:not(:last-child) {
@@ -200,6 +247,11 @@
     font-size: 22px;
     line-height: 1.23;
   }
+
+  @include desktop {
+    font-size: 30px;
+    margin-bottom: 66px;
+  }
 }
 .products__descr {
   font-weight: 400;
@@ -217,10 +269,16 @@
   width: 40px;
   height: 16px;
   fill: $title-color-black;
+  margin-top: auto;
+
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 16px;
 }
 
 .products__icon {
   width: 40px;
   height: 16px;
+
   margin-bottom: 0;
 }
