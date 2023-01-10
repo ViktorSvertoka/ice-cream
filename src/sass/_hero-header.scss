@@ -25,16 +25,23 @@
     
 }
 
+.mobil-icon {
+    fill: #000000;
+}
+
 .header__menu-button {
+    width: 32px;
+    height: 32px;
     // display: flex;
     // align-items: center;
     // text-align: center;
     color: #000000;
-    background-color: $main-bg-color;
+    // background-color: $main-bg-color;
     fill: rgb(248, 8, 8);
     // color: #fff;
     border: none;
     padding: 0;
+
 
     @media (min-width: 767px) {
         display: none;
@@ -43,7 +50,8 @@
 
 .tab-desk__button {
     background-color: #F8D24E;
-   
+    width: 152px;
+    height: 42px;
     cursor: pointer;
     padding: 0px;
     border-radius: 10px;
