@@ -68,23 +68,6 @@ body {
   }
 }
 
-// container
-.container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-// hide unnecessary headers
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 // mixins
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
@@ -99,7 +82,7 @@ body {
 }
 
 @mixin tel {
-  @media screen and (max-width: 479px) {
+  @media screen and (min-width: 320px) {
     @content;
   }
 }
@@ -128,4 +111,46 @@ body {
     (min-resolution: 2dppx) {
     @content;
   }
+}
+
+// container
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include tel {
+    width: 320px;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// section
+.section {
+  padding: 60px 0;
+}
+
+// hide unnecessary headers
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
