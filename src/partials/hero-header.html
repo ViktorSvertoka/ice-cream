@@ -1,29 +1,34 @@
 <header class="header" id="home">
-  <div class="container">
-    <a href="##"><img src="./images/logo.png" alt="logo" /></a>
+  <div class="container header__container">
+    <a href="##"><img src="./images/logo.png" alt="logo"/></a>
     <!-- кнопки мобильного меню -->
     <!-- <button type="button" class="menu-button menu-button__position" data-modal-open>
       <svg width="32" height="32">
         <use href="images/symbol-defs.svg#icon-menu_32px"></use>
       </svg>
     </button> -->
-    <nav>
+    <button class="header__menu-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false" type="button">
+      <svg width="32" height="32" aria-label="перемикач меню” class=“mobil-icon">
+        <use class="header__icon-menu" href="./images/symbol-defs.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
+    <nav class="header__nav">
       <ul class="nav-header__list">
         <li class="nav-header__item">
-          <a href="#home" data-modal-close class="nav-header__link">Home</a>
+          <a href="#home" class="nav-header__link">Home</a>
         </li>
         <li class="nav-header__item">
-          <a href="#how-its-made" data-modal-close class="nav-header__link"
+          <a href="#how-its-made" class="nav-header__link"
             >How it’s made?</a
           >
         </li>
         <li class="nav-header__item">
-          <a href="#products" data-modal-close class="nav-header__link"
+          <a href="#products" class="nav-header__link"
             >Our products</a
           >
         </li>
         <li class="nav-header__item">
-          <a href="#locations" data-modal-close class="nav-header__link"
+           <a href="#locations" class="nav-header__link"
             >Contact</a
           >
         </li>
