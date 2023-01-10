@@ -12,10 +12,11 @@
     <!-- кнопки мобильного меню -->
     
     <button
-      class="header__menu-button js-open-menu"
+      class="header__menu-button js-open-modal"
       aria-controls="mobile-menu"
       aria-expanded="false"
       type="button"
+      data-modal="2"
     >
       <svg
         class="mobil-icon"
@@ -29,6 +30,21 @@
         ></use>
       </svg>
     </button>
+    <!-- мобільне меню -->
+    <div class="header__mobil-menu modal" data-modal="2">
+      <a class="header__logo-mobil" href="##"><img src="./images/logo_tablet.png" alt="logo"/></a>
+      <!--   Svg иконка для закрытия окна  -->
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+      </svg>
+       <ul class="header__mobil-menu-list">
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="##">Home</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">How it’s made?</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">Our products</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">Contact</a></li>
+       </ul>
+    </div>
     <!-- меню навігації -->
     <nav class="header__nav">
       <ul class="nav-header__list">
@@ -75,7 +91,13 @@
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
         />
       </svg>
-      <p class="modal__title">Заголовок окна 1</p>
+      <p class="modal__title">Buy now</p>
+      
+      <ul class="modal__header-lict">
+        <li class="modal__header-item">1</li>
+        <li class="modal__header-item">2</li>
+        <li class="modal__header-item">3</li>     
+      </ul>
     </div>
   </div>
 </header>
