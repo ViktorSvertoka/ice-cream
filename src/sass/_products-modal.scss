@@ -1,0 +1,87 @@
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  @include desktop {
+    width: 568px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 280px;
+  }
+  width: 100%;
+  max-width: 500px;
+
+  // давать свои размеры
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+
+  padding: 32px 40px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__cross {
+  position: absolute;
+  @include flex-align;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+
+.modal__titel {
+  font-family: $title-fonts;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $title-color-black;
+  text-align: center;
+  align-items: center;
+  margin: 0 69px 20px;
+  @include desktop {
+    margin: 0 0 24px;
+  }
+}
+.modal__pic {
+}
+.modal__items {
+}
+.modal__item {
+}
+.modal__ingredients-titel {
+}
+.modal__ingregients-list {
+}
+.modal__ingredients-item {
+}
+.modal__ingredients-text {
+}
+.form {
+}
+.form__list {
+}
+.form__item {
+}
+.form__input {
+}
+.form__textarea {
+}
+.close-btn {
+}
