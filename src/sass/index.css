@@ -62,6 +62,47 @@ body {
   margin: -1px;
 }
 
+.header {
+  padding-top: 20px;
+  background-color: #84a178;
+}
+
+.header__nav {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu-nav {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__menu-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .products {
   display: block;
   text-align: center;
@@ -70,7 +111,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products {
     background-image: url(../images/bg_mobile_2x.jpg);
   }
@@ -80,7 +121,7 @@ body {
     background-image: url(../images/bg_tablet_1x.jpg);
   }
 }
-@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .products {
     background-image: url(../images/bg_tablet_2x.jpg);
   }
@@ -90,7 +131,7 @@ body {
     background-image: url(../images/bg_desktop_1x.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products {
     background-image: url(../images/bg_desktop_2x.jpg);
   }
@@ -137,7 +178,7 @@ body {
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item::before {
     background-position-y: 50px;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;

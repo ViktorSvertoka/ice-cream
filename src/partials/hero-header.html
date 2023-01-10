@@ -1,13 +1,14 @@
 <header class="header" id="home">
-  <div class="container">
-    <a href="##"><img src="./images/logo.png" alt="logo"/></a>
-    <!-- кнопки мобильного меню -->
-    <!-- <button type="button" class="menu-button menu-button__position" data-modal-open>
-      <svg width="32" height="32">
-        <use href="images/symbol-defs.svg#icon-menu_32px"></use>
+  <div class="header__container container">
+    <a class="header__logo" href="##"><img src="./images/logo.png" alt="logo"/></a>
+    <!-- кнопки мобильного меню  -->
+    <!--data-modal-open-->
+    <button class="header__menu-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false" type="button">
+      <svg width="32" height="32" aria-label="перемикач меню" class="mobil-icon ">
+        <use class=" header__icon-menu " href="./images/symbol-defs.svg#icon-menu_32px"></use>
       </svg>
-    </button> -->
-    <nav>
+    </button>
+    <nav class="header__nav">
       <ul class="nav-header__list">
         <li class="nav-header__item">
           <a href="#home" data-modal-close class="nav-header__link">Home</a>
