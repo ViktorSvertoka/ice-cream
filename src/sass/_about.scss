@@ -114,16 +114,24 @@
     position: absolute;
     max-width: 100%;
     border-radius: 140px;
-    top: 22px;
+
+    transform: translateY(22px);
+    transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
+
+    .about__container-img:hover & {
+      transform: translateY(0px);
+    }
 
     @include tablet {
       border-radius: 165px;
-      top: 26px;
+ 
+      transform: translateY(26px);
     }
 
     @include desktop {
       border-radius: 250px;
-      top: 39px;
+
+      transform: translateY(39px);
     }
   }
 
