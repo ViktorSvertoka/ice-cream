@@ -123,14 +123,15 @@
   color: #f8d24e;
 }
 
-.header__mobil-menu {
+.header__mobil-menu .modal {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.23;
+  background-color:#0A8817;
+  @media (max-width: 480px) {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 1.23;
-    @media (max-width: 480px) {
-            font-weight: 700;
-                font-size: 32px;
-                line-height: 39px;
-        }
+    font-size: 32px;
+    line-height: 39px;
+  }
 
 }
