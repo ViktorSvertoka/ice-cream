@@ -1,6 +1,7 @@
 .advantages__list {
     @include tablet {
         @include flex-align;
+        justify-content: space-between;
     }     
 }
 
@@ -8,7 +9,77 @@
     text-align: center;
 }
 
-.advantage__quantity {
-    font-family: $primary-fonts;
-    @include font (400, 16px, 176%, 0,02em);
+.advantages__text {
+    font-family: 'Montserrat';
+    // @include font (400, 16px, 28.16px, 0,02em);
+    font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 176%;
+        /* or 28px */
+    
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: #FCFCFC;
+}
+
+.advantages__item {
+    width: 368px;
+}
+
+.advantages__quantity {
+    display: inline-flex;
+    padding-top: 40px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    // @include font (400, 16px, 28.16px, 0,02em);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.22;
+    /* or 28px */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FCFCFC;
+}
+
+.advantages__icon-cow {
+    position: relative;
+}
+
+.advantages__icon-cow::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-100%);
+    border-radius: 50%;
+    background-color: #f8d24e;
+    background-image: url(../images/icon-cow.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.advantages__icon-weight::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-color: #f8d24e;
+    background-image: url(../images/icon-weight.png);
+}
+
+.advantages__icon-ice-cream::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-color: #f8d24e;
+    background-image: url(../images/icon-ice-crema.png);
 }
