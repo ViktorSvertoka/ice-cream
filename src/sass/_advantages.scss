@@ -1,1 +1,9 @@
+.advantages__list {
+    @include tablet {
+        @include flex-align;
+    }     
+}
 
+.advantages__case {
+    text-align: center;
+}
