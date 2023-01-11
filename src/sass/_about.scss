@@ -194,3 +194,37 @@
   }
 }
 
+.modal__title {
+  font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #131313;
+
+margin-bottom: 32px;
+}
+
+.modal__frame {
+background: #000000;
+border-radius: 10px;
+
+margin-bottom: 32px;
+}
+.modal__text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+color: #131313;
+}
