@@ -5,15 +5,15 @@
 }
 
 .header__logo-destop {
-    @media (max-width: 767px) {
-            display: none;
-        }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__logo-tablet {
-    @media (min-width: 768px) {
-            display: none;
-        }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -36,69 +36,68 @@
   margin: 0;
   padding: 0;
   font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 // .mobil-icon {
 //     fill: #000000;
-    
+
 // }
 
 .header__menu-button {
-    width: 32px;
-    height: 32px;
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 0;
-    margin-left: auto;
-    margin-right: 32px;
-    background-color: $main-bg-color;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 32px;
+  background-color: $main-bg-color;
 
-    @media (max-width: 480px) {
-            
-            margin-right: 0px;
-        }
+  @media (max-width: 480px) {
+    margin-right: 0px;
+  }
 
-    @media (min-width: 767px) {
-        display: none;
-    }
+  @media (min-width: 767px) {
+    display: none;
+  }
 }
 
 .tab-desk__button {
-    font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-    background-color: #F8D24E;
-    width: 152px;
-    height: 42px;
-    cursor: pointer;
-    padding: 0px;
-    border-radius: 10px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // margin-top: 10px;
-    @media (max-width: 480px) {
-        display: none;
-    }
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: #f8d24e;
+  width: 152px;
+  height: 42px;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 10px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .tab-desk__button:hover {
-    background: #0A8817;
+  background: #0a8817;
 }
 
 .tab-desk__button:focus {
-    background: #0A8817;
-    color: #ffff;
+  background: #0a8817;
+  color: #ffff;
 }
 
 .header__icon-arrow {
-    fill: currentColor;
-    margin-left: 5px;
+  fill: currentColor;
+  margin-left: 5px;
 }
 
 .nav-header__link {
@@ -123,15 +122,14 @@
   color: #f8d24e;
 }
 
-.header__mobil-menu .modal {
+.header__mobil-menu.modal {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.23;
-  background-color:#0A8817;
+  background-color: #0a8817;
   @media (max-width: 480px) {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
   }
-
 }
