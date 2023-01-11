@@ -7,3 +7,8 @@
 .advantages__case {
     text-align: center;
 }
+
+.advantage__quantity {
+    font-family: $primary-fonts;
+    @include font (400, 16px, 176%, 0,02em);
+}
