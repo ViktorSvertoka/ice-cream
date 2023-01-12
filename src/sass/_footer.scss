@@ -1,3 +1,26 @@
+.footer {
+    background-color: $main-bg-color;
+}
+
+@media screen and (min-width: 768px) {
+    .wrappage {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inner {
+padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inner {
+        padding-top: 18px;
+    }
+}
+
 .slogan__top {
 font-weight: 700;
 font-size: 18px;
@@ -19,6 +42,16 @@ text-transform: uppercase;
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .slogan__top {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.23;        
+        letter-spacing: 0.04em;
+        margin-bottom: 14px;
+    }
+}
+
 .slogan__bottom {
 font-weight: 700;
 font-size: 34px;
@@ -37,7 +70,18 @@ text-transform: uppercase;
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     .slogan__bottom {
         font-size: 48px;
-        width: 352px;        
+        width: 352px; 
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slogan__bottom {
+        font-size: 58px;
+        line-height: 1.22;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+
     }
 }
 
@@ -49,6 +93,12 @@ text-transform: uppercase;
 @media screen and (max-width: 768px) {
     .social-media {        
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .social-media {
+        margin-bottom: 40px;
     }
 }
 
@@ -98,10 +148,22 @@ fill: $main-bg-color;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
+    line-height: 1.83;    
     text-align: right;
     color: $title-color-white;
+}
+
+@media screen and (min-width: 768px) {
+    .phone__number {
+        font-size: 14px;        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .phone__number {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .phone__text {    
@@ -109,10 +171,22 @@ fill: $main-bg-color;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
+    line-height: 1.83;    
     text-align: right;
     color: $title-color-black;
+}
+
+@media screen and (min-width: 768px) {
+    .phone__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .phone__text {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .footer--line {
@@ -136,8 +210,7 @@ fill: $main-bg-color;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 152%;
-    /* or 21px */    
+    line-height: 1.5;    
     text-align: center;    
     color: #7A7A7A;   
 }
