@@ -49,15 +49,6 @@ $copyright-color: #7a7a7a;
 $primary-fonts: 'Montserrat';
 $title-fonts: 'Seymour One';
 
-// common
-body {
-  background-color: $main-bg-color;
-  color: $main-text-color;
-  font-family: $primary-fonts, sans-serif;
-  font-style: normal;
-  letter-spacing: 0.04em;
-}
-
 // mixins
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
@@ -100,6 +91,42 @@ body {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     @content;
+  }
+}
+
+// common
+body {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $primary-fonts, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+
+  background-image: url(../images/background-mobile-1x.png);
+  background-size: contain;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background-mobile-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/background-tablet-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-tablet-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/background-desktop-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-desktop-2x.png);
+    }
   }
 }
 
