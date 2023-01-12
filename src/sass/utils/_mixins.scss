@@ -1,0 +1,58 @@
+///МИКСИНЫ
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin btn-sizes($w, $h, $br, $fs, $lh, $pd) {
+  width: $w;
+  height: $h;
+  border-radius: $br;
+  font-size: $fs;
+  line-height: $lh;
+  padding: $pd;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin tel {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin animation($type) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,17 +1,28 @@
-@import './common';
-@import './base';
-@import './modal';
-@import './header';
-@import './header-modal';
-@import './hero';
-@import './hero-modal';
-@import './products';
-@import './products-modal';
-@import './about';
-@import './about-modal';
-@import './advantages';
-@import './gallery';
-@import './customer-reviews';
-@import './contacts';
-@import './contacts-modal';
-@import './footer';
+///FOLDER BASE
+@import './base/normalize';
+@import './base/fonts';
+@import './base/colors';
+
+///FOLDER UTILS
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/command';
+
+///FOLDER LAYOUTS
+@import './layout/about';
+@import './layout/about-modal';
+@import './layout/advantages';
+@import './layout/contacts';
+@import './layout/contacts-modal';
+@import './layout/customer-reviews';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/header';
+@import './layout/header-modal';
+@import './layout/hero';
+@import './layout/hero-modal';
+@import './layout/products';
+@import './layout/products-modal';
+
+///FOLDER COMPONENTS
+@import './components/modal';
