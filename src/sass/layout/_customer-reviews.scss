@@ -1,12 +1,30 @@
-.swiper {
-  // width: 600px;
-  // height: 600px;
+.customer-reviews {
+  padding: 80px 0 40px;
+
+  @include mobile {
+    padding: 80px 0 60px;
+  }
+
+  @include tablet {
+    padding: 100px 0 80px;
+  }
+
+  @include desktop {
+    padding: 140px 0 100px;
+  }
 }
 
+// .swiper {
+//   // width: 600px;
+//   // height: 600px;
+// }
+
 .swiper-slide {
-  color: black;
   padding: 20px;
-  // background-color: antiquewhite;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -18,9 +36,6 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-}
-
-.customer-reviews__wrapper {
 }
 
 .customer-reviews__img-wrapp {

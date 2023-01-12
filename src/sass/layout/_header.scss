@@ -4,17 +4,17 @@
   align-items: center;
 }
 
-.header__logo-destop {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
+// .header__logo-destop {
+//   @media (max-width: 767px) {
+//     display: none;
+//   }
+// }
 
-.header__logo-tablet {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
+// .header__logo-tablet {
+//   @media (min-width: 768px) {
+//     display: none;
+//   }
+// }
 
 .header__nav {
   display: flex;
@@ -121,6 +121,8 @@
 
 .modal__cross.header__modal-cros {
   fill: #ffff;
+  width: 20px;
+  height: 20px;
 }
 
 .nav-header__link {
@@ -166,7 +168,8 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  
+  border: none;
+  border-radius: 0;
 
   
   @media (max-width: 480px) {
