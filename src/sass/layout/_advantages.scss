@@ -1,9 +1,109 @@
-.advantages__list {
-    @include tablet {
-        @include flex-align;
-    }     
+// .advantages__list {
+//     @include tablet {
+//         @include flex-align;
+//     }
+// }
+
+// .advantages__case {
+//     text-align: center;
+// }
+
+.advantages {
+  padding-top: 0;
+  padding-bottom: 64px;
+  &__item {
+    width: 270px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item + &__item {
+    margin-top: 28px;
+  }
+  &__case {
+    text-align: center;
+  }
+  &__text {
+    font-family: $primary-fonts;
+    font-style: normal;
+    @include font(400, 16px, 1.76, 0.02em);
+    text-align: center;
+    color: $main-text-color;
+  }
+
+  @include mobile {
+    padding-bottom: 59px;
+    &__item + &__item {
+      margin-top: 32px;
+    }
+  }
+
+  @include tablet {
+    padding-bottom: 204px;
+    &__list {
+      @include flex-align;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 165px;
+    }
+    &__item + &__item {
+      margin-top: 0;
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 178px;
+    &__item {
+      width: 368px;
+    }
+  }
 }
 
-.advantages__case {
-    text-align: center;
+.advantages__numbers {
+  position: relative;
+  display: inline-flex;
+  padding-top: 16px;
+  margin-bottom: 16px;
+
+  font-family: $primary-fonts;
+  font-style: normal;
+  @include font(700, 58px, 1.22, 0.04em);
+  text-align: center;
+
+  color: $main-text-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -100%);
+    border-radius: 50%;
+    background-color: $link-bg-color;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  @include tablet {
+    padding-top: 32px;
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    padding-top: 40px;
+  }
+}
+
+.advantages {
+  &__icon-cow::before {
+    background-image: url(../images/icon-cow.png);
+  }
+  &__icon-weight::before {
+    background-image: url(../images/icon-weight.png);
+  }
+  &__icon-ice-cream::before {
+    background-image: url(../images/icon-ice-crema.png);
+  }
 }
