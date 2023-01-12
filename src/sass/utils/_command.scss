@@ -1,0 +1,75 @@
+///БАЗОВЫЕ СТИЛИ
+
+body {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $primary-fonts, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+
+  background-image: url(../images/background-mobile-1x.png);
+  background-size: contain;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background-mobile-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/background-tablet-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-tablet-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/background-desktop-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-desktop-2x.png);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include tel {
+    width: 320px;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
