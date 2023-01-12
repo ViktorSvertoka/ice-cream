@@ -68,7 +68,7 @@
         }
     }
 // тут питання по коду див вниз
-    .contacts-description__item {
+    .contacts-details__item {
         &:first-child {
             margin-bottom: 24px;
         }
@@ -100,7 +100,7 @@
         //     }
         // }
     }
-    .contacts-description__text {
+    .contacts-details__text {
         @include font(500, 12px, 1.84, 0.04em);
     
         color: $title-color-black;
@@ -158,7 +158,7 @@
         }
           
     }
-    .contacts-description__time-work {
+    .contacts-details__time-work {
         @include font(500, 12px, 1.86, null);
         color: $time-color;  
 
@@ -174,8 +174,8 @@
 
     }
     
-    .contacts-description__tel,
-    .contacts-description__email
+    .contacts-details__tel,
+    .contacts-details__email
      {
         @include font(500, 12px, 1.86, null);
         color: $title-color-black;
