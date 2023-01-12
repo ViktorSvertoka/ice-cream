@@ -1,6 +1,50 @@
 .customer-reviews {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-image: url(../images/bg_mobile_1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg_mobile_2x.jpg);
+  }
+
+  @include tablet {
+    background-image: url(../images/bg_tablet_1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg_tablet_2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/bg_desktop_1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg_desktop_2x.jpg);
+    }
+  }
+}
+
+// .swiper {
+//   // width: 600px;
+//   // height: 600px;
+// }
+
+// .swiper-slide {
+//   color: black;
+//   padding: 20px;
+//   // background-color: antiquewhite;
+// }
+
+.swiper-pagination-bullet-active {
+  background-color: #84a178;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
 }
 
 .customer-reviews__img-wrapp {
@@ -86,26 +130,4 @@
     line-height: 1.88;
     margin-bottom: 32px;
   }
-}
-
-.swiper {
-  // width: 600px;
-  // height: 600px;
-}
-
-.swiper-slide {
-  color: black;
-  padding: 20px;
-  // background-color: antiquewhite;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #84a178;
-  width: 12px;
-  height: 12px;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
 }
