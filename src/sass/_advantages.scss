@@ -2,8 +2,10 @@
   padding-top: 0;
   padding-bottom: 64px;
   &__item {
-    width: 230px;
+    width: 270px;
     padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__item + &__item {
     margin-top: 28px;
@@ -48,7 +50,7 @@
   }
 }
 
-.advantages__quantity {
+.advantages__numbers {
   position: relative;
   display: inline-flex;
   padding-top: 16px;
