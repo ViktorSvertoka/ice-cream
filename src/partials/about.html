@@ -1,4 +1,3 @@
-
 <section class="about section">
   <div class="container">
     <div class="about__title-container">
@@ -8,30 +7,12 @@
     <div class="about__content">
       <div class="about__container-img">
         <picture>
-          <source
-            media="(min-width:1200px)"
-            srcset="./images/cow.png 1x, ./images/cow-2x.png 2x"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="./images/cow-tab.png 1x, ./images/cow-tab-2x.png 2x"
-          />
-          <source
-            media="(min-width:480px)"
-            srcset="./images/cow-mob.png 1x, ./images/cow-mob-2x.png 2x"
-          />
-          <source
-            media="(min-width:320px)"
-            srcset="./images/cow-tel.png 1x, ./images/cow-tel-2x.png 2x"
-          />
-          <img
-            srcset="./images/cow.png 1x, ./images/cow-2x.png 2x"
-            src="./images/cow.png"
-            alt="cow in the meadow"
-            width="490"
-            height="490"
-            class="about__img"
-          />
+          <source media="(min-width:1200px)" srcset="./images/cow.png 1x, ./images/cow-2x.png 2x" />
+          <source media="(min-width:768px)" srcset="./images/cow-tab.png 1x, ./images/cow-tab-2x.png 2x" />
+          <source media="(min-width:480px)" srcset="./images/cow-mob.png 1x, ./images/cow-mob-2x.png 2x" />
+          <source media="(min-width:320px)" srcset="./images/cow-tel.png 1x, ./images/cow-tel-2x.png 2x" />
+          <img srcset="./images/cow.png 1x, ./images/cow-2x.png 2x" src="./images/cow.png" alt="cow in the meadow"
+            width="490" height="490" class="about__img" />
         </picture>
       </div>
       <div class="about__right-block">
@@ -52,9 +33,25 @@
           </li>
         </ul>
 
-        <button type="button" class="about__button button">Read more</button>
+        <button type="button" class="about__button button js-open-modal" data-modal="about"">Read more</button>
       </div>
     </div>
   </div>
-</section>
 
+  <!-- Модальное окно About -->
+  
+  <div class=" modal" data-modal="about">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg width="20" height="20" class="modal__cross js-modal-close">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+          <p class="modal__title">How it’s made?</p>
+          <iframe class="modal__frame" width="448" height="205" src="https://www.youtube.com/embed/CaQxqt5ErAg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </div>
+</section>
