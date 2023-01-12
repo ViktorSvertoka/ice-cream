@@ -1,26 +1,6 @@
-.swiper {
-  // width: 600px;
-  // height: 600px;
-}
-
-.swiper-slide {
-  color: black;
-  padding: 20px;
-  // background-color: antiquewhite;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #84a178;
-  width: 12px;
-  height: 12px;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-}
-
-.customer-reviews__wrapper {
+.customer-reviews {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .customer-reviews__img-wrapp {
@@ -106,4 +86,26 @@
     line-height: 1.88;
     margin-bottom: 32px;
   }
+}
+
+.swiper {
+  // width: 600px;
+  // height: 600px;
+}
+
+.swiper-slide {
+  color: black;
+  padding: 20px;
+  // background-color: antiquewhite;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #84a178;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
 }
