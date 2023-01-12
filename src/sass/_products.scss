@@ -1,28 +1,28 @@
 .products {
-  background-image: url(../images/bg_mobile_1x.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg_mobile_2x.jpg);
-  }
+  // background-image: url(../images/bg_mobile_1x.jpg);
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/bg_mobile_2x.jpg);
+  // }
 
-  @include tablet {
-    background-image: url(../images/bg_tablet_1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg_tablet_2x.jpg);
-    }
-  }
+  // @include tablet {
+  //   background-image: url(../images/bg_tablet_1x.jpg);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/bg_tablet_2x.jpg);
+  //   }
+  // }
 
-  @include desktop {
-    background-image: url(../images/bg_desktop_1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg_desktop_2x.jpg);
-    }
-  }
+  // @include desktop {
+  //   background-image: url(../images/bg_desktop_1x.jpg);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/bg_desktop_2x.jpg);
+  //   }
+  // }
 
   &__container {
     display: block;
