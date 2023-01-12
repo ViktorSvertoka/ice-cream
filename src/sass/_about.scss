@@ -19,13 +19,9 @@
     width: 100%;
     text-align: center;
 
-    @include mobile {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+   
 
     @include tablet {
-      flex-direction: column;
       max-width: 456px;
       margin-bottom: 80px;
     }
@@ -163,12 +159,15 @@
     }
 
     &:last-child {
-      display: none;
-      margin-bottom: 0;
-
-      @include tablet {
-        display: block;
-      }
+          margin-bottom: 24px;
+          
+            @include tablet {
+              margin-bottom: 32px;
+            }
+          
+            @include desktop {
+              margin-bottom: 54px;
+            }
     }
   }
 
@@ -178,19 +177,51 @@
     background: $link-bg-color;
     border-radius: 10px;
     padding: 12px;
-    margin-top: 6px;
-
-    @include mobile {
-      margin-top: 20px;
-    }
-
-    @include tablet {
-      margin-top: 32px;
-    }
-
-    @include desktop {
-      margin-top: 54px;
-    }
   }
+
+
 }
 
+.modal__title {
+  font-family: 'Seymour One';
+
+text-align: center;
+@include font (400, 16px, 1.5, null);
+color: #131313;
+
+margin-bottom: 20px;
+
+@include tablet {
+  @include font (null, 20px, 1.4, null);
+  margin-bottom: 32px;
+}
+}
+
+.modal__frame {
+background: #000000;
+border-radius: 10px;
+width: 224px;
+height: 199px;
+
+margin-bottom: 20px;
+
+@include tablet {
+  width: 448px;
+  height: 205px;
+  margin-bottom: 32px;
+}
+
+
+}
+.modal__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-align: left;
+  @include font (400, 14px, 1.4, null);
+
+  color: #131313;
+
+  @include tablet {
+    @include font (null, 16px, null, null);
+  }
+}
