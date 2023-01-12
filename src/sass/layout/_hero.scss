@@ -1,0 +1,175 @@
+/*Можна перенести у _base.html*/
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+/*------------*/
+
+.hero {
+  padding-top: 50px;
+  height: 454px;
+  overflow: hidden;
+
+  @include tablet {
+    height: 349px;
+    padding-top: 14px;
+  }
+
+  @include desktop {
+    height: 591px;
+    padding-top: 45px;
+  }
+
+  & .container {
+    height: 100%;
+    position: relative;
+  }
+}
+
+.hero__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__title {
+  max-width: 247px;
+  margin-bottom: 32px;
+
+  font-family: $title-fonts;
+  @include font(400, 26px, 1.27, 0.04em);
+  text-transform: uppercase;
+  color: $title-color-white;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    @include font(400, 38px, 1.26, 0.04em);
+    text-transform: uppercase;
+    max-width: 367px;
+    margin-bottom: 28px;
+  }
+}
+.hero__navigation-list {
+  display: flex;
+  gap: 12px;
+
+  @include desktop {
+    margin-bottom: 42px;
+  }
+
+  & .hero__navigation-item:first-child {
+    margin-right: 12px;
+  }
+}
+
+.hero__link {
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px;
+    border-style: solid;
+    font-family: $primary-fonts;
+    font-weight: 600;
+    cursor: pointer;
+    color: $button-text-color;
+    background-color: transparent;
+    border-color: $link-bg-color;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function, border-color 250ms $timing-function;
+
+    &:hover {
+      border-color: $button-border-color;
+    }
+
+    &:focus {
+      border-color: $button-border-color;
+      color: $main-text-color;
+    }
+
+    &:disabled {
+      border-color: $time-color;
+    }
+  }
+
+  &__underline {
+    text-decoration: underline;
+    color: $link-bg-color;
+    background-color: transparent;
+    border: 0;
+    font-weight: 600;
+
+    @include desktop {
+      @include btn-sizes(auto, auto, 0px, 12, 1.25, 0px 0px);
+    }
+  }
+}
+
+.hero__point-sale {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  text-align: right;
+
+  @include desktop {
+    margin-top: 8px;
+  }
+
+  &-count {
+    @include font(900, 28px, 1.21, 0.04em);
+    text-transform: uppercase;
+
+    @include desktop {
+      @include font(900, 46px, 1.21, 0.04em);
+      text-transform: uppercase;
+      color: $title-color-black;
+    }
+  }
+
+  &-name {
+    @include font(400, 8px, 1.2, 0.04em);
+    color: $main-text-color;
+
+    @include desktop {
+      @include font(400, 14px, 1.2, 0.04em);
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 20px;
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.hero__content {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+}
+// .hero__img-balls {
+// }
+// .hero__text {
+// }
+// .hero__text-paragraph {
+// }
+// .hero__arrow {
+// }
+// .hero__picture {
+// }
+// .hero__img-cone {
+// }
