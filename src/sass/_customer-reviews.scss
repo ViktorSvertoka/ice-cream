@@ -20,7 +20,11 @@
 // }
 
 .swiper-slide {
-  // padding: 20px;
+  padding: 20px;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .swiper-pagination-bullet-active {

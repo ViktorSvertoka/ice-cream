@@ -27,6 +27,13 @@ a {
   outline: none;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
 // colors
 $main-bg-color: #84a178;
 $accent-bg-color: #ffffff;
@@ -58,6 +65,15 @@ $title-fonts: 'Seymour One';
   font-size: $fs;
   line-height: $lh;
   letter-spacing: $ls;
+}
+
+@mixin btn-sizes($w, $h, $br, $fs, $lh, $pd) {
+  width: $w;
+  height: $h;
+  border-radius: $br;
+  font-size: $fs;
+  line-height: $lh;
+  padding: $pd;
 }
 
 @mixin flex-align {
@@ -97,6 +113,8 @@ $title-fonts: 'Seymour One';
   }
 }
 
+// animation
+
 // common
 body {
   background-color: $main-bg-color;
@@ -134,6 +152,7 @@ body {
 }
 
 // container
+
 .container {
   width: 100%;
   padding-left: 20px;
@@ -162,11 +181,13 @@ body {
 }
 
 // section
-// .section {
-//   padding: 60px 0;
-// }
+
+.section {
+  padding: 60px 0;
+}
 
 // hide unnecessary headers
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
