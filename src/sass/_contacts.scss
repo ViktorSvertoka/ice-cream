@@ -1,0 +1,193 @@
+
+
+
+.section__contacts {
+    padding: 0;
+
+    background-image: linear-gradient(
+        to bottom,
+        $accent-bg-color 24%,
+        $main-bg-color 24%,
+
+    );
+
+
+    @include tablet {
+        padding-top: 40px;
+
+        background-image: linear-gradient(
+            to bottom,
+            $accent-bg-color 23%,
+            $main-bg-color 23%,
+            
+        );
+    }
+
+    @include desktop {
+        padding-top: 60px;
+
+        background-image: linear-gradient(
+            to bottom,
+            $accent-bg-color 21%,
+            $main-bg-color 21%, 
+        );
+    }
+    .contacts__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include tablet {
+            justify-content: normal;
+            flex-wrap: nowrap;
+            margin: -16px;
+        }
+    }
+    .contacts__item {
+        padding: 40px 32px;
+        width: 280px;
+    
+        background-color: $accent-bg-color;
+        border: 1px solid #E1E1E1;
+        border-radius: 24px;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 20px;
+            }
+        }
+        
+        @include tablet {
+            width: calc((100% - 6 * 16px) / 3);
+            margin: 16px;
+        }
+        @include desktop {
+            padding: 40px 40px;
+        }
+    }
+// тут питання по коду див вниз
+    .contacts-details__item {
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    
+        &:nth-child(2) {
+            padding: 24px 0;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        &:last-child {
+            margin-top: 24px;
+        }
+    
+        // @include tablet {
+        //     &:first-child {
+        //         margin-bottom: 32px;
+        //     }
+        
+        //     &:nth-child(2) {
+        //         padding: 32px 0;
+    
+        //         border-top: 1px solid #E1E1E1;
+        //         border-bottom: 1px solid #E1E1E1;
+        //     }
+    
+        //     &:last-child {
+        //         margin-top: 32px;
+        //     }
+        // }
+    }
+    .contacts-details__text {
+        @include font(500, 12px, 1.84, 0.04em);
+    
+        color: $title-color-black;
+    
+        @include mobile {
+            @include font(500, 14px, 1.86, 0.04em);
+        }
+    
+        @include desktop {
+            @include font(500, 16px, 1.88, 0.04em);
+        }
+    
+        &--margin-bottom {
+            margin-bottom: 8px;
+    
+            @include tablet {
+                margin-bottom: 12px;
+            }
+            @include desktop {
+                margin-bottom: 8px;
+            }
+        }
+        &--category {
+            display: flex;
+            width: 80px;
+            height: 22px;
+    
+            background-color: $link-bg-color;
+           
+            // display: inline-block;
+            // text-align: center;
+            // vertical-align: middle;
+
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+    
+            text-transform: uppercase;
+
+            border-radius: 4px;
+           
+    
+            @include tablet {
+                margin-bottom: 32px;
+    
+                @include font(500, 16px, 1.88, 0.04em);
+            }
+        }
+        &--adress {
+         color:$map-link-color;
+         &:hover,
+         &:focus {
+            text-decoration: underline;
+         }
+        }
+          
+    }
+    .contacts-details__time-work {
+        @include font(500, 12px, 1.86, null);
+        color: $time-color;  
+
+        @include tablet {
+            @include font(500, 14px, 1.86, 0.04em);
+        }
+
+        @include desktop {
+            @include font(500, 16px, 1.86, 0.04em);
+        }
+            
+
+
+    }
+    
+    .contacts-details__tel,
+    .contacts-details__email
+     {
+        @include font(500, 12px, 1.86, null);
+        color: $title-color-black;
+        
+        @include tablet {
+            @include font(500, 14px, 1.86, 0.04em);
+        }
+        
+        @include desktop {
+            @include font(500, 16px, 1.82, 0.04em);
+        }
+    }
+
+    
+}
