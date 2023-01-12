@@ -1,12 +1,11 @@
 .section__contacts {
   padding: 0;
 
-  // background-image: linear-gradient(
-  //     to bottom,
-  //     $accent-bg-color 24%,
-  //     $main-bg-color 24%,
-
-  // );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(132, 161, 120, 0) 24%,
+    rgba(132, 161, 120, 1) 24%,
+);
 
   @include tablet {
     padding-top: 40px;
@@ -120,9 +119,8 @@
       }
     }
     &--category {
-      display: flex;
-      width: 80px;
-      height: 22px;
+      display: inline-block;
+      padding:4px 14px;
 
       background-color: $link-bg-color;
 
@@ -141,7 +139,7 @@
       @include tablet {
         margin-bottom: 32px;
 
-        @include font(500, 16px, 1.88, 0.04em);
+        @include font(500, 16px, 1.4, 0.04em);
       }
     }
     &--adress {
