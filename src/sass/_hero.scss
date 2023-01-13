@@ -9,6 +9,15 @@
 
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+@mixin btn-sizes($w, $h, $rad, $fsize, $lh, $pdn) {
+  width: $w;
+  height: $h;
+  border-radius: $rad;
+  font-size: $fsize;
+  line-height: $lh;
+  padding: $pdn;
+}
+
 /*------------*/
 
 .hero {
@@ -82,18 +91,18 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-family: $primary-fonts;
     font-weight: 600;
     cursor: pointer;
-    color: $button-text-color;
+    color: #000000;
     background-color: transparent;
     border-color: $link-bg-color;
     transition: background-color 250ms $timing-function,
       color 250ms $timing-function, border-color 250ms $timing-function;
 
     &:hover {
-      border-color: $button-border-color;
+      border-color: #0a8817;
     }
 
     &:focus {
-      border-color: $button-border-color;
+      border-color: #0a8817;
       color: $main-text-color;
     }
 
