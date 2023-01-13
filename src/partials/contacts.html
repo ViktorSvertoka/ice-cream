@@ -1,37 +1,4 @@
-<!-- Элементы для вызова модальных окон, могут быть любые -->
 
-<!-- <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
-<a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
-
-<!-- Несколько модальных окон -->
-
-<div class="modal contacts__modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 2</p>
-</div>
-
-<div class="modal" data-modal="3">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 3</p>
-</div> -->
 
 
 <section class="section section__contacts">
@@ -132,9 +99,29 @@
               </li>
             </ul>
             </li>
-          </li>
-              
+          </li>   
       </ul> 
+  </ul>
+ <!-- BUTTONS -->
+  <ul class="contacts-buttons__list">
+    <li class="contacts-buttons__item">
+      <button type="button" class="contacts-buttons__button button js-open-modal" data-modal="locations" >
+        Our Locations
+        <svg class="button__icon" width="8" height="18">
+          <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="contacts-buttons__item">
+      <button type="button" class="contacts-buttons__button button js-open-modal" data-modal="franchise">
+        Franchise
+        <svg class="button__icon" width="8" height="18">
+          <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
+        </svg>
+      </button>
+
+    </li>
+    <li></li>
   </ul>
 </div>
 </section>
