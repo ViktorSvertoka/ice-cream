@@ -1,38 +1,50 @@
 <div class="modal" data-modal="products">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    width="11"
-    height="11"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+  <button class="modal__cross js-modal-close">
+    <svg width="26" height="26">
+      <use href="../src/images/icons-sprite.svg#icon-button-cross"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title"><span>Chololate icecream</span></h2>
+  <div class="modal__pic">
+    <img
+      class="modal__img"
+      srcset="
+        ../src/images/products_modal_pic_1x.png 132w,
+        ../src/images/products_modal_pic_2x.png 264w
+      "
+      sizes="(min-width: 1200px) 132px, 100vw "
+      src="../src/images/products_modal_pic_1x.png"
+      alt="Chololate icecream"
+      width="132"
+      height="139"
     />
-  </svg>
-  <h2 class="modal__titel"><span>Chololate icecream</span></h2>
-  <div class="modal__pic"></div>
-  <ul class="modal__items">
-    <li class="modal__item"></li>
-    <li class="modal__item"></li>
-    <li class="modal__item"></li>
-    <li class="modal__item"></li>
+  </div>
+  <ul class="modal__features">
+    <li class="modal__list">
+      <p class="modal__item">320</p>
+      <p class="modal__items">kcal</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">4g</p>
+      <p class="modal__items">Protein...</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">8,2g</p>
+      <p class="modal__items">Fats</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">40,4g</p>
+      <p class="modal__items">Carbs</p>
+    </li>
   </ul>
-  <h3 class="modal__ingredients-titel"></h3>
+  <h3 class="modal__ingredients-title">Ingredients</h3>
   <ul class="modal__ingregients-list">
     <li class="modal__ingredients-item">
       <p class="modal__ingredients-text">Milk</p>
-      <p class="modal__ingredients-text">100ml</p>
+      @@ -36,35 +47,35 @@
     </li>
-    <li class="modal__ingredients-item">
-      <p class="modal__ingredients-text">Belgian chocolate</p>
-      <p class="modal__ingredients-text">20g</p>
-    </li>
-    <li class="modal__ingredients-item">
-      <p class="modal__ingredients-text">Cream</p>
-      <p class="modal__ingredients-text">150 ml</p>
-    </li>
+
     <li class="modal__ingredients-item">
       <p class="modal__ingredients-text">Cocoa powder</p>
       <p class="modal__ingredients-text">30g</p>
@@ -56,15 +68,13 @@
       </li>
       <li class="form__item">
         <textarea
-          type="text"
+          name="comment"
+          id="comment"
           class="form__textarea"
           placeholder="Comment"
-          cols="30"
-          rows="10"
         ></textarea>
-        />
       </li>
     </ul>
-    <button type="submit" class="close-btn"></button>
+    <button type="submit" class="close-btn">Submit</button>
   </form>
 </div>
