@@ -3,39 +3,39 @@
 }
 
 @media screen and (min-width: 768px) {
-    .wrappage {
+    .footer--container {
         display: flex;
         justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .inner {
+    .footer__content {
 padding-top: 60px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .inner {
+    .footer__content {
         padding-top: 18px;
     }
 }
 
-.slogan__top {
+.footer__slogan-text {
 font-weight: 700;
 font-size: 18px;
 text-transform: uppercase;
 }
     
 @media screen and (max-width: 768px) {
-    .slogan__top {
+    .footer__slogan-text {
             width: 240px;
             margin-bottom: 16px;                   
         }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .slogan__top {
+    .footer__slogan-text {
         font-size: 26px;
         width: 352px;
         margin-bottom: 8px;
@@ -43,7 +43,7 @@ text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
-    .slogan__top {
+    .footer__slogan-text {
         font-weight: 400;
         font-size: 30px;
         line-height: 1.23;        
@@ -52,7 +52,7 @@ text-transform: uppercase;
     }
 }
 
-.slogan__bottom {
+.footer__slogan-title {
 font-weight: 700;
 font-size: 34px;
 line-height: 1.2;
@@ -61,14 +61,14 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
-    .slogan__bottom {
+    .footer__slogan-title {
         width: 186px;
         margin-bottom: 60px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .slogan__bottom {
+    .footer__slogan-title {
         font-size: 48px;
         width: 352px; 
         margin-bottom: 32px;
@@ -76,7 +76,7 @@ text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
-    .slogan__bottom {
+    .footer__slogan-title {
         font-size: 58px;
         line-height: 1.22;
         letter-spacing: 0.06em;
@@ -85,24 +85,24 @@ text-transform: uppercase;
     }
 }
 
-.social-media {
+.footer__soc {
     display: flex;
     justify-content: end;
 }
 
 @media screen and (max-width: 768px) {
-    .social-media {        
+    .footer__soc {        
         margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .social-media {
+    .footer__soc {
         margin-bottom: 40px;
     }
 }
 
-.social-media__list {
+.footer__soclist {
     display: flex;
     background: $link-bg-color;
     border-radius: 50%;
@@ -115,12 +115,12 @@ text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-    .social-media__list:not(:last-child) {
+    .footer__soclist:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.social-media__link {
+.footer__soclink {
     display: flex;
     width: 100%;
     height: 100%;
@@ -128,22 +128,22 @@ text-transform: uppercase;
     align-items: center;
 }
 
-.social-media__icon {
+.footer__socicon {
 fill: $main-bg-color;
 }
 
-.phone {
+.footer__phone {
     display: flex;
     justify-content: flex-end;
 }
 
 @media screen and (max-width: 767px) {
-    .phone {
+    .footer__phone {
         margin-bottom: 40px;
     }
 }
 
-.phone__number {
+.footer__phone-number {
     font-family: $primary-fonts;
     font-style: normal;
     font-weight: 700;
@@ -154,19 +154,19 @@ fill: $main-bg-color;
 }
 
 @media screen and (min-width: 768px) {
-    .phone__number {
+    .footer__phone-number {
         font-size: 14px;        
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .phone__number {
+    .footer__phone-number {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
 }
 
-.phone__text {    
+.footer__phone-text {    
     font-family: $primary-fonts;
     font-style: normal;
     font-weight: 700;
@@ -177,13 +177,13 @@ fill: $main-bg-color;
 }
 
 @media screen and (min-width: 768px) {
-    .phone__text {
+    .footer__phone-text {
         font-size: 14px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .phone__text {
+    .footer__phone-text {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
@@ -194,18 +194,18 @@ fill: $main-bg-color;
     border: 1px solid #E1E1E1;
 }
 
-.copyright {
+.footer__copyright {
     border-top: 1px solid #E1E1E1;    
 }
 
 @media screen and (max-width: 767px) {
-    .copyright {
+    .footer__copyright {
         display: flex;
         justify-content: center;
     }
 }
 
-.copyright__text {
+.footer__copyright-text {
     font-family: $primary-fonts;
     font-style: normal;
     font-weight: 700;
@@ -216,7 +216,7 @@ fill: $main-bg-color;
 }
 
 @media screen and (max-width: 767px) {
-    .copyright__text {   
+    .footer__copyright-text {   
         width: 160px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -224,7 +224,7 @@ fill: $main-bg-color;
 }
 
 @media screen and (min-width: 768px) {
-    .copyright__text {        
+    .footer__copyright-text {        
         padding-top: 12px;
         padding-bottom: 12px;
     }
