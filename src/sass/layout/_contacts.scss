@@ -1,5 +1,6 @@
 .section__contacts {
   padding: 0;
+  padding-bottom: 60px;
 
   background-image: linear-gradient(
     to bottom,
@@ -124,9 +125,6 @@
 
       background-color: $link-bg-color;
 
-      // display: inline-block;
-      // text-align: center;
-      // vertical-align: middle;
 
       align-items: center;
       justify-content: center;
@@ -176,4 +174,60 @@
       @include font(500, 16px, 1.82, 0.04em);
     }
   }
+  .contacts-buttons__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    @include desktop {
+        margin-top: 60px;
+    }
+}
+
+.contacts-buttons__item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    @include tablet {
+        &:not(:last-child) {
+            margin-right: 14.5px;
+            margin-bottom: 0;
+        }
+    }
+
+    @include desktop {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+.contacts-buttons__button {
+  @include font(600, 14px, 1.29, null);
+
+    background: $link-bg-color;
+    border-radius: 10px;
+    padding: 12px;
+    width: 152px;
+    height: 42px;
+    cursor: pointer;
+  
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+
+}
+.button__icon {
+  fill: currentColor;
+  margin-left: 5px;
+}
 }
