@@ -8,6 +8,10 @@
 @import './utils/mixins';
 @import './utils/command';
 
+///FOLDER COMPONENTS
+@import './components/buttons';
+@import './components/modal';
+
 ///FOLDER LAYOUTS
 @import './layout/about';
 @import './layout/about-modal';
@@ -23,6 +27,3 @@
 @import './layout/hero-modal';
 @import './layout/products';
 @import './layout/products-modal';
-
-///FOLDER COMPONENTS
-@import './components/modal';
