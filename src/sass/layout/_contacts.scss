@@ -9,7 +9,7 @@
 );
 
   @include tablet {
-    padding-top: 40px;
+    // padding-top: 40px;
 
     // background-image: linear-gradient(
     //     to bottom,
@@ -20,7 +20,7 @@
   }
 
   @include desktop {
-    padding-top: 60px;
+    // padding-top: 60px;
 
     // background-image: linear-gradient(
     //     to bottom,
@@ -42,12 +42,21 @@
   .contacts__item {
     padding: 40px 32px;
     width: 280px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: $accent-bg-color;
     border: 1px solid #e1e1e1;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:hover,
+    &:focus {
+      @include tablet {
+        transform: translateY(-1%);
+        filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+      }
+    }
 
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -63,6 +72,9 @@
       padding: 40px 40px;
     }
   }
+
+    
+
   // тут питання по коду див вниз
   .contacts-details__item {
     &:first-child {
@@ -78,6 +90,8 @@
     &:last-child {
       margin-top: 24px;
     }
+
+    
 
     // @include tablet {
     //     &:first-child {
@@ -209,17 +223,14 @@
             margin-right: 15px;
         }
     }
+    
 }
 .contacts-buttons__button {
   @include font(600, 14px, 1.29, null);
 
-    background: $link-bg-color;
-    border-radius: 10px;
-    padding: 12px;
-    width: 152px;
+    
+    width: 196px;
     height: 42px;
-    cursor: pointer;
-  
     justify-content: center;
     align-items: center;
     padding: 0;
