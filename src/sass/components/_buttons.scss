@@ -1,0 +1,54 @@
+.button {
+    @include font(600, 14px, 1.29, null);
+
+    border-radius: 10px;
+    padding: 12px 34px;
+    display: flex;
+    align-items: center;
+
+    color: $button-text-color;
+    background-color: $link-bg-color;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &:focus {
+        color: $main-text-color;
+    }
+
+    &__arrow {
+        margin-left: 4px;
+        fill: currentColor;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $button-border-color;
+    }
+
+    &:disabled {
+        background-color: $time-color;
+    }
+
+    &--bg-transperent {
+        background-color: transparent;
+        border: 2px solid $link-bg-color;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $button-border-color;
+        }
+
+        &:focus {
+            background-color: transparent;
+            border-color: $main-text-color;
+        }
+
+        &:disabled {
+            background-color: transparent;
+            border-color: $time-color;
+        }
+    }
+}
