@@ -2,7 +2,7 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-
+  
   /*  Установаем ширину окна  */
   @include desktop {
     width: 568px;
@@ -12,7 +12,6 @@
   }
   width: 100%;
   max-width: 500px;
-
   // давать свои размеры
 
   /*  Центрируем и задаем z-index */
@@ -29,9 +28,7 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   transition: 0.3s all;
-
-
-
+       
    
 }
 
@@ -46,9 +43,12 @@
 .modal__cross {
   position: absolute;
   @include flex-align;
-  top: 16px;
-  right: 16px;
+  background: transparent;
+  border: none;
+  top: 12px;
+  right: 12px;
   padding: 0;
+  
 }
 
 .modal__title {
@@ -70,7 +70,7 @@
         background-size: cover;
         width: 132px;
         height: 132px;
-        top: 20%;
+        top: 16.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
@@ -79,15 +79,18 @@
             rgba(156, 190, 143, 0.7)),
           #d9d9d9;
         box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    
       }
+            
+
 
 }
 .modal__img {
+  position: relative;
 display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
+  
 
 }
 .modal__features {
@@ -98,19 +101,31 @@ display: flex;
 }
 .modal__list {
 
-// outline: solid 2px red;
+
 margin-right: 20px;
 border: 2px solid #9CBE8F;
 border-radius: 40px;
+width: 67px;
+height: 90px;
+&:last-child {
+  margin-right: 0;
+}
 }
 
 .modal__item {
+
+
+display: flex;
+justify-content: center;
+align-items: center;
 background: #9CBE8F;
 border: 2px solid #9CBE8F;
 border-radius: 50% ;
+width: 53px;
+height: 53px;
 box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
-justify-content: center;
+
   
 font-weight: 500;
 font-size: 12px;
@@ -197,7 +212,6 @@ color: $secondary-text-color;
   line-height: 140%;
   color: $title-color-black;
   background: rgba(248, 210, 78, 0.1);
-
   width: 368px;
   height: 84px;
   border: 1px solid #84A178;
@@ -212,7 +226,7 @@ color: $secondary-text-color;
       color: $title-color-black;
     }
   &:focus {
-        border-color: $title-color-black;
+        border-color: black;
         }
         margin-bottom: 32px;
    }
@@ -224,5 +238,4 @@ color: $secondary-text-color;
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
-  outline-style: none;
 }
