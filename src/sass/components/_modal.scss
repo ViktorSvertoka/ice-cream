@@ -13,8 +13,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
-  overflow-y: scroll;
-}
+ }
 
 /* Стили для модальных окон */
 
@@ -60,6 +59,7 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
 }
 
 // выше не трогать
