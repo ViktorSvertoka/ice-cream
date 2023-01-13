@@ -21,8 +21,11 @@
     height: 199px;
 
     margin-bottom: 20px;
+    border: 0;
+    overflow: hidden;
+    
 
-    @include tablet {
+    @include mobile {
       max-width: 448px;
       width: 100%;
       height: 205px;
