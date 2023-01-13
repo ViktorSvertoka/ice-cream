@@ -1,0 +1,42 @@
+
+.contacts-modal__input {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+
+    background-color: rgba(248, 210, 78, 0.1);
+    border: solid 1px $main-bg-color;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    color: $title-color-black;
+    
+    &:not(:placeholder-shown):invalid {
+        border-color: red;
+    }
+}
+
+.contacts-modal__comment {
+    resize: none;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.modal-franchise {
+    width: 280px;
+    height: 100%;
+    padding: 28px 29px 28px 28px;
+    background-color: $title-color-white;
+    
+    @include tablet {
+        width: 568px;
+        height: 668px;
+        padding: 32px 54px;
+    }
+}

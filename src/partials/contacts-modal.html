@@ -5,7 +5,7 @@
 
 <!-- Несколько модальных окон -->
 
-<div class="modal modal-franchise" data-modal="2">
+<div class="modal modal-franchise" data-modal="franchise">
     <!--   Svg иконка для закрытия окна  -->
     <svg
     class="modal__cross js-modal-close"
@@ -19,6 +19,24 @@
       />
     </svg>
     <p class="modal__title">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="modal__text">Due to the overwhelming volume of franchise requests 
+      we are not accepting new franchisee applications at this time. Once the application process resumes, 
+      we will contact you for further information. 
+      Please fill out the contact information below and we will reach out for additional information. 
+      We appreciate your patience.
+    </p>
+
+    <form class="contacts-modal__form" action="">
+      
+      <input type="text" class="contacts-modal__input" placeholder="Name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
+      <input type="text" class="contacts-modal__input" placeholder="Phone" name="name" id="name" />
+      <input type="text" class="contacts-modal__input" placeholder="Email" name="name" id="name" />
+
+      <textarea class="contacts-modal__input contacts-modal__comment" name="" id="" 
+      placeholder="Comment" cols="30" rows="10"></textarea>
+      <button class="submit-btn btn" type="button">Submit</button>
+    </div>
+
   </div>
   
 <!-- Модалка локація -->
