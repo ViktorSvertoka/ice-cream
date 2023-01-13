@@ -90,13 +90,13 @@ text-transform: uppercase;
     justify-content: end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .social-media {        
         margin-bottom: 20px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
     .social-media {
         margin-bottom: 40px;
     }
