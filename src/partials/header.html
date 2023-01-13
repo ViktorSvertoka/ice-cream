@@ -1,6 +1,6 @@
 <header class="header" id="home">
   <div class="container header__container">
-    <a class="header__logo-destop"href="##">
+    <a class="header__logo-destop"href="#">
       <picture>
         <source
          srcset="./images/logo_tablet.png"
@@ -9,9 +9,7 @@
         <img src="./images/logo.png" alt="logo">
       </picture>
     </a>
-    <!-- <a class="header__logo-tablet" href="##"><img src="./images/logo_tablet.png" alt="logo" /></a> -->
     <!-- кнопки мобильного меню -->
-    
     <button
       class="header__menu-button button__mobil-menu js-open-modal"
       aria-controls="mobile-menu"
@@ -33,17 +31,17 @@
     </button>
     <!-- мобільне меню -->
     <div class="header__mobil-menu modal" data-modal="2">
-      <a class="header__logo-mobil header__ise-logo" href="##"><img src="./images/logo_tablet.png" alt="logo"/></a>
+      <a class="header__logo-mobil header__ise-logo" href="#"><img src="./images/logo_tablet.png" alt="logo"/></a>
       <!--   Svg иконка для закрытия окна  -->
       <svg class="modal__cross header__modal-cros js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
       </svg>
       <ul class="header__mobil-menu-list">
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="##">Home</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">How it’s made?</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">Our products</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link" href="#">Contact</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#home">Home</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#how-its-made">How it’s made?</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#products">Our products</a></li>
+        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#contact">Contact</a></li>
       </ul>
       <button class="tab-desk__button tab-desk__in-menu  js-open-modal" type="button" data-modal="1">
         Buy now
@@ -55,24 +53,24 @@
     </div>
     <!-- меню навігації -->
     <nav class="header__nav">
-      <ul class="nav-header__list">
-        <li class="nav-header__item">
-          <a href="#home" class="nav-header__link">Home</a>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#home" class="header-nav__link">Home</a>
         </li>
-        <li class="nav-header__item">
-          <a href="#how-its-made" class="nav-header__link">How it’s made?</a>
+        <li class="header-nav__item">
+          <a href="#how-its-made" class="header-nav__link">How it’s made?</a>
         </li>
-        <li class="nav-header__item">
-          <a href="#products" class="nav-header__link">Our products</a>
+        <li class="header-nav__item">
+          <a href="#products" class="header-nav__link">Our products</a>
         </li>
-        <li class="nav-header__item">
-          <a href="#locations" class="nav-header__link">Contact</a>
+        <li class="header-nav__item">
+          <a href="#contact" class="header-nav__link">Contact</a>
         </li>
       </ul>
     </nav>
     <!-- кнопка buy noy -->
     <button
-      class="tab-desk__button button js-open-modal"
+      class="header-tab-desk__button button js-open-modal"
       type="button"
       data-modal="1"
     >
@@ -86,11 +84,12 @@
 
     <!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
 
-    <!-- Несколько модальных окон -->
-
-
-      
-      
-    </div>
+    <!-- Несколько модальных окон -->  
+   </div>
+    <div class="header__scroll-ap">
+      <svg class="header__scroll-svg" vievBox="-2 -2 52 52">
+        <path class="heder-scroll-ap__svg-path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+      </svg>
+    </div> 
   </div>
 </header>
