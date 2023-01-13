@@ -108,6 +108,7 @@ text-transform: uppercase;
     border-radius: 50%;
     width: 34px;
     height: 34px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
 
     &:not(:last-child) {
             margin-right: 20px;
@@ -126,6 +127,11 @@ text-transform: uppercase;
     height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.footer__soclink:hover .footer__socicon,
+.footer__soclink:focus .footer__socicon {
+    fill: #FCFCFC;
 }
 
 .footer__socicon {
