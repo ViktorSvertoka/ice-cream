@@ -15,63 +15,78 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 50px;
   height: 454px;
   overflow: hidden;
+  background: $main-bg-color;
+
+  background-image: url(../images/hero-dots-tel.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  @include mobile {
+    background-image: url(../images/hero-dots-mobile.svg);
+  }
 
   @include tablet {
     height: 349px;
     padding-top: 14px;
+    background-image: url(../images/hero-dots-tablet.svg);
   }
 
   @include desktop {
     height: 591px;
     padding-top: 45px;
+    background-image: url(../images/hero-dots-desktop.svg);
   }
 
   & .container {
     height: 100%;
     position: relative;
   }
-}
 
-.hero__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero__title {
-  max-width: 247px;
-  margin-bottom: 32px;
-
-  font-family: $title-fonts;
-  @include font(400, 26px, 1.27, 0.04em);
-  text-transform: uppercase;
-  color: $title-color-white;
-
-  @include tablet {
-    margin-bottom: 24px;
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  @include desktop {
-    @include font(400, 38px, 1.26, 0.04em);
+  &__title {
+    max-width: 247px;
+    margin-bottom: 32px;
+
+    font-family: $title-fonts;
+    @include font(400, 26px, 1.27, 0.04em);
     text-transform: uppercase;
-    max-width: 367px;
-    margin-bottom: 28px;
-  }
-}
-.hero__navigation-list {
-  display: flex;
-  gap: 12px;
+    color: $title-color-white;
 
-  @include desktop {
-    margin-bottom: 42px;
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      @include font(400, 38px, 1.26, 0.04em);
+      text-transform: uppercase;
+      max-width: 367px;
+      margin-bottom: 28px;
+    }
   }
 
-  & .hero__navigation-item:first-child {
-    margin-right: 12px;
-  }
-}
+  &__navigation-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-.hero__link {
+    @include desktop {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__link {
+    @include btn-sizes(108px, 38px, 8px, 12px, 1.25, 11px 26px);
+
+    @include desktop {
+      @include btn-sizes(134px, 42px, 10px, 12px, 1.25, 11px 26px);
+    }
+  }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -108,40 +123,45 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     border: 0;
     font-weight: 600;
+    transition: color 250ms $timing-function;
 
     @include desktop {
       @include btn-sizes(auto, auto, 0px, 12, 1.25, 0px 0px);
     }
-  }
-}
 
-.hero__point-sale {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  text-align: right;
-
-  @include desktop {
-    margin-top: 8px;
-  }
-
-  &-count {
-    @include font(900, 28px, 1.21, 0.04em);
-    text-transform: uppercase;
-
-    @include desktop {
-      @include font(900, 46px, 1.21, 0.04em);
-      text-transform: uppercase;
-      color: $title-color-black;
+    &:hover {
+      color: $button-border-color;
     }
   }
 
-  &-name {
-    @include font(400, 8px, 1.2, 0.04em);
-    color: $main-text-color;
+  &__point-sale {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    text-align: right;
 
     @include desktop {
-      @include font(400, 14px, 1.2, 0.04em);
+      margin-top: 8px;
+    }
+
+    &-count {
+      @include font(900, 28px, 1.21, 0.04em);
+      text-transform: uppercase;
+      color: $title-color-black;
+
+      @include desktop {
+        @include font(900, 46px, 1.21, 0.04em);
+        text-transform: uppercase;
+      }
+    }
+
+    &-name {
+      @include font(400, 8px, 1.2, 0.04em);
+      color: $main-text-color;
+
+      @include desktop {
+        @include font(400, 14px, 1.2, 0.04em);
+      }
     }
   }
 
@@ -151,25 +171,108 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       margin-bottom: 16px;
     }
   }
-}
+  &__content {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
-.hero__content {
-  @media screen and (max-width: 767px) {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 
-  display: flex;
-  align-items: center;
+  &__img-balls {
+    margin-right: 32px;
+    @include desktop {
+      margin-right: 20px;
+
+      &:hover {
+        animation-name: circle;
+        animation-duration: 3000ms;
+      }
+
+      @keyframes circle {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  &__content-link {
+    &:hover .hero__arrow,
+    &:hover .hero__arrow {
+      fill: $link-bg-color;
+
+      animation: pulse 1s infinite;
+      animation-timing-function: linear;
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    color: $main-text-color;
+    fill: $main-text-color;
+    transition: fill 250ms $timing-function;
+  }
+
+  &__text {
+    @include font(400, 12px, 1.4, 0.04em);
+    max-width: 139px;
+    color: $main-text-color;
+    margin-bottom: 12px;
+
+    @include desktop {
+      @include font(400, 14px, 1.4, 0.04em);
+      margin-top: 45px;
+
+      max-width: 200px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__img-cone {
+    position: absolute;
+    bottom: 0;
+    width: 177px;
+
+    transform: translateY(5px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(0px);
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 50%;
+      transform: translateX(56%);
+    }
+
+    @include tablet {
+      width: 268px;
+      right: 12%;
+    }
+
+    @include desktop {
+      width: 456px;
+      right: 7%;
+    }
+  }
 }
-// .hero__img-balls {
-// }
-// .hero__text {
-// }
-// .hero__text-paragraph {
-// }
-// .hero__arrow {
-// }
+
 // .hero__picture {
-// }
-// .hero__img-cone {
 // }
