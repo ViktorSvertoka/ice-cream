@@ -15,7 +15,7 @@ padding-top: 60px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .inner {
         padding-top: 18px;
     }
@@ -34,7 +34,7 @@ text-transform: uppercase;
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .slogan__top {
         font-size: 26px;
         width: 352px;
@@ -42,7 +42,7 @@ text-transform: uppercase;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .slogan__top {
         font-weight: 400;
         font-size: 30px;
@@ -67,7 +67,7 @@ text-transform: uppercase;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .slogan__bottom {
         font-size: 48px;
         width: 352px; 
@@ -75,7 +75,7 @@ text-transform: uppercase;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .slogan__bottom {
         font-size: 58px;
         line-height: 1.22;
@@ -90,13 +90,13 @@ text-transform: uppercase;
     justify-content: end;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .social-media {        
         margin-bottom: 20px;
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .social-media {
         margin-bottom: 40px;
     }
@@ -159,7 +159,7 @@ fill: $main-bg-color;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .phone__number {
         font-size: 16px;
         letter-spacing: 0.02em;
@@ -182,7 +182,7 @@ fill: $main-bg-color;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .phone__text {
         font-size: 16px;
         letter-spacing: 0.02em;
