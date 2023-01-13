@@ -1,0 +1,34 @@
+<div class="modal header-modal" data-modal="1">
+    <button type="button" class="modal__cross js-modal-close btn">
+        <svg class="modal-btn-close" width="24" height="24">
+            <use href="./images/icons-sprite.svg#icon-button-cross"></use>
+        </svg>
+    </button>
+    <p class="header-modal__title">Buy now</p>
+    <ul class="header-modal__list">
+        <li class="header-modal__item">
+            <label class="header-modal__label">
+                <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream">  
+                <span class="header-modal__product icecream">ice cream</span> 
+            </label>
+        </li>
+        <li class="header-modal__item">
+            <label class="header-modal__label">
+               <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe">
+               <span class="header-modal__product icecoffe">ice coffee</span>
+            </label>
+        </li>
+        <li class="header-modal__item">
+            <label class="header-modal__label">
+               <input class="header-modal__checkbox" type="checkbox" name="product" value="milkshake">
+               <span class="header-modal__product milkshake">milkshake</span>
+            </label>
+        </li>
+    </ul>
+    <form class="header-modal__form" action="">
+        <input class="header-modal__input" type="text" placeholder="Name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$">
+        <input class="header-modal__input" type="text" placeholder="Phone">
+        <textarea class="header-modal__input header-modal__comment" name="" id="" placeholder="Comment" cols="30" rows="10"></textarea>
+        <button class="submit-btn btn" type="button">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,263 @@
+.header-modal {
+    width: 100%;
+    height: 100%;
+    padding: 28px 29px 28px 28px;
+    background-color: $title-color-white;
+
+    @include tablet {
+        width: 568px;
+        height: 644px;
+        padding: 32px 54px;
+    }
+
+    &__title {
+        margin-bottom: 83px;
+        text-align: center;
+    font-family: $title-fonts; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $title-color-black;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 82px;
+        margin-bottom: 31px;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+
+    &__product {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 21px;
+        width: 132px;
+        height: 136px;
+        border: solid 2px;
+        border-radius: 10px;
+        color: $title-color-black;
+        font-family: $primary-fonts;
+        font-size: 16px;
+        line-height: 1.25;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center; 
+    }
+
+    &__checkbox {
+        appearance: none;
+        position: absolute;
+    }
+
+    &__checkbox:checked + .icecream {
+        background-color: #AEC6A5;
+    }
+
+    &__checkbox:checked + .icecoffe {
+        background-color: #EFD478;
+    }
+
+    &__checkbox:checked + .milkshake {
+        background-color: #D6936D;
+    }
+}
+
+.icecream {
+    border-color: #96AF8C;
+}
+
+.icecream::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.icecream::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background-image: url(../images/modal-icecream_@1x-min.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-icecream_@2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.icecoffe {
+    border-color: $products-bg-color-yellow;
+}
+
+.icecoffe::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.icecoffe::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background-image: url(../images/modal-icecoffee_@1x-min.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-icecoffee_@2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.milkshake {
+    border-color: $products-bg-color-coffee;
+}
+
+.milkshake::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.milkshake::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background-image: url(../images/modal-milkshake_@1x-min.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-milkshake_@2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.header-modal__input {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+
+    background-color: rgba(248, 210, 78, 0.1);
+    border: solid 1px $main-bg-color;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    color: $title-color-black;
+
+    @include tablet {
+        width: 368px;
+        height: 42px;
+    }
+}
+
+.header-modal__input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.header-modal__comment {
+    resize: none;
+    height: 65px;
+    margin-bottom: 26px;
+
+    @include tablet {
+        height: 84px;
+    }
+}
+
+.submit-btn {
+    display: flex;
+    width: 114px;
+    height: 42px;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px 34px;
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.17;
+    background-color: $link-bg-color;
+    
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
