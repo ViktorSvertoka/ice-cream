@@ -2,6 +2,7 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
+  overflow-y: scroll;
   
   /*  Установаем ширину окна  */
   @include desktop {
@@ -11,6 +12,7 @@
     width: 280px;
   }
   width: 100%;
+  height: 100%;
   max-width: 500px;
   // давать свои размеры
 
@@ -38,6 +40,7 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+
 }
 
 .modal__cross {
@@ -45,12 +48,16 @@
   @include flex-align;
   background: transparent;
   border: none;
-  top: 12px;
-  right: 12px;
-  padding: 0;
-  
+  top: 15px;
+  right: 15px;
+ 
+      &:hover {
+          border-radius: 50%;
+          border: 1px solid $products-bg-color-green;
+      
+        }
 }
-
+   
 .modal__title {
   font-family: $title-fonts;
   font-size: 20px;
@@ -59,61 +66,73 @@
   text-align: center;
   align-items: center;
   margin: 0 69px 20px;
+  margin-right: auto;
+  margin-left: auto;
   @include desktop {
     margin: 0 0 24px;
   }
 }
+
 .modal__pic {
     &::before {
-        content: '';
-        position: absolute;
-        background-size: cover;
-        width: 132px;
-        height: 132px;
-        top: 16.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        background: linear-gradient(0deg,
+      content: '';
+      position: absolute;
+      background-size: cover;
+      width: 132px;
+      height: 132px;
+      top: 16%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: linear-gradient(0deg,
             rgba(156, 190, 143, 0.7),
             rgba(156, 190, 143, 0.7)),
           #d9d9d9;
-        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+      box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
       }
-            
-
-
+         
 }
 .modal__img {
   position: relative;
-display: flex;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
-  
-
+  &:hover,
+    &:focus {
+      transform: translateY(-6%);
+    }
+   
 }
 .modal__features {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 48px;
+  
 }
 .modal__list {
 
-
-margin-right: 20px;
+position: relative;
+margin-right: 10px;
 border: 2px solid #9CBE8F;
 border-radius: 40px;
-width: 67px;
-height: 90px;
+width: 55px;
+height: 72px;
 &:last-child {
   margin-right: 0;
+}
+ @media screen and (min-width: 479px)  {
+  width: 67px;
+  height: 90px;
+  margin-right: 20px;
 }
 }
 
 .modal__item {
-
+position: absolute;
+left: 0;
+top: 0;
 
 display: flex;
 justify-content: center;
@@ -121,26 +140,39 @@ align-items: center;
 background: #9CBE8F;
 border: 2px solid #9CBE8F;
 border-radius: 50% ;
-width: 53px;
-height: 53px;
+
+
+width: 40px;
+height: 40px;
 box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-
-
-  
 font-weight: 500;
 font-size: 12px;
 line-height: calc(28/12);
 margin-bottom: 8px;
-color: $secondary-text-color;
-    
+color: $secondary-text-color; 
+&:hover,
+  &:focus {
+    transform: translateY(+5%);
+  }
+         @media screen and (min-width: 479px) {
+      width: 53px;
+      height: 53px;
+      left: 9%;
+      top: 0;
+    }
 }
+
 .modal__items {
 
+position: absolute;
+top: 70%;
+left: 25%;
 font-weight: 400;
-justify-content: center;
+
 font-size: 12px;
 line-height: calc(15/12);
 color: $secondary-text-color;
+
 }
 
 .modal__ingredients-title {
@@ -226,7 +258,7 @@ color: $secondary-text-color;
       color: $title-color-black;
     }
   &:focus {
-        border-color: black;
+        border-color: $title-color-black;
         }
         margin-bottom: 32px;
    }
@@ -234,8 +266,22 @@ color: $secondary-text-color;
 .close-btn {
   display: flex;
   padding: 12px 34px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17/14);
+  color: $title-color-black;
   background: $link-bg-color;
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+      border-color: $secondary-text-color;
+      
+    }
+
 }
+
+
+
