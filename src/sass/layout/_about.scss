@@ -167,12 +167,4 @@
       }
     }
   }
-
-  &__button {
-    @include font(600, 14px, 1.29, null);
-
-    background: $link-bg-color;
-    border-radius: 10px;
-    padding: 12px;
-  }
 }
