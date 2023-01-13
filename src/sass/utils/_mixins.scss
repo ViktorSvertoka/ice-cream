@@ -56,3 +56,21 @@
 @mixin animation($type) {
   transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@mixin animation2($type1, $type2) {
+  transition: $type1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin animation3($type1, $type2, $type3) {
+  transition: $type1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type3 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin animation4($type1, $type2, $type3, $type4) {
+  transition: $type1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type3 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type4 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
