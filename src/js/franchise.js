@@ -9,6 +9,5 @@ function checkInputs() {
     return el.value.trim() === '';
   }).length;
   button.disabled = empty !== 0;
-  console.log(button);
 }
 checkInputs();
