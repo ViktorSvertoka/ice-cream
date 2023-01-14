@@ -1,31 +1,27 @@
 html {
-  cursor: url('..//../images/cursor-black.svg'), pointer;
+  cursor: url('..//../images/cursor-black-white.svg'), pointer;
 }
 
 a {
-  cursor: url('..//../images/cursor-green.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }
 
 button {
-  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }
 
 a:hover {
-  cursor: url('..//../images/cursor-green.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }
 
 button:hover {
-  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }
 
 svg:hover {
-  cursor: url('..//../images/cursor-green.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }
 
 .swiper-pagination-bullet:hover {
-  cursor: url('..//../images/cursor-yellow.svg'), pointer;
-}
-
-.products__btn:hover {
-  cursor: url('..//../images/cursor-green.svg'), pointer;
+  cursor: url('..//../images/cursor-black.svg'), pointer;
 }

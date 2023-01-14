@@ -1,35 +1,39 @@
 .header-modal {
-    width: 100%;
-    height: 100%;
     padding: 28px 29px 28px 28px;
     background-color: $title-color-white;
 
     @include tablet {
-        width: 568px;
-        height: 644px;
         padding: 32px 54px;
     }
 
     &__title {
         margin-bottom: 83px;
         text-align: center;
-    font-family: $title-fonts; 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $title-color-black;
+        color: $title-color-black;
+        font-family: $title-fonts; 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        
+        @include tablet {
+            font-size: 20;
+            line-height: 1.4;
+            margin-bottom: 103px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 82px;
+        gap: 84px;
         margin-bottom: 31px;
 
         @include tablet {
             flex-direction: row;
+            justify-content: center;
             gap: 32px;
+            margin-bottom: 40px;
         }
     }
 
@@ -44,12 +48,18 @@
         border: solid 2px;
         border-radius: 10px;
         color: $title-color-black;
+
         font-family: $primary-fonts;
+        font-weight: 700;
         font-size: 16px;
         line-height: 1.25;
         font-style: bold;
         text-transform: uppercase;
         text-align: center; 
+
+        @include tablet {
+            height: 135px;
+        }
     }
 
     &__checkbox {
@@ -67,6 +77,26 @@
 
     &__checkbox:checked + .milkshake {
         background-color: #D6936D;
+    }
+}
+
+.icon-close {
+    width: 24px;
+    height: 20px;
+
+    @include tablet {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.header-modal.modal {
+    height: 100%;
+    max-height: 991px;
+
+    @include tablet {
+        max-width: 568px;
+        max-height: 644px;
     }
 }
 
@@ -205,6 +235,10 @@
     }
 }
 
+.header-modal__form {
+    color: $title-color-black;
+}
+
 .header-modal__input {
     display: flex;
     margin-right: auto;
@@ -214,6 +248,7 @@
     margin-bottom: 12px;
     padding: 8px 12px;
 
+    outline: none;
     background-color: rgba(248, 210, 78, 0.1);
     border: solid 1px $main-bg-color;
     border-radius: 10px;
@@ -226,7 +261,13 @@
     @include tablet {
         width: 368px;
         height: 42px;
+        padding: 11px 16px;
+        margin-bottom: 16px;
     }
+}
+
+.header-modal__input::placeholder {
+    color: $title-color-black;
 }
 
 .header-modal__input:not(:placeholder-shown):invalid {
@@ -240,6 +281,7 @@
 
     @include tablet {
         height: 84px;
+        margin-bottom: 32px;
     }
 }
 
@@ -247,17 +289,9 @@
     display: flex;
     width: 114px;
     height: 42px;
-
     margin-right: auto;
     margin-left: auto;
-    padding: 12px 34px;
-    
-    font-weight: 600;
     font-size: 12px;
     line-height: 1.17;
-    background-color: $link-bg-color;
-    
-    cursor: pointer;
-    border-radius: 10px;
     border: none;
 }

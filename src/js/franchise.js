@@ -1,5 +1,5 @@
 var inputs = [].slice.call(document.querySelectorAll('#franchise')),
-  button = document.querySelector('#franchise-btn');
+  button = document.querySelector('#franchise-button');
 
 inputs.forEach(function (el) {
   el.addEventListener('input', checkInputs, false);
