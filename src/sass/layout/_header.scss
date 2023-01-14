@@ -19,7 +19,7 @@
 .header__nav {
   display: flex;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -61,18 +61,18 @@
     margin-right: 0px;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 }
 
-.header__menu-button.button__mobil-menu {
-  @media (min-width: 768px) {
-      display: none;
-    }
-}
+// .header__menu-button.button__mobil-menu {
+//   @media (min-width: 768px) {
+//       display: none;
+//     }
+// }
 
-.tab-desk__button {
+.header-tab-desk__button {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -90,7 +90,7 @@
   
 }
 
-.tab-desk__in-menu {
+.header-tab-desk__in-menu {
 
   justify-content: center;
   align-items: center;
@@ -98,18 +98,18 @@
       display: none;
     }
 }
-
+//  buy nav в навігації
 .header-tab-desk__button.button {
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
       display: none;
     }
 }
 
-.tab-desk__button:hover {
+.header-tab-desk__button:hover {
   background: #0a8817;
 }
 
-.tab-desk__button:focus {
+.header-tab-desk__button:focus {
   background: #0a8817;
   color: #ffff;
 }
@@ -166,7 +166,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  //  justify-content: center;
   align-items: center;
   border: none;
   border-radius: 0;
@@ -186,8 +186,11 @@
 
 .header__mobil-menu-list {
   padding-top: 76px;
-  @media (max-width: 480px) {      
-      padding-top: 50px;
+  @media (max-width: 480px) {
+      font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+      padding-top: 100px;
       padding-bottom: 110px;
     }
 
