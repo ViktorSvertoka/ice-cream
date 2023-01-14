@@ -30,7 +30,7 @@
 
 .modal-franchise {
     width: 280px;
-    height: 100%;
+    height: auto;
     padding: 28px 29px 28px 28px;
     background-color: $title-color-white;
     
@@ -39,4 +39,8 @@
         height: 668px;
         padding: 32px 54px;
     }
+}
+
+.contacts-modal__form {
+    margin-bottom: 24px;
 }
