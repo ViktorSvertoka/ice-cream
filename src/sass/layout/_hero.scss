@@ -184,27 +184,33 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 32px;
     @include desktop {
       margin-right: 20px;
+      // transition: transform 3000ms;
 
-      &:hover {
-        animation-name: circle;
-        animation-duration: 3000ms;
-      }
+      // &:hover {
+      // transform: rotate(360deg);
+      animation: circle 9000ms infinite 1000ms alternate-reverse;
 
       @keyframes circle {
         0% {
           transform: rotate(0deg);
         }
-
         100% {
           transform: rotate(360deg);
         }
       }
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      // }
     }
   }
 
   &__content-link {
+    // color: $main-text-color;
+
     &:hover .hero__arrow,
-    &:hover .hero__arrow {
+    &:focus .hero__arrow {
       fill: $link-bg-color;
 
       animation: pulse 1s infinite;
@@ -225,8 +231,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__arrow {
-    color: $main-text-color;
-    fill: $main-text-color;
+    fill: currentColor;
     transition: fill 250ms $timing-function;
   }
 
@@ -273,6 +278,15 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
-
-// .hero__picture {
+/* animate*/
+// .animate__animated.animate__backInDown {
+//   --animate-duration: 1s;
 // }
+
+// .animate__animated.animate__backInLeft {
+//   --animate-duration: 1s;
+// }
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 1s;
+}
