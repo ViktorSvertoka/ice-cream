@@ -6,61 +6,89 @@
  Несколько модальных окон -->
 
 <div class="modal modal-franchise" data-modal="franchise">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
     class="modal__cross js-modal-close"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     width="11"
     height="11"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
-    </svg>
-    <p class="modal__title">Thank you for your interest in owning an Ice Cream shop</p>
-    <p class="modal__text">Due to the overwhelming volume of franchise requests 
-      we are not accepting new franchisee applications at this time. Once the application process resumes, 
-      we will contact you for further information. 
-      Please fill out the contact information below and we will reach out for additional information. 
-      We appreciate your patience.
-    </p>
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
 
-    <form class="contacts-modal__form" action="">
-      
-      <input type="text" class="contacts-modal__input" placeholder="Name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
-      <input type="text" class="contacts-modal__input" placeholder="Phone" name="name" id="name" />
-      <input type="text" class="contacts-modal__input" placeholder="Email" name="name" id="name" />
+  <form class="contacts-modal__form" action="">
+    <input
+      type="text"
+      class="contacts-modal__input"
+      placeholder="Name"
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+    />
+    <input
+      type="text"
+      class="contacts-modal__input"
+      placeholder="Phone"
+      name="name"
+      id="name"
+    />
+    <input
+      type="text"
+      class="contacts-modal__input"
+      placeholder="Email"
+      name="name"
+      id="name"
+    />
 
-      <textarea class="contacts-modal__input contacts-modal__comment" name="" id="" 
-      placeholder="Comment" cols="30" rows="10"></textarea>
-      <button class="submit-btn btn" type="button">Submit</button>
-    </form>
+    <textarea
+      class="contacts-modal__input contacts-modal__comment"
+      name=""
+      id=""
+      placeholder="Comment"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button class="submit-btn btn" type="button">Submit</button>
+  </form>
+</div>
 
-  </div>
-  
 <!-- Модалка локація -->
 
-  <div class="modal" data-modal="locations">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg width="20" height="20" class="modal__cross js-modal-close">
-      <use href="./images/symbol-defs.svg#icon-close"></use>
+<div class="modal" data-modal="locations">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg width="20" height="20" class="modal__cross js-modal-close">
+    <use href="./images/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <p class="modal__title">Our Locations</p>
+  <iframe
+    class="modal__frame"
+    width="448"
+    height="260"
+    src="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F"
+    title="GOOGLE map"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+  <button
+    type="button"
+    class="contacts-buttons__button button js-open-modal"
+    data-modal="Open map"
+  >
+    Open map
+    <svg class="button__icon" width="8" height="18">
+      <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
     </svg>
-    <p class="modal__title">Our Locations</p>
-    <iframe
-      class="modal__frame"
-      width="448"
-      height="260"
-      src="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F"
-      title="GOOGLE map"
-      frameborder="0"
-      <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
-      <!-- allowfullscreen -->
-    ></iframe>
-    <button type="button" class="contacts-buttons__button button js-open-modal" data-modal="Open map">
-        Open map
-        <svg class="button__icon" width="8" height="18">
-          <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
-        </svg>
-      </button>
-  </div>
+  </button>
+</div>
