@@ -23,9 +23,21 @@ svg:hover {
 }
 
 .swiper-pagination-bullet:hover {
-  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+  cursor: url('..//../images/cursor-yellow-full.svg'), pointer;
 }
 
 .products__btn:hover {
   cursor: url('..//../images/cursor-green.svg'), pointer;
+}
+
+.back-to-top:hover {
+  cursor: url('..//../images/cursor-black-full.svg'), pointer;
+}
+
+.hero__img-balls:hover {
+  cursor: url('..//../images/cursor-blue-pink.svg'), pointer;
+}
+
+.hero__img-cone:hover {
+  cursor: url('..//../images/cursor-blue-pink.svg'), pointer;
 }
