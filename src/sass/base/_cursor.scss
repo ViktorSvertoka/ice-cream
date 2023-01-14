@@ -30,7 +30,7 @@ svg:hover {
   cursor: url('..//../images/cursor-green.svg'), pointer;
 }
 
-.back-to-top:hover {
+.header__back-to-top:hover {
   cursor: url('..//../images/cursor-black-full.svg'), pointer;
 }
 
@@ -40,4 +40,8 @@ svg:hover {
 
 .hero__img-cone:hover {
   cursor: url('..//../images/cursor-blue-pink.svg'), pointer;
+}
+
+.hero__link:hover {
+  cursor: url('..//../images/cursor-yellow.svg'), pointer;
 }
