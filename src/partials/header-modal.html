@@ -1,20 +1,28 @@
-<div class="modal header-modal" data-modal="1">
+<div class="header-modal modal" data-modal="1">
     <button type="button" class="modal__cross js-modal-close btn">
-        <svg class="modal-btn-close" width="24" height="24">
-            <use href="./images/icons-sprite.svg#icon-button-cross"></use>
+        <svg class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
     </button>
-    <p class="header-modal__title">Buy now</p>
+    <h1 class="header-modal__title">Buy now</h1>
     <ul class="header-modal__list">
         <li class="header-modal__item">
             <label class="header-modal__label">
-                <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream">  
+                <input 
+                class="header-modal__checkbox" 
+                type="checkbox" 
+                name="product" 
+                value="icecream">  
                 <span class="header-modal__product icecream">ice cream</span> 
             </label>
         </li>
         <li class="header-modal__item">
             <label class="header-modal__label">
-               <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe">
+               <input 
+               class="header-modal__checkbox" 
+               type="checkbox" 
+               name="product" 
+               value="icecoffe">
                <span class="header-modal__product icecoffe">ice coffee</span>
             </label>
         </li>
@@ -25,10 +33,22 @@
             </label>
         </li>
     </ul>
-    <form class="header-modal__form" action="">
-        <input class="header-modal__input" type="text" placeholder="Name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$">
-        <input class="header-modal__input" type="text" placeholder="Phone">
-        <textarea class="header-modal__input header-modal__comment" name="" id="" placeholder="Comment" cols="30" rows="10"></textarea>
-        <button class="submit-btn btn" type="button">Submit</button>
+    <form class="header-modal__form">
+        <input 
+            class="header-modal__input" 
+            type="text" 
+            placeholder="Name" 
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+            title="Name must be two words separated by space.">
+        <input 
+            class="header-modal__input" 
+            type="text" 
+            placeholder="Phone" 
+            pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+            title="Phone cannot contain letters.">
+        <textarea class="header-modal__input header-modal__comment" 
+        name="comment" 
+        placeholder="Comment" cols="30" rows="10"></textarea>       
+        <button class="submit-btn button" type="submit">Submit</button>
     </form>
 </div>
