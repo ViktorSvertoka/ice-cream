@@ -18,6 +18,14 @@ button:hover {
   cursor: url('..//../images/cursor-yellow.svg'), pointer;
 }
 
+svg:hover {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
+}
+
 .swiper-pagination-bullet:hover {
   cursor: url('..//../images/cursor-yellow.svg'), pointer;
+}
+
+.products__btn:hover {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
 }
