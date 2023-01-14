@@ -1,28 +1,20 @@
 <header class="header" id="home">
   <div class="container header__container">
-    <a class="header__logo-destop"href="#home">
+    <a class="header__logo-destop" href="#home">
       <picture>
-        <source
-         srcset="./images/logo_tablet.png"
-         media="(max-width:768px)"
-        />
-        <img src="./images/logo.png" alt="logo">
+        <source srcset="./images/logo_tablet.png" media="(max-width:768px)" />
+        <img src="./images/logo.png" alt="logo" />
       </picture>
     </a>
     <!-- кнопки мобильного меню -->
     <button
-      class="header__menu-button button button__mobil-menu js-open-modal"
-      aria-controls="mobile-menu"
+      class="header__menu-button button__mobil-menu js-open-modal"
+      aria-controls="mobile-menu-1"
       aria-expanded="false"
       type="button"
       data-modal="2"
     >
-      <svg
-        class="mobil-icon"
-        width="32"
-        height="32"
-        aria-label="menu"
-      >
+      <svg class="mobil-icon" width="32" height="32" aria-label="menu">
         <use
           class="header__icon-menu"
           href="./images/icons-sprite.svg#icon-burger-menu"
@@ -31,23 +23,53 @@
     </button>
     <!-- мобільне меню -->
     <div class="header__mobil-menu modal" data-modal="2">
-      <a class="header__logo-mobil header__ise-logo" href="#"><img src="./images/logo_tablet.png" alt="logo"/></a>
+      <a class="header__logo-mobil header__ise-logo" href="#"
+        ><img src="./images/logo_tablet.png" alt="logo"
+      /></a>
       <!--   Svg иконка для закрытия окна  -->
-      <svg class="modal__cross header__modal-cros js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <svg
+        class="modal__cross header__modal-cros js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
         <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
       </svg>
       <ul class="header__mobil-menu-list scrollto">
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#home">Home</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#how-its-made">How it’s made?</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#products">Our products</a></li>
-        <li class="header__mobil-menu-item"><a class="header__mobil-menu-link js-modal-close" href="#contact">Contact</a></li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#home"
+            >Home</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#how-its-made"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#contact"
+            >Contact</a
+          >
+        </li>
       </ul>
-      <button class="tab-desk__button button tab-desk__in-menu  js-open-modal" type="button" data-modal="1">
+      <button
+        class="tab-desk__button button tab-desk__in-menu js-open-modal"
+        type="button"
+        data-modal="1"
+      >
         Buy now
         <!-- стрілка в кнопці -->
         <svg width="12" height="12">
-          <use class="header__icon-arrow" href="images/symbol-defs.svg#icon-arrow-right-bold"></use>
+          <use
+            class="header__icon-arrow"
+            href="images/symbol-defs.svg#icon-arrow-right-bold"
+          ></use>
         </svg>
       </button>
     </div>
@@ -77,28 +99,11 @@
       Buy now
       <!-- стрілка в кнопці -->
       <svg width="12" height="12">
-        <use class="header__icon-arrow" href="images/symbol-defs.svg#icon-arrow-right-bold"></use>
+        <use
+          class="header__icon-arrow"
+          href="images/symbol-defs.svg#icon-arrow-right-bold"
+        ></use>
       </svg>
     </button>
-    <!-- <a class="back-to-top" href="#">.</use> -->
-    <!-- <a class="back-to-top" href="#" id="up">.</a> -->
-      
-    <a class="header__back-to-top" href="#" id="top"><span class="header__none">.</span></a>
-      </svg></a>
-    <!-- Элементы для вызова модальных окон, могут быть любые -->
-    <!-- <svg width="12" height="12">
-      <use class="" href="images/symbol-defs.svg#icon-burger-desk"> -->
-    <!-- <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> -->
-
-    <!-- Несколько модальных окон -->  
-   
-    
-      <!-- -->
-    
-      
-        
-      
-    
-    
   </div>
 </header>
