@@ -1,0 +1,31 @@
+html {
+  cursor: url('..//../images/cursor-black.svg'), pointer;
+}
+
+a {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
+}
+
+button {
+  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+}
+
+a:hover {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
+}
+
+button:hover {
+  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+}
+
+svg:hover {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
+}
+
+.swiper-pagination-bullet:hover {
+  cursor: url('..//../images/cursor-yellow.svg'), pointer;
+}
+
+.products__btn:hover {
+  cursor: url('..//../images/cursor-green.svg'), pointer;
+}

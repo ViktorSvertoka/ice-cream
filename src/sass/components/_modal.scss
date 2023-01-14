@@ -74,6 +74,10 @@
   right: 20px;
   cursor: pointer;
 
+&:hover {
+  fill: $main-bg-color;
+}
+
   @include tablet {
     width: 24px;
     height: 24px;
