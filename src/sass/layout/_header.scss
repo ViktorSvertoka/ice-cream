@@ -105,11 +105,11 @@
     }
 }
 
-.tab-desk__button:hover {
+.header-tab-desk__button:hover {
   background: #0a8817;
 }
 
-.tab-desk__button:focus {
+.header-tab-desk__button:focus {
   background: #0a8817;
   color: #ffff;
 }
@@ -214,7 +214,7 @@
 }
 // cкрол сторінки
 
-.back-to-top {
+.header__back-to-top {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -227,14 +227,14 @@
   //  display: none;
 }
 
-.back-to-top:hover,
-.back-to-top:focus {
+.header__back-to-top:hover,
+.header__back-to-top:focus {
   filter: brightness(1.0);
   outline: none;
 }
 
-.back-to-top::before,
-.back-to-top::after {
+.header__back-to-top::before,
+.header__back-to-top::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -243,7 +243,7 @@
 
 }
 
-.back-to-top::before {
+.header__back-to-top::before {
   width: 5px;
   height: 25px;
   border-top-left-radius: 3px;
@@ -251,7 +251,7 @@
   background-color: #84A178;
 }
 
-.back-to-top::after {
+.header__back-to-top::after {
   width: 15px;
   height: 15px;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -259,6 +259,9 @@
   border-left: 5px solid#84A178;
 }
  
+.header__none {
+  display: none;
+}
 
 
 
