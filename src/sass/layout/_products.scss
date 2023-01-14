@@ -331,7 +331,7 @@
   }
 
   &__btn:hover,
-  &__btn:hover {
+  &__btn:focus {
     fill: $title-color-white;
     animation: pulse 1s infinite;
     animation-timing-function: linear;
