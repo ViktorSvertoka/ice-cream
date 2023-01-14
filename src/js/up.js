@@ -1,23 +1,53 @@
-window.onload = function () {
-    //window.scrollTo (x,y)
-    var scrolled;
-    var timer;
-
-    document.getElementById('top').onclick = function () {
-        scrolled = window.pageYOffset;
-        // window.scrollTo(0, 0);
-        scrollToTop();
-
-    }
-    function scrollToTop() {
-        if (scrolled > 0) {
-            window.scrollTo(0, scrolled);
-            scrolled = scrolled - 90;  //100- швидкість прокрутки
-            timer = setTimeout(scrollToTop, 100);
-        }
-        else {
-            clearTimeout(timer);
-            window.scrollTo(0, 0);
-        }
-    }
+function hasScrollBehavior() {
+  return 'scrollBehavior' in document.documentElement.style;
 }
+
+function smoothScroll() {
+  var currentY = window.scrollY;
+  var int = setInterval(function () {
+    window.scrollTo(0, currentY);
+
+    if (currentY > 500) {
+      currentY -= 70;
+    } else if (currentY > 100) {
+      currentY -= 50;
+    } else {
+      currentY -= 10;
+    }
+
+    if (currentY <= 0) clearInterval(int);
+  }, 1000 / 2); // 60fps
+}
+
+function scrollToTop() {
+  if (hasScrollBehavior()) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    smoothScroll();
+  }
+}
+
+function toggleScrollUpButton() {
+  var y = window.scrollY;
+  var e = document.getElementById('scroll-to-top');
+  if (y >= 200) {
+    e.style.transform = 'translateY(-30%)';
+    e.style.opacity = 1;
+  } else {
+    e.style.opacity = 0;
+    e.style.transform = 'translateY(30%)';
+  }
+}
+
+document.addEventListener(
+  'DOMContentLoaded',
+  function () {
+    document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+
+    window.addEventListener('scroll', toggleScrollUpButton);
+
+    var e = document.getElementById('scroll-to-top');
+    e.addEventListener('click', scrollToTop, false);
+  },
+  false
+);
