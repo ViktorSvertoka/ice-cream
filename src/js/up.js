@@ -1,10 +1,23 @@
-(function($) {
-$(function() {
+window.onload = function () {
+    //window.scrollTo (x,y)
+    var scrolled;
+    var timer;
 
-	$('#up').click(function() {
-		$('html, body').animate({scrollTop: 0},500);
-		return false;
-	})
+    document.getElementById('top').onclick = function () {
+        scrolled = window.pageYOffset;
+        // window.scrollTo(0, 0);
+        scrollToTop();
 
-})
-})(jQuery)
+    }
+    function scrollToTop() {
+        if (scrolled > 0) {
+            window.scrollTo(0, scrolled);
+            scrolled = scrolled - 90;  //100- швидкість прокрутки
+            timer = setTimeout(scrollToTop, 100);
+        }
+        else {
+            clearTimeout(timer);
+            window.scrollTo(0, 0);
+        }
+    }
+}
