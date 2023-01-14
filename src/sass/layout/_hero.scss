@@ -214,7 +214,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       fill: $link-bg-color;
 
       animation: pulse 1s infinite;
-      animation-timing-function: linear;
+      animation-timing-function: $timing-function;
 
       @keyframes pulse {
         0% {
