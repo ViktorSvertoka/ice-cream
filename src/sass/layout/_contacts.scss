@@ -5,28 +5,24 @@
   background-image: linear-gradient(
     to bottom,
     rgba(132, 161, 120, 0) 24%,
-    rgba(132, 161, 120, 1) 24%,
-);
+    rgba(132, 161, 120, 1) 24%
+  );
 
   @include tablet {
-    // padding-top: 40px;
-
-    // background-image: linear-gradient(
-    //     to bottom,
-    //     $accent-bg-color 23%,
-    //     $main-bg-color 23%,
-
-    // );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 0) 50%,
+      rgba(132, 161, 120, 1) 50%
+    );
   }
 
   @include desktop {
-    // padding-top: 60px;
-
-    // background-image: linear-gradient(
-    //     to bottom,
-    //     $accent-bg-color 21%,
-    //     $main-bg-color 21%,
-    // );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 0) 24%,
+      rgba(132, 161, 120, 1) 24%
+    );
+    
   }
   .contacts__list {
     display: flex;
@@ -54,7 +50,7 @@
     &:focus {
       @include tablet {
         transform: translateY(-1%);
-        filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
       }
     }
 
@@ -73,8 +69,6 @@
     }
   }
 
-    
-
   // тут питання по коду див вниз
   .contacts-details__item {
     &:first-child {
@@ -90,8 +84,6 @@
     &:last-child {
       margin-top: 24px;
     }
-
-    
 
     // @include tablet {
     //     &:first-child {
@@ -135,10 +127,9 @@
     }
     &--category {
       display: inline-block;
-      padding:4px 14px;
+      padding: 4px 14px;
 
       background-color: $link-bg-color;
-
 
       align-items: center;
       justify-content: center;
@@ -195,50 +186,47 @@
     margin-top: 32px;
 
     @include tablet {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
     }
     @include desktop {
-        margin-top: 60px;
+      margin-top: 60px;
     }
-}
+  }
 
-.contacts-buttons__item {
+  .contacts-buttons__item {
     &:not(:last-child) {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     @include tablet {
-        &:not(:last-child) {
-            margin-right: 14.5px;
-            margin-bottom: 0;
-        }
+      &:not(:last-child) {
+        margin-right: 14.5px;
+        margin-bottom: 0;
+      }
     }
 
     @include desktop {
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
     }
-    
-}
-.contacts-buttons__button {
-  @include font(600, 14px, 1.29, null);
+  }
+  .contacts-buttons__button {
+    @include font(600, 14px, 1.29, null);
 
-    
     width: 196px;
     height: 42px;
     justify-content: center;
     align-items: center;
     padding: 0;
     display: flex;
-
-}
-.button__icon {
-  fill: currentColor;
-  margin-left: 5px;
-}
+  }
+  .button__icon {
+    fill: currentColor;
+    margin-left: 5px;
+  }
 }
