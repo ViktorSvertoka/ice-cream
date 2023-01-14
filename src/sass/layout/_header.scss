@@ -214,27 +214,27 @@
 }
 // cкрол сторінки
 
-.back-to-top {
+.header__back-to-top {
   position: fixed;
-  right: 70px;
-  bottom: 50px;
+  right: 20px;
+  bottom: 20px;
   width: 50px;
   height: 50px;
   border-color: transparent;
   border-radius: 50%;
-  background-color: #f8d24e;
+  background-color: #e6c448;
   z-index: 3;
   //  display: none;
 }
 
-.back-to-top:hover,
-.back-to-top:focus {
-  filter: brightness(1.5);
+.header__back-to-top:hover,
+.header__back-to-top:focus {
+  filter: brightness(1.0);
   outline: none;
 }
 
-.back-to-top::before,
-.back-to-top::after {
+.header__back-to-top::before,
+.header__back-to-top::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -243,20 +243,24 @@
 
 }
 
-.back-to-top::before {
+.header__back-to-top::before {
   width: 5px;
   height: 25px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-color: #15bf2c;
+  background-color: #84A178;
 }
 
-.back-to-top::after {
+.header__back-to-top::after {
   width: 15px;
   height: 15px;
   transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 5px solid#15bf2c;
-  border-left: 5px solid#15bf2c;
+  border-top: 5px solid#84A178;
+  border-left: 5px solid#84A178;
+}
+
+.header__none {
+  display: none;
 }
  
 
