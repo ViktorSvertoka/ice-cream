@@ -162,12 +162,10 @@ color: $secondary-text-color;
 }
 
 .modal__items {
-display: flex;
-justify-content: center;
-text-align: center;
-// position: absolute;
-// top: 70%;
-// left: 25%;
+
+position: absolute;
+top: 70%;
+left: 25%;
 font-weight: 400;
 
 font-size: 12px;

@@ -67,6 +67,7 @@
 }
 
 .modal__pic {
+  
   &::before {
     content: '';
     position: absolute;
@@ -84,6 +85,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    
   }
 }
 .modal__img {
@@ -104,65 +106,83 @@
   margin-bottom: 48px;
 }
 .modal__list {
-  position: relative;
+  
   margin-right: 10px;
   border: 2px solid #9cbe8f;
   border-radius: 40px;
-  width: 55px;
-  height: 72px;
+  width: 52px;
+  height: 78px;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:last-child {
     margin-right: 0;
   }
   @media screen and (min-width: 479px) {
-    width: 67px;
-    height: 90px;
+    width: 70px;
+    height: 98px;
     margin-right: 20px;
+    
   }
+     &:hover .modal__item {
+       transform: translateY(+55%);
+       background-color: $title-color-white;
+       
+     }
+         &:hover .modal__items {
+           transform: translateY(-330%);
+           
+         }
+        &:hover {
+          background-color: #9cbe8f;
+        }
+
+         
 }
 
 .modal__item {
-  position: absolute;
-  left: 0;
-  top: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #9cbe8f;
+  background-color: #9cbe8f;
   border: 2px solid #9cbe8f;
   border-radius: 50%;
+  margin-left: 1px;
 
-  width: 40px;
-  height: 40px;
+  width: 47px;
+  height: 47px;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   font-weight: 500;
   font-size: 12px;
   line-height: calc(28 / 12);
   margin-bottom: 8px;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: $secondary-text-color;
-  &:hover,
-  &:focus {
-    transform: translateY(+5%);
-  }
+
   @media screen and (min-width: 479px) {
-    width: 53px;
-    height: 53px;
-    left: 9%;
-    top: 0;
+    margin-left: 5px;
+    width: 57px;
+    height: 57px;
   }
 }
 
 .modal__items {
-  position: absolute;
-  top: 70%;
-  left: 25%;
+  display: flex;
+  justify-content: center;
   font-weight: 400;
 
   font-size: 12px;
   line-height: calc(15 / 12);
   color: $secondary-text-color;
-}
+  transition: 270ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 479px) {
+      display: flex;
+      justify-content: center;
+      padding-top: 3px;
+     
+    }
 
+}
 .modal__ingredients-title {
   font-weight: 500;
   font-size: 20px;
@@ -193,10 +213,6 @@
   color: $title-color-black;
 }
 
-.form {
-}
-.form__list {
-}
 .form__item {
   display: flex;
   justify-content: center;
@@ -262,6 +278,7 @@
   margin-left: auto;
   cursor: pointer;
   border: 1px solid transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     border-color: $secondary-text-color;
   }
