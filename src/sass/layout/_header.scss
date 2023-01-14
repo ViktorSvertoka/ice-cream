@@ -214,48 +214,52 @@
 }
 // cкрол сторінки
 
-.header__scroll-ap {
+.back-to-top {
   position: fixed;
-  right: 60px;
+  right: 70px;
   bottom: 50px;
-  z-index: 1000;
   width: 50px;
   height: 50px;
-  color: #18e32c;
-  cursor: pointer;
-  // visibility: hidden;
+  border-color: transparent;
   border-radius: 50%;
-  height: 50px;
-  box-shadow: inset 0 0 0 4px #f8d24e;
-  // opacity: 0;
-  transition: .2s;
-  transform: translateY(25px);
+  background-color: #f8d24e;
+  z-index: 3;
+  //  display: none;
 }
 
-.header__scroll-ap::before {
+.back-to-top:hover,
+.back-to-top:focus {
+  filter: brightness(1.5);
+  outline: none;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  content: "↥";
-}
-.header__scroll-ap:hover {
-  color: #f8d24e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
-.header__scroll-ap--active {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+.back-to-top::before {
+  width: 5px;
+  height: 25px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #15bf2c;
 }
 
-.header__scroll-svg {
-  box-sizing: border-box;
-  fill: none;
-  stroke: #f8d24e;
+.back-to-top::after {
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid#15bf2c;
+  border-left: 5px solid#15bf2c;
 }
+ 
+
+
+
+
