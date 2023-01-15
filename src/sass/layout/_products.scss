@@ -310,3 +310,7 @@
     animation-timing-function: linear;
   }
 }
+
+.in-viewport .products__item--green {
+  transform: translate(-50%, -40%);
+}
