@@ -4,7 +4,7 @@
       <use href="./images/icons-sprite.svg#icon-close"></use>
     </svg>
   </button>
-  <h1 class="header-modal__title">Buy now</h1>
+  <h2 class="header-modal__title">Buy now</h2>
   <ul class="header-modal__list">
     <li class="header-modal__item">
       <label class="header-modal__label">
@@ -16,9 +16,15 @@
         />
         <span class="header-modal__product header-modal__product--icecream">
           ice cream
-          <img class="product-img" srcset="./images/modal-icecream_@1x-min.png 1x, ./images/modal-icecream_@2x-min.png 2x"
-            src="./images/modal-icecream_@1x-min.png" 
-            alt="ice-cream">
+          <img
+            class="product-img"
+            srcset="
+              ./images/modal-icecream_@1x-min.png 1x,
+              ./images/modal-icecream_@2x-min.png 2x
+            "
+            src="./images/modal-icecream_@1x-min.png"
+            alt="ice-cream"
+          />
         </span>
       </label>
     </li>
@@ -30,12 +36,18 @@
           name="product"
           value="icecoffe"
         />
-          <span class="header-modal__product header-modal__product--icecoffee">
-            ice coffe
-            <img class="product-img" srcset="./images/modal-icecoffee_@1x-min.png 1x, ./images/modal-icecoffee_@2x-min.png 2x"
-              src="./images/modal-icecoffee_@1x-min.png" 
-              alt="ice-coffee">
-          </span>  
+        <span class="header-modal__product header-modal__product--icecoffee">
+          ice coffe
+          <img
+            class="product-img"
+            srcset="
+              ./images/modal-icecoffee_@1x-min.png 1x,
+              ./images/modal-icecoffee_@2x-min.png 2x
+            "
+            src="./images/modal-icecoffee_@1x-min.png"
+            alt="ice-coffee"
+          />
+        </span>
       </label>
     </li>
     <li class="header-modal__item">
@@ -46,10 +58,17 @@
           name="product"
           value="milkshake"
         />
-        <span class="header-modal__product header-modal__product--milkshake">milkshake
-          <img class="product-img" srcset="./images/modal-milkshake_@1x-min.png 1x, ./images/modal-milkshake_@2x-min.png 2x"
-            src="./images/modal-milkshake_@1x-min.png" 
-            alt="milkshake">
+        <span class="header-modal__product header-modal__product--milkshake"
+          >milkshake
+          <img
+            class="product-img"
+            srcset="
+              ./images/modal-milkshake_@1x-min.png 1x,
+              ./images/modal-milkshake_@2x-min.png 2x
+            "
+            src="./images/modal-milkshake_@1x-min.png"
+            alt="milkshake"
+          />
         </span>
       </label>
     </li>
@@ -71,11 +90,13 @@
       pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
       title="+380 (00) 000-00-00"
     />
-    <textarea class="header-modal__input header-modal__comment"
-    name="comment"
-    placeholder="Comment"
-    cols="30"
-    rows="10"></textarea>
+    <textarea
+      class="header-modal__input header-modal__comment"
+      name="comment"
+      placeholder="Comment"
+      cols="30"
+      rows="10"
+    ></textarea>
     <button class="submit-btn button buynow-button-js" type="submit">
       Submit
     </button>
