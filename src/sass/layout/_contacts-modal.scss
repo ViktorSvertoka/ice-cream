@@ -34,13 +34,14 @@
 .modal-franchise {
   width: 280px;
   height: 100%;
-  padding: 28px 29px 28px 28px;
+  max-height: 674px;
+  padding: 28px 28px;
 
 
   @include tablet {
     width: 568px;
-    height: 668px;
-    padding: 32px 54px;
+    max-height: 668px;
+    padding: 32px 60px;
   }
 }
 
@@ -52,6 +53,9 @@
   margin-left: auto;
   padding: 12px 24px;
   @include font(600, 12px, 15px, null);
+  @include mobile {
+    width: 145px;
+  }
 
 }
 
@@ -63,6 +67,20 @@
   }
 }
 
+.modal-locations{
+  width: 280px;
+  height: 100%;
+  max-height: 365px;
+  padding: 28px 28px;
+
+  @include tablet {
+    width: 568px;
+    max-height: 458px;
+    padding: 32px 60px;
+  }
+
+
+}
 .modal.modal-locations {
   text-align: center;
 }
