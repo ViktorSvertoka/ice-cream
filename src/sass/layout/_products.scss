@@ -1,29 +1,4 @@
 .products {
-  // background-image: url(../images/bg_mobile_1x.jpg);
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url(../images/bg_mobile_2x.jpg);
-  // }
-
-  // @include tablet {
-  //   background-image: url(../images/bg_tablet_1x.jpg);
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/bg_tablet_2x.jpg);
-  //   }
-  // }
-
-  // @include desktop {
-  //   background-image: url(../images/bg_desktop_1x.jpg);
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/bg_desktop_2x.jpg);
-  //   }
-  // }
-
   &__container {
     display: block;
     text-align: center;
@@ -114,11 +89,15 @@
     @include tablet {
       transform: translateY(-1%);
       box-shadow: 20px 20px 60px #bebebe5c, -2px -2px 6px #ffffff;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include desktop {
       transform: translateY(-1%);
       box-shadow: 20px 20px 60px #bebebe, -2px -2px 6px #ffffff;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -162,9 +141,7 @@
       height: 302px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/products_img_cream_2x.png);
       background-position: center;
       background-size: cover;
@@ -211,9 +188,7 @@
       height: 302px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/products_img_coffee_2x.png);
       background-position: center;
       background-size: cover;
@@ -261,9 +236,7 @@
     }
     background-image: url(../images/products_img_milkshakes_1x.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/products_img_milkshakes_2x.png);
       background-position: center;
       background-size: cover;
@@ -327,7 +300,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    transition: fill 250ms $timing-function;
+    @include animation(fill);
   }
 
   &__btn:hover,
