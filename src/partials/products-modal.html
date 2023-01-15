@@ -2,7 +2,7 @@
   <!--   Svg иконка для закрытия окна  -->
   <button class="modal__cross js-modal-close">
     <svg width="26" height="26">
-    <use href="./images/symbol-defs.svg#icon-close"></use>
+      <use href="./images/symbol-defs.svg#icon-close"></use>
     </svg>
   </button>
   <h2 class="modal__title"><span>Chololate icecream</span></h2>
@@ -11,7 +11,8 @@
       class="modal__img"
       srcset="
         ../src/images/products_modal_pic_1x.png 132w,
-        ../src/images/products_modal_pic_2x.png 264w"
+        ../src/images/products_modal_pic_2x.png 264w
+      "
       sizes="(min-width: 1200px) 132px, 100vw "
       src="../src/images/products_modal_pic_1x.png"
       alt="Chololate icecream"
@@ -19,7 +20,7 @@
       height="139"
     />
   </div>
- 
+
   <ul class="modal__features">
     <li class="modal__list">
       <p class="modal__item">320</p>
@@ -68,21 +69,23 @@
   <form class="form">
     <ul class="form__list">
       <li class="form__item">
-        <input type="text" class="form__input" placeholder="Name" />
+        <input type="text" class="form__input products-js" placeholder="Name" />
       </li>
       <li class="form__item">
-        <input type="tel" class="form__input" placeholder="Phone" />
+        <input type="tel" class="form__input products-js" placeholder="Phone" />
       </li>
       <li class="form__item">
         <textarea
           name="comment"
           id="comment"
-          class="form__textarea"
+          class="form__textarea products-js"
           placeholder="Comment"
         ></textarea>
       </li>
     </ul>
-   
-    <button type="submit" class="close-btn">Submit</button>
+
+    <button type="submit" class="close-btn button products-button-js">
+      Submit
+    </button>
   </form>
 </div>
