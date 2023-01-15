@@ -1,3 +1,6 @@
+.contacts-modal__form {
+  margin-top: 32px;
+}
 .contacts-modal__input {
   display: flex;
   margin-right: auto;
@@ -45,11 +48,13 @@
   padding: 28px 29px 28px 28px;
   display: flex;
   flex-direction: column;
- 
 }
 
-.button {
-  &__contacts {
-  width: 130px;
-}
+.button__contacts {
+  width: 134px;
+  height: 42px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 12px 24px;
+  @include font(600, 12px, 15px, null);
 }
