@@ -35,7 +35,7 @@
   width: 280px;
   height: 100%;
   padding: 28px 29px 28px 28px;
-  background-color: $title-color-white;
+
 
   @include tablet {
     width: 568px;
@@ -44,11 +44,6 @@
   }
 }
 
-.modal-locations {
-  padding: 28px 29px 28px 28px;
-  display: flex;
-  flex-direction: column;
-}
 
 .button__contacts {
   width: 134px;
@@ -57,4 +52,17 @@
   margin-left: auto;
   padding: 12px 24px;
   @include font(600, 12px, 15px, null);
+
+}
+
+
+
+.modal__frame--contacts {
+  @include mobile {
+    height: 260px;
+  }
+}
+
+.modal.modal__location {
+  text-align: center;
 }
