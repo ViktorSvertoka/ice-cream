@@ -51,12 +51,13 @@
   display: inline-block;
    justify-content: center;
    align-items: center;
+
   border: none;
   padding: 0;
   margin-left: auto;
   margin-right: 32px;
   background-color: $main-bg-color;
-
+  
   @media (max-width: 480px) {
     margin-right: 0px;
   }
@@ -90,19 +91,22 @@
   
 }
 
+
+//  buy nav в навігації
+.header-tab-desk__button {
+  @media (max-width: 768px) {
+      display: none;
+    }
+}
+
 .header-tab-desk__in-menu {
 
   justify-content: center;
   align-items: center;
+
   @media (min-width: 768px) {
-      display: none;
-    }
-}
-//  buy nav в навігації
-.header-tab-desk__button.button {
-  @media (max-width: 768px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .header-tab-desk__button:hover {
@@ -166,7 +170,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  //  justify-content: center;
+  // justify-content: center;
   align-items: center;
   border: none;
   border-radius: 0;
@@ -194,11 +198,18 @@
       padding-bottom: 110px;
     }
 
-        @media (max-width: 768px) {
-          padding-top: 40px;
+        @media (min-width: 480px) {
+          padding-top: 100px;
           padding-bottom: 110px;
         }
   
+}
+
+.header__mobil-menu-item {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+
 }
 
 .header__mobil-menu-item + .header__mobil-menu-item {
