@@ -1,5 +1,5 @@
 <!-- HERO -->
-<section class="hero" id="hero">
+<section class="hero hero__dots" id="hero">
   <div class="container">
     <div class="hero__description">
       <div class="hero__title-wrapper">
@@ -14,25 +14,28 @@
         </ul>
       </div>
       <!-- -------before tablet is hidden ----- -->
-      <ul class="hero__point-sale list animate__animated animate__backInRight">
+      <ul class="hero__point-sale list animate__animated animate__fadeInTopRight">
         <li class="hero__point-sale-item">
-          <p class="hero__point-sale-count">16</p>
+          <p class="hero__point-sale-count hero__counter-first"></p>
           <p class="hero__point-sale-name">cafes</p>
         </li>
         <li class="hero__point-sale-item">
-          <p class="hero__point-sale-count">23</p>
+          <p class="hero__point-sale-count hero__counter-second"></p>
           <p class="hero__point-sale-name">food trucks</p>
         </li>
       </ul>
     </div>
     <div class="hero__content">
-      <img class="hero__img-balls" srcset="
+      <div class="hero_img-balls-active animate__animated animate__fadeInTopLeft">
+        <img class="hero__img-balls" srcset="
                   ./images/hero/hero-ice-balls-tablet-1x.png  152w,
                   ./images/hero/hero-ice-balls-tablet-2x.png  304w,
                   ./images/hero/hero-ice-balls-desktop-1x.png 225w,
                   ./images/hero/hero-ice-balls-desktop-2x.png 450w
                 " sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
-        src="./images/hero/hero-ice-balls-tablet-1x.png" alt="plate with ice-cream balls" />
+          src="./images/hero/hero-ice-balls-tablet-1x.png" alt="plate with ice-cream balls" />
+      </div>
+
       <a href="#products" class="hero__content-link a">
         <p class="hero__text">
           You can't buy happiness, but you can buy ice cream, and that's pretty much the same thing.
@@ -43,7 +46,7 @@
         </svg>
       </a>
     </div>
-    <div class="hero__picture">
+    <div class="hero__picture animate__animated animate__fadeInDownBig">
       <img class="hero__img-cone" srcset="
             ./images/hero/hero-ice-cone-mobile-1x.png  218w,
             ./images/hero/hero-ice-cone-mobile-2x.png  436w,

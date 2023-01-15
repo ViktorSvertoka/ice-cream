@@ -1,32 +1,40 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
 .hero {
   padding-top: 50px;
   height: 454px;
   overflow: hidden;
   background: $main-bg-color;
 
-  background-image: url(../images/hero-dots-tel.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-
-  @include mobile {
-    background-image: url(../images/hero-dots-mobile.svg);
-  }
-
-  @include tablet {
-    height: 349px;
-    padding-top: 14px;
-    background-image: url(../images/hero-dots-tablet.svg);
-  }
-
-  @include desktop {
-    height: 591px;
-    padding-top: 45px;
-    background-image: url(../images/hero-dots-desktop.svg);
-  }
-
   & .container {
     height: 100%;
     position: relative;
+  }
+
+  &__dots {
+    background-image: url(../images/hero-dots-tel.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    @include mobile {
+      background-image: url(../images/hero-dots-mobile.svg);
+    }
+
+    @include tablet {
+      height: 349px;
+      padding-top: 14px;
+      background-image: url(../images/hero-dots-tablet.svg);
+    }
+
+    @include desktop {
+      height: 591px;
+      padding-top: 45px;
+      background-image: url(../images/hero-dots-desktop.svg);
+    }
   }
 
   &__description {
@@ -142,6 +150,10 @@
         @include font(900, 46px, 1.21, 0.04em);
         text-transform: uppercase;
       }
+
+      &::after {
+        content: counter(num);
+      }
     }
 
     &-name {
@@ -160,6 +172,39 @@
       margin-bottom: 16px;
     }
   }
+
+  &__counter-first {
+    animation: counterfirst 3s ease-in-out forwards;
+    counter-reset: num var(--num);
+
+    @keyframes counterfirst {
+      0% {
+        opacity: 0.05;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        --num: 16;
+      }
+    }
+  }
+
+  &__counter-second {
+    animation: countersecond 3s ease-in-out forwards;
+    counter-reset: num var(--num);
+
+    @keyframes countersecond {
+      0% {
+        opacity: 0.05;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        --num: 23;
+      }
+    }
+  }
+
   &__content {
     @media screen and (max-width: 767px) {
       display: none;
@@ -233,11 +278,24 @@
     }
   }
 
-  &__img-cone {
+  &__picture {
     position: absolute;
     bottom: 0;
     width: 177px;
+    right: 50%;
 
+    @include tablet {
+      width: 268px;
+      right: 12%;
+    }
+
+    @include desktop {
+      width: 456px;
+      right: 7%;
+    }
+  }
+
+  &__img-cone {
     transform: translateY(5px);
     @include animation(transform);
 
@@ -253,20 +311,18 @@
       right: 50%;
       transform: translateX(56%);
     }
-
-    @include tablet {
-      width: 268px;
-      right: 12%;
-    }
-
-    @include desktop {
-      width: 456px;
-      right: 7%;
-    }
   }
 }
 /* animate*/
 
-.animate__animated.animate__backInRight {
+.animate__animated.animate__fadeInDownBig {
   --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInTopRight {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInTopLeft {
+  --animate-duration: 1.5s;
 }
