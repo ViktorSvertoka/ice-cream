@@ -21,4 +21,4 @@ const inViewport = (elem, pix, cls) => {
 
 inViewport('products__item--green', tolCard, 'in-viewport');
 inViewport('products__item--coffee', tolCard, 'in-viewport');
-inViewport('products__item--milkshake', tolCard, 'in-viewport');
+inViewport('products__item--milkshakes', tolCard, 'in-viewport');
