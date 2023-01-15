@@ -51,6 +51,22 @@
   @include tablet {
     padding: 32px 60px;
   }
+
+
+  // Заголовок модалки
+  &__title {
+    font-family: 'Seymour One';
+    text-align: center;
+    @include font(400, 16px, 1.5, null);
+    color: #131313;
+
+    margin-bottom: 20px;
+
+    @include tablet {
+      @include font(null, 20px, 1.4, null);
+      margin-bottom: 32px;
+    }
+  }
 }
 
 /* Стили для активных классов подложки и окна */
@@ -74,14 +90,15 @@
   right: 20px;
   cursor: pointer;
 
-&:hover {
-  fill: $main-bg-color;
-}
+  &:hover {
+    fill: $main-bg-color;
+  }
 
   @include tablet {
     width: 24px;
     height: 24px;
   }
+
 }
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
