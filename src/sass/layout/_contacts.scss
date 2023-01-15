@@ -22,7 +22,6 @@
       rgba(132, 161, 120, 0) 24%,
       rgba(132, 161, 120, 1) 24%
     );
-    
   }
   .contacts__list {
     display: flex;
@@ -69,7 +68,6 @@
     }
   }
 
-  // тут питання по коду див вниз
   .contacts-details__item {
     &:first-child {
       margin-bottom: 24px;
@@ -225,5 +223,4 @@
     padding: 0;
     display: flex;
   }
-
 }
