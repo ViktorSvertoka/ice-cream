@@ -74,6 +74,10 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     gap: 12px;
 
+    @include tablet {
+      margin-bottom: 12px;
+    }
+
     @include desktop {
       margin-bottom: 42px;
     }
@@ -126,7 +130,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms $timing-function;
 
     @include desktop {
-      @include btn-sizes(auto, auto, 0px, 12, 1.25, 0px 0px);
+      @include btn-sizes(auto, auto, 0px, 12, 1.25, 18px 0px);
     }
 
     &:hover {
@@ -182,28 +186,23 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &__img-balls {
     margin-right: 32px;
-    @include desktop {
-      margin-right: 20px;
-      // transition: transform 3000ms;
 
-      // &:hover {
-      // transform: rotate(360deg);
-      animation: circle 9000ms infinite 1000ms alternate-reverse;
+    animation: circle 9000ms $timing-function infinite 1000ms alternate-reverse;
 
-      @keyframes circle {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
       }
-      &:hover {
-        animation-play-state: paused;
+      100% {
+        transform: rotate(360deg);
       }
-
-      // }
     }
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  @include desktop {
+    margin-right: 20px;
   }
 
   &__content-link {
@@ -240,12 +239,12 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 139px;
     color: $main-text-color;
     margin-bottom: 12px;
+    max-width: 200px;
 
     @include desktop {
       @include font(400, 14px, 1.4, 0.04em);
       margin-top: 45px;
 
-      max-width: 200px;
       margin-bottom: 24px;
     }
   }
@@ -256,13 +255,17 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 177px;
 
     transform: translateY(5px);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $timing-function;
 
     &:hover {
       transform: translateY(0px);
     }
 
     @media screen and (max-width: 767px) {
+      &:hover {
+        transform: skew(10deg);
+      }
+
       right: 50%;
       transform: translateX(56%);
     }
@@ -279,13 +282,6 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 /* animate*/
-// .animate__animated.animate__backInDown {
-//   --animate-duration: 1s;
-// }
-
-// .animate__animated.animate__backInLeft {
-//   --animate-duration: 1s;
-// }
 
 .animate__animated.animate__backInRight {
   --animate-duration: 1s;
