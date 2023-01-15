@@ -64,7 +64,7 @@
 
 <!-- Модалка локація -->
 
-<div class="modal modal__location" data-modal="locations">
+<div class="modal modal-locations" data-modal="locations">
   <!--   Svg иконка для закрытия окна  -->
   <button type="button" class="modal__cross js-modal-close">
     <svg width="20" height="20">
@@ -78,6 +78,7 @@
     height="260"
     src="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F"
     title="GOOGLE map"
+    frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
   ></iframe>
@@ -85,7 +86,10 @@
   <a href="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" 
     target="_blank"
     rel="nofollow noindex noopener"
-    class="button js-open-modal" data-modal="Open map">
+    class="button__contacts button" data-modal="Open map">
     Open map
+    <svg class="button__arrow" width="8" height="18">
+      <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
+    </svg>
   </a>
 </div>
