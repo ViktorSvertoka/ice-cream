@@ -1,18 +1,4 @@
 .modal {
-  &__title {
-    font-family: 'Seymour One';
-    text-align: center;
-    @include font(400, 16px, 1.5, null);
-    color: #131313;
-
-    margin-bottom: 20px;
-
-    @include tablet {
-      @include font(null, 20px, 1.4, null);
-      margin-bottom: 32px;
-    }
-  }
-
   &__frame {
     background-color: #000000;
     border-radius: 10px;
@@ -23,7 +9,6 @@
     margin-bottom: 20px;
     border: 0;
     overflow: hidden;
-    
 
     @include mobile {
       max-width: 448px;

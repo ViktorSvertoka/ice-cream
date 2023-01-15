@@ -1,20 +1,20 @@
-<div class="modal" data-modal="products">
+<div class="modal products-modal" data-modal="products">
   <!--   Svg иконка для закрытия окна  -->
   <button class="modal__cross js-modal-close">
-    <svg width="26" height="26">
-      <use href="./images/symbol-defs.svg#icon-close"></use>
+    <svg width="24" height="24">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
     </svg>
   </button>
-  <h2 class="modal__title"><span>Chololate icecream</span></h2>
+  <h2 class="modal__title product-modal__title">Chololate icecream</h2>
   <div class="modal__pic">
     <img
       class="modal__img"
       srcset="
-        ../src/images/products_modal_pic_1x.png 132w,
-        ../src/images/products_modal_pic_2x.png 264w
+        ./images/products_modal_pic_1x.png 132w,
+        ./images/products_modal_pic_2x.png 264w
       "
       sizes="(min-width: 1200px) 132px, 100vw "
-      src="../src/images/products_modal_pic_1x.png"
+      src="./images/products_modal_pic_1x.png"
       alt="Chololate icecream"
       width="132"
       height="139"
@@ -28,7 +28,7 @@
     </li>
     <li class="modal__list">
       <p class="modal__item">4g</p>
-      <p class="modal__items">Proteins</p>
+      <p class="modal__items">Protein...</p>
     </li>
     <li class="modal__list">
       <p class="modal__item">8,2g</p>
