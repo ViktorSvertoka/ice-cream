@@ -1,10 +1,13 @@
 .products-modal {
   padding-left: 20px;
   padding-right: 20px;
+  height: 100%;
+  max-height: 968px;
 
   @include tablet {
     padding-left: 40px;
     padding-right: 40px;
+    max-height: 996px
   }
 }
 
@@ -53,9 +56,10 @@
   margin-right: 10px;
   border: 2px solid #9cbe8f;
   border-radius: 40px;
-  width: 52px;
-  height: 78px;
+  width: 50px;
+  height: 73px;
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 
   &:last-child {
     margin-right: 0;
@@ -66,11 +70,19 @@
     margin-right: 20px;
   }
   &:hover .modal__item {
-    transform: translateY(+55%);
     background-color: $title-color-white;
+
+    transform: translateY(+60%);
+
   }
   &:hover .modal__items {
-    transform: translateY(-330%);
+
+    @include tablet {
+    transform: translateY(-305%);}
+    
+    @media screen and (max-width: 767px) {
+        transform: translateY(-320%);
+      }
   }
   &:hover {
     background-color: #9cbe8f;
@@ -84,19 +96,21 @@
   background-color: #9cbe8f;
   border: 2px solid #9cbe8f;
   border-radius: 50%;
-  margin-left: 1px;
+  margin-left: 2px;
 
-  width: 47px;
-  height: 47px;
+  width: 43px;
+  height: 43px;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   font-weight: 500;
-  font-size: 12px;
-  line-height: calc(28 / 12);
+  font-size: 10px;
+  line-height: calc(28 / 10);
   margin-bottom: 8px;
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: $secondary-text-color;
 
   @include tablet {
+    font-size: 12px;
+    line-height: calc(28 / 12);
     margin-left: 5px;
     width: 57px;
     height: 57px;
@@ -107,17 +121,29 @@
   display: flex;
   justify-content: center;
   font-weight: 400;
-
-  font-size: 12px;
-  line-height: calc(15 / 12);
+  
+  font-size: 10px;
+  line-height: calc(12 / 10);
   color: $secondary-text-color;
   transition: 270ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
+    font-size: 12px;
+    line-height: calc(15 / 12);
     display: flex;
     justify-content: center;
-    padding-top: 3px;
+    padding-top: 1px;
   }
+}
+.modal__items-span {
+  @include tablet {
+    display: none;
+  }
+}
+.modal__items-span2 {
+  @media screen and (max-width: 767px)  {
+      display: none;
+    }
 }
 .modal__ingredients-title {
   font-weight: 500;
@@ -177,6 +203,11 @@
     border-color: $title-color-black;
   }
 }
+
+.form__input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
 .form__textarea {
   font-size: 14px;
   line-height: 140%;
