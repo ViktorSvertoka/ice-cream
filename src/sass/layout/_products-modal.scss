@@ -36,8 +36,6 @@
     width: 132px;
     height: 132px;
     top: 7px;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     border-radius: 50%;
     background: linear-gradient(
         0deg,
@@ -70,7 +68,7 @@
   width: 53px;
   padding: 0 2px 4px;
   
-  @include animation (transition);
+  @include animation (transform);
   
 
   &:last-child {
@@ -120,7 +118,7 @@
 
   margin-bottom: 8px;
 
-  @include animation (transition);
+  @include animation (transform);
 
   @include tablet {
     @include font(null, 12px, 2.33, null);
@@ -198,6 +196,7 @@
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 16px;
+  
   &::placeholder {
     font-size: 14px;
     line-height: 140%;
