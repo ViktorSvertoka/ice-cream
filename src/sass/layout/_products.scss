@@ -135,10 +135,12 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include desktop {
+      top: 0;
       width: 302px;
       height: 302px;
     }
@@ -184,10 +186,16 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    
+    @include tablet {
+      transition-delay: 250ms;
+    }
+
 
     @include desktop {
+      top: 0;
       width: 302px;
       height: 302px;
     }
@@ -232,10 +240,17 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @include tablet {
+      transition-delay: 500ms;
+    }
+
     @include desktop {
+      top: 0;
+
       width: 302px;
       height: 302px;
     }
@@ -319,5 +334,10 @@
 .in-viewport.products__item--green::after,
 .in-viewport.products__item--coffee::after,
 .in-viewport.products__item--milkshakes::after {
-  transform: translate(-50%, -165px);
+  transform: translate(-50%, -111px);
+
+  @include desktop {
+    transform: translate(-50%, -167px);
+  }
+
 }
