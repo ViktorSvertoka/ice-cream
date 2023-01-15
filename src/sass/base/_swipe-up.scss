@@ -1,43 +1,9 @@
-// cкрол сторінки
-.swipe-up {
+.scrollToTopBtn {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  border-color: transparent;
-  border-radius: 50%;
-  background-color: #e6c448;
-  z-index: 3;
-}
-
-.swipe-up:hover,
-.swipe-up:focus {
-  filter: brightness(1);
-  outline: none;
-}
-
-.swipe-up::before,
-.swipe-up::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.swipe-up::before {
-  width: 5px;
-  height: 25px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-color: #84a178;
-}
-
-.swipe-up::after {
-  width: 15px;
-  height: 15px;
-  transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 5px solid#84A178;
-  border-left: 5px solid#84A178;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  display: none;
+  padding: 8px 4px;
+  cursor: pointer;
 }
