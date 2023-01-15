@@ -19,7 +19,7 @@
 .header__nav {
   display: flex;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }
@@ -94,7 +94,7 @@
 
 //  buy nav в навігації
 .header-tab-desk__button {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
       display: none;
     }
 }
