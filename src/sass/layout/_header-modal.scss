@@ -67,15 +67,15 @@
         position: absolute;
     }
 
-    &__checkbox:checked + .icecream {
+    &__checkbox:checked + .header-modal__product--icecream {
         background-color: #AEC6A5;
     }
 
-    &__checkbox:checked + .icecoffe {
+    &__checkbox:checked + .header-modal__product--icecoffee {
         background-color: #EFD478;
     }
 
-    &__checkbox:checked + .milkshake {
+    &__checkbox:checked + .header-modal__product--milkshake {
         background-color: #D6936D;
     }
 }
@@ -100,11 +100,29 @@
     }
 }
 
-.icecream {
-    border-color: #96AF8C;
+.product-img {
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icecream::before {
+.header-modal__product:focus .product-img,
+.header-modal__product:hover .product-img {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @mixin animation {
+        transition: transform;
+    }
+}
+
+.header-modal__product:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -114,6 +132,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+.header-modal__product--icecream {
+    border-color: #96AF8C;
+}
+
+.header-modal__product--icecream:before {
     background: linear-gradient(
         0deg,
         rgba(156, 190, 143, 0.7),
@@ -123,42 +148,11 @@
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
-.icecream::after {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: -7px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-
-    background-image: url(../images/modal-icecream_@1x-min.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/modal-icecream_@2x-min.png);
-      background-position: center;
-      background-size: cover;
-    }
-}
-
-.icecoffe {
+.header-modal__product--icecoffee {
     border-color: $products-bg-color-yellow;
 }
 
-.icecoffe::before {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+.header-modal__product--icecoffee:before {
     background: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
@@ -168,42 +162,11 @@
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
-.icecoffe::after {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: -7px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-
-    background-image: url(../images/modal-icecoffee_@1x-min.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/modal-icecoffee_@2x-min.png);
-      background-position: center;
-      background-size: cover;
-    }
-}
-
-.milkshake {
+.header-modal__product--milkshake {
     border-color: $products-bg-color-coffee;
 }
 
-.milkshake::before {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+.header-modal__product--milkshake:before {
     background: linear-gradient(
         0deg,
         rgba(213, 117, 63, 0.7),
@@ -211,28 +174,6 @@
       ),
       #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-}
-
-.milkshake::after {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: -7px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-
-    background-image: url(../images/modal-milkshake_@1x-min.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/modal-milkshake_@2x-min.png);
-      background-position: center;
-      background-size: cover;
-    }
 }
 
 .header-modal__form {
