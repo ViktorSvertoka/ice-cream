@@ -217,54 +217,6 @@
 }
 // cкрол сторінки
 
-.header__back-to-top {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  border-color: transparent;
-  border-radius: 50%;
-  background-color: #e6c448;
-  z-index: 3;
-  //  display: none;
-}
-
-.header__back-to-top:hover,
-.header__back-to-top:focus {
-  filter: brightness(1.0);
-  outline: none;
-}
-
-.header__back-to-top::before,
-.header__back-to-top::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-.header__back-to-top::before {
-  width: 5px;
-  height: 25px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-color: #84A178;
-}
-
-.header__back-to-top::after {
-  width: 15px;
-  height: 15px;
-  transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 5px solid#84A178;
-  border-left: 5px solid#84A178;
-}
-
-.header__none {
-  display: none;
-}
  
 
 
