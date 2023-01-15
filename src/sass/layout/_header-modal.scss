@@ -82,7 +82,7 @@
 
 .header-modal.modal {
     height: 100%;
-    height: 991px;
+    max-height: 991px;
 
     @include tablet {
         max-width: 568px;
