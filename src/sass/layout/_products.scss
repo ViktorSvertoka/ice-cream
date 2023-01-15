@@ -311,6 +311,8 @@
   }
 }
 
-.in-viewport .products__item--green {
-  transform: translate(-50%, -40%);
+.in-viewport.products__item--green::after,
+.in-viewport.products__item--coffee::after,
+.in-viewport.products__item--milkshake::after {
+  transform: translate(-50%, -47%);
 }
