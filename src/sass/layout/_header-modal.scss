@@ -86,7 +86,7 @@
 
     @include tablet {
         max-width: 568px;
-        height: 644px;
+        max-height: 644px;
     }
 }
 
