@@ -40,3 +40,16 @@
     padding: 32px 54px;
   }
 }
+
+.modal-locations {
+  padding: 28px 29px 28px 28px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.button {
+  &__contacts {
+  width: 130px;
+}
+}

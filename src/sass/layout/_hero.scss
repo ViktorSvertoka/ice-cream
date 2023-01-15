@@ -1,14 +1,5 @@
-/*Можна перенести у _base.html*/
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
+/*to transfer _base.html*/
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 /*------------*/
 
 .hero {
@@ -43,9 +34,9 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__description {
-    display: flex;
+    @include flex-align;
+
     justify-content: space-between;
-    align-items: center;
   }
 
   &__title {
@@ -92,9 +83,8 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__button {
-    display: flex;
+    @include flex-align;
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     border: 2px;
     border-style: solid;
@@ -104,8 +94,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: $button-text-color;
     background-color: transparent;
     border-color: $link-bg-color;
-    transition: background-color 250ms $timing-function,
-      color 250ms $timing-function, border-color 250ms $timing-function;
+    @include animation3(background-color, color, border-color);
 
     &:hover {
       border-color: $button-border-color;
@@ -127,7 +116,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     border: 0;
     font-weight: 600;
-    transition: color 250ms $timing-function;
+    @include animation(color);
 
     @include desktop {
       @include btn-sizes(auto, auto, 0px, 12, 1.25, 18px 0px);
@@ -179,15 +168,14 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (max-width: 767px) {
       display: none;
     }
-
-    display: flex;
-    align-items: center;
+    @include flex-align;
   }
 
   &__img-balls {
     margin-right: 32px;
 
-    animation: circle 9000ms $timing-function infinite 1000ms alternate-reverse;
+    animation: circle 9000ms infinite 1000ms alternate-reverse;
+    @include animation(animation-timing-function);
 
     @keyframes circle {
       0% {
@@ -210,10 +198,10 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover .hero__arrow,
     &:focus .hero__arrow {
-      fill: $link-bg-color;
+      fill: $button-border-color;
 
       animation: pulse 1s infinite;
-      animation-timing-function: $timing-function;
+      @include animation(animation-timing-function);
 
       @keyframes pulse {
         0% {
@@ -230,8 +218,8 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__arrow {
-    fill: currentColor;
-    transition: fill 250ms $timing-function;
+    fill: $title-color-white;
+    @include animation(fill);
   }
 
   &__text {
@@ -255,7 +243,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 177px;
 
     transform: translateY(5px);
-    transition: transform 250ms $timing-function;
+    @include animation(transform);
 
     &:hover {
       transform: translateY(0px);
