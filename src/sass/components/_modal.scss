@@ -4,7 +4,7 @@
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-
+ 
   position: fixed;
   top: 0;
   left: 0;
@@ -21,10 +21,10 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-
+  
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 280px;
+   max-width: 280px;
 
   @include tablet {
     max-width: 568px;
@@ -53,6 +53,7 @@
   }
 
 
+
   // Заголовок модалки
   &__title {
     font-family: 'Seymour One';
@@ -67,6 +68,33 @@
       margin-bottom: 32px;
     }
   }
+
+  // Iframe
+  &__frame {
+    background-color: #000000;
+    border-radius: 10px;
+    max-width: 224px;
+    
+
+    border: 0;
+    overflow: hidden;
+
+    @include tablet {
+      max-width: 448px;
+    }
+  }
+
+  // Текст можального окна
+    &__text {
+      text-align: left;
+      @include font(400, 14px, 1.4, 0);
+  
+      color: #131313;
+  
+      @include tablet {
+        @include font(null, 16px, null, null);
+      }
+    }
 }
 
 /* Стили для активных классов подложки и окна */
