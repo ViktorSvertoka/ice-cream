@@ -7,9 +7,11 @@
 
 <div class="modal modal-franchise" data-modal="franchise">
   <!--   Svg иконка для закрытия окна  -->
-  <svg width="20" height="20" class="modal__cross js-modal-close">
-    <use href="./images/symbol-defs.svg#icon-close"></use>
-  </svg>
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="./images/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
   <p class="modal__title">
     Thank you for your interest in owning an Ice Cream shop
   </p>
@@ -66,9 +68,11 @@
 
 <div class="modal" data-modal="locations">
   <!--   Svg иконка для закрытия окна  -->
-  <svg width="20" height="20" class="modal__cross js-modal-close">
-    <use href="./images/symbol-defs.svg#icon-close"></use>
-  </svg>
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="./images/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
   <p class="modal__title">Our Locations</p>
   <iframe
     class="modal__frame"
@@ -81,11 +85,8 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
   ></iframe>
-  <button
-    type="button"
-    class="contacts-buttons__button button js-open-modal"
-    data-modal="Open map"
-  >
+
+  <button type="button" class="contacts-buttons__button button js-open-modal" data-modal="Open map">
     Open map
     <svg class="button__icon" width="8" height="18">
       <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
