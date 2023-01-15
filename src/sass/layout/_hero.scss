@@ -172,8 +172,6 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__img-balls {
-    margin-right: 32px;
-
     animation: circle 9000ms infinite 1000ms alternate-reverse;
     @include animation(animation-timing-function);
 
@@ -189,13 +187,8 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       animation-play-state: paused;
     }
   }
-  @include desktop {
-    margin-right: 20px;
-  }
 
   &__content-link {
-    // color: $main-text-color;
-
     &:hover .hero__arrow,
     &:focus .hero__arrow {
       fill: $button-border-color;
@@ -215,6 +208,14 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
       }
     }
+
+    @include tablet {
+      margin-left: 32px;
+    }
+
+    @include desktop {
+      margin-left: 16px;
+    }
   }
 
   &__arrow {
@@ -224,14 +225,13 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &__text {
     @include font(400, 12px, 1.4, 0.04em);
-    max-width: 139px;
     color: $main-text-color;
     margin-bottom: 12px;
-    max-width: 200px;
+    max-width: 220px;
 
     @include desktop {
       @include font(400, 14px, 1.4, 0.04em);
-      margin-top: 45px;
+      margin-top: 60px;
 
       margin-bottom: 24px;
     }
