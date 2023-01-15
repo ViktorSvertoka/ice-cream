@@ -202,7 +202,7 @@
 
     @include tablet {
       &:not(:last-child) {
-        margin-right: 14.5px;
+        margin-right: 14px;
         margin-bottom: 0;
       }
     }
