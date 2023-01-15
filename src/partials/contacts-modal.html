@@ -23,31 +23,35 @@
     We appreciate your patience.
   </p>
 
-  <form class="contacts-modal__form" action="">
+  <form class="contacts-modal__form">
     <input
       type="text"
       class="contacts-modal__input franchise-js"
       placeholder="Name"
-      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-      title="Name must be two words separated by space."
+      pattern="[a-zA-Z]+"
+      title="Name"
     />
     <input
-      type="text"
+      type="tel"
       class="contacts-modal__input franchise-js"
-      placeholder="Phone"
-      pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
-      title="Phone cannot contain letters."
+      placeholder="enter phone number"
+      name="phone number"
+      pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      title="+380 (93) 111-66-77"
+      value="+380"
+      required
     />
     <input
-      type="text"
+      type="email"
       class="contacts-modal__input franchise-js"
       placeholder="Email"
       name="email"
+      required
     />
 
     <textarea
       class="contacts-modal__input contacts-modal__comment"
-      name=""
+      name="comment"
       placeholder="Comment"
       cols="30"
       rows="10"
@@ -79,10 +83,13 @@
     allowfullscreen
   ></iframe>
 
-  <button type="button button__contacts" class="button js-open-modal" data-modal="Open map">
+  <a href="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" 
+    target="_blank"
+    rel="nofollow noindex noopener"
+    class="button__contacts button js-open-modal" data-modal="Open map">
     Open map
     <svg class="button__arrow" width="8" height="18">
       <use href="./images/icons-sprite.svg#icon-button-arrow"></use>
     </svg>
-  </button>
+  </a>
 </div>
