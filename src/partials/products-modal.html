@@ -106,3 +106,169 @@
     </button>
   </form>
 </div>
+
+
+
+<div class="modal products-modal" data-modal="products 1">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="modal__cross js-modal-close">
+    <svg width="24" height="24">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title product-modal__title">Caramel Latte</h2>
+  <div class="modal__pic">
+    <img class="modal__img" srcset="
+         ./images/products_img_coffee_1x.png 132w,
+        ./images/products_img_coffee_2x.png 264w
+      " sizes="(min-width: 1200px) 132px, 100vw " src="./images/products_img_coffee_1x.png" alt="Chololate icecream"
+      width="132" height="139" />
+  </div>
+
+  <ul class="modal__features">
+    <li class="modal__list">
+      <p class="modal__item">280</p>
+      <p class="modal__items">kcal</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">12g</p>
+      <p class="modal__items">
+        <span class="modal__items-span">Prote...</span>
+        <span class="modal__items-span2">Protein...</span>
+      </p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">6,5</p>
+      <p class="modal__items">Fats</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">25,2</p>
+      <p class="modal__items">Carbs</p>
+    </li>
+  </ul>
+  <h3 class="modal__ingredients-title">Ingredients</h3>
+  <ul class="modal__ingregients-list">
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Espresso</p>
+      <p class="modal__ingredients-text">60ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Ice</p>
+      <p class="modal__ingredients-text">1/4 cup</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Cream</p>
+      <p class="modal__ingredients-text">120ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Caramel syrup</p>
+      <p class="modal__ingredients-text">2 tbsp.</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Vanilla sugar</p>
+      <p class="modal__ingredients-text">1/2 tbsp.</p>
+    </li>
+    
+ 
+    </li>
+  </ul>
+<form class="form">
+  <ul class="form__list">
+    <li class="form__item">
+      <input type="text" required class="form__input products-js" placeholder="Name" pattern="^[a-zA-Z]+$"
+        title="Name cannot contain numbers or symbols." />
+    </li>
+    <li class="form__item">
+      <input type="tel" required class="form__input products-js" placeholder="+380 (__) ___-__-__" data-slots="_"
+        title="+380 (00) 000-00-00" />
+    </li>
+    <li class="form__item">
+      <textarea name="comment" id="comment" class="form__textarea" placeholder="Comment"></textarea>
+    </li>
+  </ul>
+
+  <button type="submit" class="close-btn button products-button-js">
+    Submit
+  </button>
+</form>
+</div>
+
+
+<div class="modal products-modal" data-modal="products 2">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="modal__cross js-modal-close">
+    <svg width="24" height="24">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title product-modal__title">Banana-chocolate milkshake </h2>
+  <div class="modal__pic">
+    <img class="modal__img" srcset="
+        ./images/products_img_milkshakes_1x.png 132w, 
+        ./images/products_img_milkshakes_2x.png 264w
+      " sizes="(min-width: 1200px) 132px, 100vw " src="./images/products_img_milkshakes_1x.png" alt="Chololate icecream"
+      width="132" height="139" />
+  </div>
+
+<ul class="modal__features">
+  <li class="modal__list">
+    <p class="modal__item">210</p>
+    <p class="modal__items">kcal</p>
+  </li>
+  <li class="modal__list">
+    <p class="modal__item">8g</p>
+    <p class="modal__items">
+      <span class="modal__items-span">Prote...</span>
+      <span class="modal__items-span2">Protein...</span>
+    </p>
+  </li>
+  <li class="modal__list">
+    <p class="modal__item">5,5</p>
+    <p class="modal__items">Fats</p>
+  </li>
+  <li class="modal__list">
+    <p class="modal__item">20,2</p>
+    <p class="modal__items">Carbs</p>
+  </li>
+</ul>
+  <h3 class="modal__ingredients-title">Ingredients</h3>
+  <ul class="modal__ingregients-list">
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Milk</p>
+      <p class="modal__ingredients-text">400ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Banana</p>
+      <p class="modal__ingredients-text">1 piece</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Chocolate ice cream</p>
+      <p class="modal__ingredients-text">80g</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Black chocolate</p>
+      <p class="modal__ingredients-text">100g</p>
+    </li>
+
+    </li>
+  </ul>
+<form class="form">
+  <ul class="form__list">
+    <li class="form__item">
+      <input type="text" required class="form__input products-js" placeholder="Name" pattern="^[a-zA-Z]+$"
+        title="Name cannot contain numbers or symbols." />
+    </li>
+    <li class="form__item">
+      <input type="tel" required class="form__input products-js" placeholder="+380 (__) ___-__-__" data-slots="_"
+        title="+380 (00) 000-00-00" />
+    </li>
+    <li class="form__item">
+      <textarea name="comment" id="comment" class="form__textarea" placeholder="Comment"></textarea>
+    </li>
+  </ul>
+
+  <button type="submit" class="close-btn button products-button-js">
+    Submit
+  </button>
+</form>
+</div>
