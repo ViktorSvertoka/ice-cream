@@ -6,3 +6,4 @@ import './js/header-modal';
 import './js/swipe-up';
 import './js/products-modal';
 import './js/products';
+import './js/tel-validator';
