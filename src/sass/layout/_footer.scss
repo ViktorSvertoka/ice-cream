@@ -2,6 +2,12 @@
     background-color: $main-bg-color;
 }
 
+@media screen and (min-width: 1200px) {
+    .footer--line {
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .footer__container {
         display: flex;
@@ -17,7 +23,7 @@ padding-top: 60px;
 
 @media screen and (min-width: 1200px) {
     .footer__content {
-        padding-top: 18px;
+        padding-top: 18px;                
     }
 }
 
@@ -192,8 +198,10 @@ fill: $main-bg-color;
     }
 }
 
-.footer__copyright {
-    border-top: 1px solid #E1E1E1;    
+@media screen and (max-width: 1199px) {
+    .footer__copyright {
+        border-top: 1px solid #E1E1E1;
+    }
 }
 
 @media screen and (max-width: 767px) {
