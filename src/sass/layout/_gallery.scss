@@ -54,6 +54,7 @@
 
   @media screen and (min-width: 480px) {
     width: 440px;
+    height: 204px;
   }
 
   @media screen and (min-width: 768px) {
@@ -75,8 +76,8 @@
   height: 130px;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 183px;
+    width: 440px;
+    height: 204px;
   }
 
   @media screen and (min-width: 768px) {
@@ -144,16 +145,19 @@
 
   @media screen and (max-width: 479px) {
     width: 280px;
+    height: 130px;
   }
 
   @media screen and (min-width: 480px) {
     border-radius: 8px;
     width: 440px;
+    height: 204px;
   }
 
   @media screen and (min-width: 768px) {
     border-radius: 18px;
     width: 704px;
+    height: 327px;
   }
 
   @media screen and (min-width: 1200px) {
