@@ -20,6 +20,8 @@
     background-position: 50% 100%;
 
     @include mobile {
+      height: 349px;
+      background-position: 95% 100%;
       background-image: url(../images/hero-dots-mobile.svg);
     }
 
@@ -67,6 +69,10 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
+
+    @include mobile {
+      gap: 0px;
+    }
 
     @include tablet {
       margin-bottom: 12px;
@@ -121,8 +127,12 @@
     font-weight: 600;
     @include animation(color);
 
+    @include mobile {
+      @include btn-sizes(auto, auto, 0px, auto, auto, 18px 16px);
+    }
+
     @include desktop {
-      @include btn-sizes(auto, auto, 0px, 12, 1.25, 18px 0px);
+      @include btn-sizes(auto, auto, 0px, 12, 1.25, 18px 26px);
     }
 
     &:hover {
@@ -231,7 +241,7 @@
   &__content-link {
     &:hover .hero__arrow,
     &:focus .hero__arrow {
-      fill: $button-border-color;
+      fill: $products-bg-color-yellow;
 
       animation: pulse 1s infinite;
       @include animation(animation-timing-function);
@@ -281,7 +291,11 @@
     position: absolute;
     bottom: 0;
     width: 177px;
-    right: 50%;
+    right: 20%;
+
+    @include mobile {
+      right: 15%;
+    }
 
     @include tablet {
       width: 268px;
@@ -300,15 +314,6 @@
 
     &:hover {
       transform: translateY(0px);
-    }
-
-    @media screen and (max-width: 767px) {
-      &:hover {
-        transform: skew(10deg);
-      }
-
-      right: 50%;
-      transform: translateX(56%);
     }
   }
 }
