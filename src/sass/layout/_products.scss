@@ -92,7 +92,7 @@
 
     @include tablet {
       transform: translateY(-1%);
-      box-shadow: 20px 20px 60px #bebebe5c, -2px -2px 6px #ffffff;
+      box-shadow: 20px 20px 60px #bebebe, -2px -2px 6px #ffffff;
     }
 
     @include desktop {
