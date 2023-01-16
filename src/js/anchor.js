@@ -1,11 +1,14 @@
-$('a.scrollto').click(function () {
-  var elementClick = $(this).attr('href');
-  var destination = $(elementClick).offset().top;
-  jQuery('html:not(:animated),body:not(:animated)').animate(
-    {
-      scrollTop: destination,
-    },
-    1000
-  );
-  return false;
-});
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute('href').substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
