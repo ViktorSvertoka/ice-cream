@@ -76,38 +76,47 @@
   &__container-img {
     position: relative;
     margin: 0 auto 62px;
-    max-width: 279px;
-    height: 278px;
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 140px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
 
     @include tablet {
       max-width: 330px;
-      width: 100%;
-      height: 330px;
-      border-radius: 165px;
       margin: 0 38px 0 0;
     }
 
     @include desktop {
       max-width: 490px;
-      height: 490px;
-      border-radius: 250px;
       margin-right: 110px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+      border-radius: 140px;
+
+      @include tablet {
+        border-radius: 165px;
+      }
+
+      @include desktop {
+        border-radius: 250px;
+      }
     }
   }
 
   &__img {
-    position: absolute;
-    max-width: 100%;
-    border-radius: 140px;
-
     transform: translateY(22px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -118,13 +127,14 @@
     @include tablet {
       border-radius: 165px;
 
-      transform: translateY(26px);
+      transform: translateY(0);
     }
 
     @include desktop {
       border-radius: 250px;
 
-      transform: translateY(39px);
+      transform: translateY(0);
+
     }
   }
 

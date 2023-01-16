@@ -1,6 +1,6 @@
 let wh = window.innerHeight;
 let tolCard = wh * 0.7; //  scroll tolerance - eg. 70% from page top
-let tolAbout = wh * 0.2; //  scroll tolerance - eg. 10% from page top
+let tolAbout = wh * 0.5; //  scroll tolerance - eg. 10% from page top
 
 const inViewport = (elem, pix, cls) => {
   if (document.getElementsByClassName(elem).length > 0) {

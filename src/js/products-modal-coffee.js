@@ -1,5 +1,5 @@
-var inputs = [].slice.call(document.querySelectorAll('.products-js')),
-  button = document.querySelector('.products-button-js');
+var inputs = [].slice.call(document.querySelectorAll('.products-coffee-js')),
+  button = document.querySelector('.products-button-coffee-js');
 
 inputs.forEach(function (el) {
   el.addEventListener('input', checkInputs, false);
