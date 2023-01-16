@@ -37,15 +37,14 @@
     height: 132px;
     top: 7px;
     border-radius: 50%;
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
+        rgba(156, 190, 143, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   }
 }
+
 .modal__pic--ice-coffee {
   &::before {
     content: '';
@@ -55,15 +54,16 @@
     height: 132px;
     top: 7px;
     border-radius: 50%;
-    background: linear-gradient(
-        0deg,
+
+    background: linear-gradient(0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
+        rgba(248, 210, 78, 0.7)),
+      #D9D9D9;
+
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   }
 }
+
 .modal__pic--milkshake {
   &::before {
     content: '';
@@ -73,15 +73,16 @@
     height: 132px;
     top: 7px;
     border-radius: 50%;
-    background: linear-gradient(
-        0deg,
+
+    background: linear-gradient(0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
+        rgba(213, 117, 63, 0.7)),
+      #D9D9D9;
+
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   }
 }
+
 .modal__img {
   position: relative;
   @include animation(transform);
@@ -91,12 +92,14 @@
     transform: translateY(7px);
   }
 }
+
 .modal__features {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 48px;
 }
+
 .modal__list {
   margin-right: 10px;
   border: 2px solid #9cbe8f;
@@ -104,17 +107,23 @@
   width: 53px;
   padding: 0 2px 4px;
 
-  @include animation(transform);
+
+
+  @include animation (transform);
+
+
 
   &:last-child {
     margin-right: 0;
   }
+
   @include tablet {
     width: 65px;
     height: 90px;
     margin-right: 20px;
     padding: 0 4px 14px 4px;
   }
+
   &:hover .modal__item {
     background-color: $title-color-white;
 
@@ -124,6 +133,7 @@
       transform: translateY(+70%);
     }
   }
+
   &:hover .modal__items {
     @include tablet {
       transform: translateY(-305%);
@@ -133,18 +143,28 @@
       transform: translateY(-320%);
     }
   }
+
   &:hover {
     background-color: #9cbe8f;
+
+
   }
 }
+
 .modal__list--milkshake {
+
+
   border: 2px solid $products-bg-color-coffee;
 
   &:hover {
     background-color: $products-bg-color-coffee;
   }
 }
+
+
 .modal__list--ice-coffee {
+
+
   border: 2px solid $products-bg-color-yellow;
 
   &:hover {
@@ -174,6 +194,7 @@
     background-color: $products-bg-color-coffee;
     border: 2px solid $products-bg-color-coffee;
   }
+
   &--ice-coffee {
     background-color: $products-bg-color-yellow;
     border: 2px solid $products-bg-color-yellow;
@@ -201,16 +222,19 @@
     @include font(null, 12px, 1.25, 0);
   }
 }
+
 .modal__items-span {
   @include tablet {
     display: none;
   }
 }
+
 .modal__items-span2 {
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
 .modal__ingredients-title {
   @include font(500, 20px, 1.4, null);
   align-items: center;
@@ -219,17 +243,22 @@
 
   margin-bottom: 24px;
 }
+
 .modal__ingregients-list {
   margin-bottom: 48px;
 }
+
 .modal__ingredients-item {
   margin-bottom: 11px;
+
   &:last-child {
     margin-bottom: 0;
   }
+
   display: flex;
   justify-content: space-between;
 }
+
 .modal__ingredients-text {
   @include font(null, 14px, 1.76, 0.04em);
   text-align: center;
@@ -241,6 +270,7 @@
   display: flex;
   justify-content: center;
 }
+
 .form__input {
   font-size: 14px;
   line-height: 140%;
@@ -262,6 +292,7 @@
     line-height: 140%;
     color: $title-color-black;
   }
+
   &:focus {
     border-color: $title-color-black;
   }
@@ -284,14 +315,17 @@
   resize: none;
   padding-top: 11px;
   padding-left: 16px;
+
   &::placeholder {
     font-size: 14px;
     line-height: 140%;
     color: $title-color-black;
   }
+
   &:focus {
     border-color: $title-color-black;
   }
+
   margin-bottom: 32px;
 }
 
