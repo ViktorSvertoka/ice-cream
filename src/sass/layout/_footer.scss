@@ -235,7 +235,7 @@ fill: $main-bg-color;
     }
 }
 
-.glow-on-hover:before {
+.footer__glow:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -252,15 +252,15 @@ fill: $main-bg-color;
     border-radius: 50px;
 }
 
-.glow-on-hover:active:after {
+.footer__glow:active:after {
     background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.footer__glow:hover:before {
     opacity: 1;
 }
 
-.glow-on-hover:after {
+.footer__glow:after {
     z-index: -1;
     content: '';
     position: absolute;
