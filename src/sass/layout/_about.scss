@@ -125,11 +125,16 @@
     }
 
     @include tablet {
-      transform: translateY(26px);
+      border-radius: 165px;
+
+      transform: translateY(0);
     }
 
     @include desktop {
-      transform: translateY(39px);
+      border-radius: 250px;
+
+      transform: translateY(0);
+
     }
   }
 
