@@ -86,19 +86,24 @@
 
   &__item:hover,
   &__item:focus {
+    box-shadow: 20px 20px 60px #bebebe, -2px -2px 6px #ffffff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @include tablet {
       transform: translateY(-1%);
       box-shadow: 20px 20px 60px #bebebe5c, -2px -2px 6px #ffffff;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include desktop {
       transform: translateY(-1%);
-      box-shadow: 20px 20px 60px #bebebe, -2px -2px 6px #ffffff;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+
+  &__item:hover &__btn,
+  &__item:focus &__btn {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
   }
 
   &__item--green::before {
@@ -188,11 +193,10 @@
     transform: translate(-50%, -50%);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
-    
+
     @include tablet {
       transition-delay: 250ms;
     }
-
 
     @include desktop {
       top: 0;
@@ -326,8 +330,6 @@
   &__btn:hover,
   &__btn:focus {
     fill: $title-color-white;
-    animation: pulse 1s infinite;
-    animation-timing-function: linear;
   }
 }
 
@@ -339,5 +341,4 @@
   @include desktop {
     transform: translate(-50%, -167px);
   }
-
 }
