@@ -92,37 +92,37 @@
   }
 }
 
-.gallery__container:hover img {
-  animation: bloom ease-in-out 0.75s forwards;
-  @include animation(animation);
-}
+// .gallery__container:hover img {
+//   animation: bloom ease-in-out 0.75s forwards;
+//   @include animation(animation);
+// }
 
-@keyframes bloom {
-  0% {
-    filter: grayscale(0.8);
-  }
-  40% {
-    filter: grayscale(0.5);
-  }
-  100% {
-    filter: grayscale(0);
-  }
-}
-@keyframes circle {
-  0% {
-    opacity: 0.5;
-    background: rgba(213, 156, 34, 0.2);
-  }
-  40% {
-    opacity: 1;
-    background: rgba(213, 34, 160, 0.2);
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
+// @keyframes bloom {
+//   0% {
+//     filter: grayscale(0.8);
+//   }
+//   40% {
+//     filter: grayscale(0.5);
+//   }
+//   100% {
+//     filter: grayscale(0);
+//   }
+// }
+// @keyframes circle {
+//   0% {
+//     opacity: 0.5;
+//     background: rgba(213, 156, 34, 0.2);
+//   }
+//   40% {
+//     opacity: 1;
+//     background: rgba(213, 34, 160, 0.2);
+//   }
+//   100% {
+//     width: 200%;
+//     height: 200%;
+//     opacity: 0;
+//   }
+// }
 
 .gallery__container {
   text-align: center;
