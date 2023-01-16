@@ -68,7 +68,7 @@
     }
 
     &__checkbox:checked + .header-modal__product--icecream {
-        background-color: #AEC6A5;
+        background-color: #96AF8C;
     }
 
     &__checkbox:checked + .header-modal__product--icecoffee {
@@ -114,12 +114,8 @@
 
 .header-modal__product:focus .product-img,
 .header-modal__product:hover .product-img {
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @mixin animation {
-        transition: transform;
-    }
+    transform: translate(-50%, -45%);
+    @include animation(transform);
 }
 
 .header-modal__product:before {
