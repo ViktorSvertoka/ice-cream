@@ -9,3 +9,4 @@ import './js/products-modal-coffee';
 import './js/products-modal-milkshakes';
 import './js/products';
 import './js/tel-validator';
+import './js/anchor';
