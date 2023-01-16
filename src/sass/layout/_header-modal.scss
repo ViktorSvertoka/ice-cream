@@ -103,8 +103,8 @@
 .product-img {
     position: absolute;
     background-size: cover;
-    width: 132px;
-    height: 132px;
+    max-width: 132px;
+    max-height: 132px;
     top: -7px;
     left: 50%;
     transform: translate(-50%, -50%);
