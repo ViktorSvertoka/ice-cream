@@ -64,7 +64,9 @@
 
 
 .modal__frame--contacts {
-  @include mobile {
+  height: 199px;
+
+  @include tablet {
     height: 260px;
   }
 }
