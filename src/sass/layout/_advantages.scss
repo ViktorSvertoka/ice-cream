@@ -1,7 +1,7 @@
 // Stiles for text
 .advantages {
   padding-top: 0;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
   background-color: $main-bg-color;
   &__item {
     width: 270px;
@@ -24,14 +24,14 @@
   }
 
   @include mobile {
-    padding-bottom: 59px;
+    
     &__item + &__item {
       margin-top: 32px;
     }
   }
 
   @include tablet {
-    padding-bottom: 204px;
+    padding-bottom: 60px;
     &__list {
       @include flex-align;
       justify-content: space-between;
@@ -45,7 +45,9 @@
   }
 
   @include desktop {
-    padding-bottom: 178px;
+ 
+    padding-bottom: 80px;
+
     &__item {
       width: 368px;
     }

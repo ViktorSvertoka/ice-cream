@@ -2,27 +2,6 @@
   padding: 0;
   padding-bottom: 60px;
 
-  background-image: linear-gradient(
-    to bottom,
-    rgba(132, 161, 120, 0) 24%,
-    rgba(132, 161, 120, 1) 24%
-  );
-
-  @include tablet {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 0) 43%,
-      rgba(132, 161, 120, 1) 43%
-    );
-  }
-
-  @include desktop {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 0) 24%,
-      rgba(132, 161, 120, 1) 24%
-    );
-  }
   .contacts__list {
     display: flex;
     justify-content: center;
@@ -83,22 +62,6 @@
       margin-top: 24px;
     }
 
-    // @include tablet {
-    //     &:first-child {
-    //         margin-bottom: 32px;
-    //     }
-
-    //     &:nth-child(2) {
-    //         padding: 32px 0;
-
-    //         border-top: 1px solid #E1E1E1;
-    //         border-bottom: 1px solid #E1E1E1;
-    //     }
-
-    //     &:last-child {
-    //         margin-top: 32px;
-    //     }
-    // }
   }
   .contacts-details__text {
     @include font(500, 12px, 1.84, 0.04em);
