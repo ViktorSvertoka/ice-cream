@@ -1,260 +1,79 @@
 .gallery {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 479px) {
-    padding-top: 32px;
-    padding-bottom: 80px;
-  }
-
-  @media screen and (min-width: 480px) {
-    padding-top: 32px;
-    padding-bottom: 80px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 100px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 80px;
-    padding-bottom: 140px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
-  }
-
-  margin-top: -32px;
-  @media screen and (min-width: 480px) {
-    margin-top: -28px;
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: -84px;
-    margin-bottom: -60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: -50px;
-    margin-bottom: -42px;
-  }
-
   position: relative;
-  width: 280px;
-  height: 130px;
 
-  @media screen and (min-width: 480px) {
-    width: 440px;
-    height: 204px;
-  }
+  &::before {
+    content: '';
 
-  @media screen and (min-width: 768px) {
-    width: 704px;
-    height: 327px;
-  }
+    background-position-x: center;
+    background-size: 1300px;
+    background-repeat: repeat-y;
+    position: absolute;
+    width: 100%;
 
-  @media screen and (min-width: 1200px) {
-    width: 1013px;
-    height: 422px;
+    height: 1037px;
+    top: 32px;
+
+    background-image: url(../images/background-mobile-1x.png);
+
+    @include retina {
+      background-image: url(../images/background-mobile-2x.png);
+    }
+
+    @include mobile {
+      top: 27px;
+      height: 1131px;
+      background-image: url(../images/background-mobile-1x.png);
+
+      @include retina {
+        background-image: url(../images/background-mobile-2x.png);
+      }
+    }
+
+    @include tablet {
+      top: 144px;
+      height: 990px;
+
+      background-image: url(../images/background-tablet-1x.png);
+
+      @include retina {
+        background-image: url(../images/background-tablet-2x.png);
+      }
+    }
+
+    @include desktop {
+      top: 98px;
+      height: 1054px;
+
+      background-image: url(../images/background-desc2.jpg);
+
+      @include retina {
+        background-image: url(../images/background-desc2-2x.jpg);
+      }
+    }
   }
+  
 }
 
 .gallery__container img {
-  display: flex;
-  justify-content: center;
-  width: 280px;
+
   border-radius: 8px;
-  height: 130px;
 
-  @media screen and (min-width: 480px) {
-    width: 440px;
-    height: 204px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 704px;
-    height: 327px;
-    border-radius: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1013px;
-    height: 422px;
-    border-radius: 24px;
-  }
 }
 
-// .gallery__container:hover img {
-//   animation: bloom ease-in-out 0.75s forwards;
-//   @include animation(animation);
-// }
-
-// @keyframes bloom {
-//   0% {
-//     filter: grayscale(0.8);
-//   }
-//   40% {
-//     filter: grayscale(0.5);
-//   }
-//   100% {
-//     filter: grayscale(0);
-//   }
-// }
-// @keyframes circle {
-//   0% {
-//     opacity: 0.5;
-//     background: rgba(213, 156, 34, 0.2);
-//   }
-//   40% {
-//     opacity: 1;
-//     background: rgba(213, 34, 160, 0.2);
-//   }
-//   100% {
-//     width: 200%;
-//     height: 200%;
-//     opacity: 0;
-//   }
-// }
 
 .gallery__container {
-  text-align: center;
-  transform: translateY(-32px);
+  position: relative;
 
-  @media screen and (min-width: 768px) {
-    transform: translateY(-122px);
+  @include desktop {
+    padding-left: 94px;
+    padding-right: 94px;
   }
+
 }
 
-.gallery__wrapper {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .gallery__img {
   border-radius: 8px;
-
-  @media screen and (max-width: 479px) {
-    width: 280px;
-    height: 130px;
-  }
-
-  @media screen and (min-width: 480px) {
-    border-radius: 8px;
-    width: 440px;
-    height: 204px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 18px;
-    width: 704px;
-    height: 327px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
-    width: 1014px;
-  }
 }
 
-// @keyframes fade {
-//   0% {
-//     opacity: 1;
-//   }
-//   11.11% {
-//     opacity: 1;
-//   }
-//   33.33% {
-//     opacity: 1;
-//   }
-//   44.44% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
-// .fadein {
-//   margin-top: -32px;
-//   @media screen and (min-width: 480px) {
-//     margin-top: -32px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     margin-top: -144px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-top: -98px;
-//   }
-
-//   position: relative;
-//   width: 280px;
-//   height: 130px;
-
-//   @media screen and (min-width: 480px) {
-//     width: 440px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 704px;
-//     height: 327px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 1013px;
-//     height: 422px;
-//   }
-// }
-
-// .fadein img {
-//   display: flex;
-//   justify-content: center;
-//   position: absolute;
-//   width: 280px;
-//   border-radius: 8px;
-//   height: 130px;
-
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//     height: 183px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 704px;
-//     height: 327px;
-//     border-radius: 18px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 1013px;
-//     height: 422px;
-//     border-radius: 24px;
-//   }
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   opacity: 0;
-//   animation-name: fade;
-//   animation-duration: 6s;
-//   animation-iteration-count: infinite;
-// }
-// .fadein img:nth-child(1) {
-//   animation-delay: 0s;
-// }
-// .fadein img:nth-child(2) {
-//   animation-delay: 2s;
-// }
-// .fadein img:nth-child(3) {
-//   animation-delay: 4s;
-// }

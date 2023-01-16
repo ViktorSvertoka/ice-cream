@@ -1,4 +1,43 @@
 .products {
+  background-position-x: center;
+  background-size: 1300px;
+  background-repeat: repeat-y;
+
+  background-image: url(../images/background-mobile-1x.png);
+
+  @include retina {
+    background-image: url(../images/background-mobile-2x.png);
+  }
+   
+
+  @include mobile {
+    background-image: url(../images/background-mobile-1x.png);
+   
+
+    @include retina {
+      background-image: url(../images/background-mobile-2x.png);
+    }
+  }
+
+  @include tablet {
+    background-image: url(../images/background-tablet-1x.png);
+
+    @include retina {
+      background-image: url(../images/background-tablet-2x.png);
+    }
+  }
+
+  @include desktop {
+    top: 98px;
+    height: 1054px;
+
+    background-image: url(../images/background-desc-prod.jpg);
+
+    @include retina {
+      background-image: url(../images/background-desc-prod-2x.jpg);
+    }
+  }
+
   &__container {
     display: block;
     text-align: center;
@@ -30,16 +69,16 @@
     text-align: center;
     color: $title-color-black;
     text-transform: uppercase;
-    margin-bottom: 140px;
+    margin-bottom: 145px;
 
     @include tablet {
       font-size: 34px;
       line-height: 1.26;
-      margin-bottom: 186px;
+      margin-bottom: 200px;
     }
 
     @include desktop {
-      margin-bottom: 278px;
+      margin-bottom: 303px;
       font-size: 36px;
       line-height: 1.25;
       letter-spacing: 0.06em;
