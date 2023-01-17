@@ -5,7 +5,6 @@
     content: '';
 
     background-position-x: center;
-    background-size: 1300px;
     background-repeat: repeat-y;
     position: absolute;
     width: 100%;
@@ -51,15 +50,11 @@
       }
     }
   }
-  
 }
 
 .gallery__container img {
-
   border-radius: 8px;
-
 }
-
 
 .gallery__container {
   position: relative;
@@ -68,12 +63,8 @@
     padding-left: 94px;
     padding-right: 94px;
   }
-
 }
-
-
 
 .gallery__img {
   border-radius: 8px;
 }
-
