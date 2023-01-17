@@ -172,7 +172,14 @@
   &__item--green::after {
     content: '';
     position: absolute;
-    background-image: url(../images/products_img_cream_1x.png);
+    background-image: url(../images/products_img_cream_min_1x-min.png);
+
+    @include retina {
+      background-image: url(../images/products_img_cream_min_2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
+
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -187,12 +194,13 @@
       top: 0;
       width: 302px;
       height: 302px;
-    }
+      background-image: url(../images/products_img_cream_1x-min.png);
 
-    @include retina {
-      background-image: url(../images/products_img_cream_2x.png);
-      background-position: center;
-      background-size: cover;
+      @include retina {
+        background-image: url(../images/products_img_cream_2x-min.png);
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 
@@ -223,7 +231,14 @@
   &__item--coffee::after {
     content: '';
     position: absolute;
-    background-image: url(../images/products_img_coffee_1x.png);
+    background-image: url(../images/products_img_coffee_min_1x-min.png);
+
+    @include retina {
+      background-image: url(../images/products_img_coffee_min_2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
+
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -241,12 +256,13 @@
       top: 0;
       width: 302px;
       height: 302px;
-    }
+      background-image: url(../images/products_img_coffee_1x-min.png);
 
-    @include retina {
-      background-image: url(../images/products_img_coffee_2x.png);
-      background-position: center;
-      background-size: cover;
+      @include retina {
+        background-image: url(../images/products_img_coffee_2x-min.png);
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 
@@ -286,6 +302,13 @@
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: url(../images/products_img_milkshakes_min_1x-min.png);
+
+    @include retina {
+      background-image: url(../images/products_img_milkshakes_min_2x-min.png);
+      background-position: center;
+      background-size: cover;
+    }
 
     @include tablet {
       transition-delay: 500ms;
@@ -293,16 +316,15 @@
 
     @include desktop {
       top: 0;
-
       width: 302px;
       height: 302px;
-    }
-    background-image: url(../images/products_img_milkshakes_1x.png);
+      background-image: url(../images/products_img_milkshakes_1x-min.png);
 
-    @include retina {
-      background-image: url(../images/products_img_milkshakes_2x.png);
-      background-position: center;
-      background-size: cover;
+      @include retina {
+        background-image: url(../images/products_img_milkshakes_2x-min.png);
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 
