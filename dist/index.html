@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ice Cream Online Shop">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="icon" href="/favicon.c3d66290.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </head>
+
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header" id="home">
+  <div class="container header__container">
+    <a class="header__logo-destop" href="#home">
+      <picture>
+        <source srcset="/logo_tablet.e23d2122.png" media="(max-width:768px)">
+        <img src="/logo.c493797d.png" alt="logo">
+      </picture>
+    </a>
+    <!-- кнопки мобильного меню  aria-controls="mobile-menu-1"
+      aria-expanded="false" -->
+    <button class="header__menu-button button__mobil-menu js-open-modal" type="button" data-modal="2">
+      <svg class="mobil-icon" width="32" height="32" aria-label="menu">
+        <use class="header__icon-menu" href="/icons-sprite.ac1cb2e2.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <!-- мобільне меню -->
+    <div class="header__mobil-menu modal" data-modal="2">
+      <a class="header__logo-mobil header__ise-logo" href="#"><img src="/logo_tablet.e23d2122.png" alt="logo"></a>
+      <!--   Svg иконка для закрытия окна  -->
+      <svg class="modal__cross header__modal-cros js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path>
+      </svg>
+      <ul class="header__mobil-menu-list">
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#home">Home</a>
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#how-its-made">How it’s made?</a>
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#products">Our products</a>
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="header-tab-desk__in-menu button js-open-modal" type="button" data-modal="1">
+        Buy now
+        <svg width="12" height="12" class="button__arrow">
+          <use href="/icons-sprite.ac1cb2e2.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- меню навігації -->
+    <nav class="header__nav" id="menu">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#home" class="header-nav__link">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#how-its-made" class="header-nav__link">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#products" class="header-nav__link">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#contact" class="header-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- кнопка buy noy -->
+    <button class="header-tab-desk__button button js-open-modal" type="button" data-modal="1">
+      Buy now
+      <!-- стрілка в кнопці -->
+      <svg width="12" height="12" class="button__arrow">
+        <use href="/icons-sprite.ac1cb2e2.svg#icon-arrow-right-bold"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <div class="modal header-modal" data-modal="1">
+  <button type="button" class="modal__cross js-modal-close">
+    <svg class="icon-close">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="header-modal__title">Buy now</h2>
+  <ul class="header-modal__list">
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream">
+        <span class="header-modal__product header-modal__product--icecream">
+          ice cream
+          <img class="product-img" srcset="/modal-icecream_@1x-min.8cc45260.png 1x, /modal-icecream_@2x-min.ce67cdc3.png 2x" src="/modal-icecream_@1x-min.8cc45260.png" alt="ice-cream">
+        </span>
+      </label>
+    </li>
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe">
+        <span class="header-modal__product header-modal__product--icecoffee">
+          ice coffee
+          <img class="product-img" srcset="/modal-icecoffee_@1x-min.4f9cc234.png 1x, /modal-icecoffee_@2x-min.2bf57ed5.png 2x" src="/modal-icecoffee_@1x-min.4f9cc234.png" alt="ice-coffee">
+        </span>
+      </label>
+    </li>
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="milkshake">
+        <span class="header-modal__product header-modal__product--milkshake">milkshake
+          <img class="product-img" srcset="/modal-milkshake_@1x-min.5ba5c651.png 1x, /modal-milkshake_@2x-min.5401e4fa.png 2x" src="/modal-milkshake_@1x-min.5ba5c651.png" alt="milkshake">
+        </span>
+      </label>
+    </li>
+  </ul>
+  <form class="header-modal__form">
+    <input class="header-modal__input buynow-js" type="text" required="" placeholder="Name" pattern="^[a-zA-Z]+$" title="Name cannot contain numbers or symbols.">
+    <input class="header-modal__input buynow-js" type="tel" required="" placeholder="+61(0) ___ ___ ___" data-slots="_" title="+61(0) ___ ___ ___">
+    <textarea class="header-modal__input header-modal__comment" name="comment" placeholder="Comment" cols="30" rows="10"></textarea>
+    <button class="submit-btn button buynow-button-js" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
+
+    <main>
+      <!-- HERO -->
+<section class="hero hero__dots" id="hero">
+  <div class="container">
+    <div class="hero__description">
+      <div class="hero__title-wrapper">
+        <h1 class="hero__title">ice cream made with passion</h1>
+        <ul class="hero__navigation-list ul">
+          <li class="hero__navigation-item">
+            <a href="#products" class="hero__link a hero__button">Products</a>
+          </li>
+          <li class="hero__navigation-item">
+            <a href="#how-its-made" class="hero__link hero__underline">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <!-- ttt -->
+      <!-- -------before tablet is hidden ----- -->
+      <ul class="hero__point-sale list animate__animated animate__fadeInTopRight">
+        <li class="hero__point-sale-item">
+          <p class="hero__point-sale-count hero__counter-first"></p>
+          <p class="hero__point-sale-name">cafes</p>
+        </li>
+        <li class="hero__point-sale-item">
+          <p class="hero__point-sale-count hero__counter-second"></p>
+          <p class="hero__point-sale-name">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__content">
+      <div class="hero_img-balls-active animate__animated animate__fadeInTopLeft">
+        <img class="hero__img-balls" srcset="/hero-ice-balls-tablet-1x.41a22752.png  152w, /hero-ice-balls-tablet-2x.e9aa3b1b.png  304w, /hero-ice-balls-desktop-1x.cff56f3a.png 225w, /hero-ice-balls-desktop-2x.4440e36b.png 450w" sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw" src="/hero-ice-balls-tablet-1x.41a22752.png" alt="plate with ice-cream balls">
+      </div>
+
+      <a href="#products" class="hero__content-link a">
+        <p class="hero__text">
+          You can't buy happiness, but you can buy ice cream, and that's pretty much the same thing.
+          The best time for ice cream is always !
+        </p>
+        <svg class="hero__arrow" width="40" height="16">
+          <use href="/icons-sprite.ac1cb2e2.svg#icon-arrow-white"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hero__picture animate__animated animate__fadeInDownBig">
+      <img class="hero__img-cone" srcset="/hero-ice-cone-mobile-1x.ab508ff3.png  218w, /hero-ice-cone-mobile-2x.7e1929b1.png  436w, /hero-ice-cone-tablet-1x.f978f949.png  268w, /hero-ice-cone-tablet-2x.c985c290.png  536w, /hero-ice-cone-desktop-1x.7a730442.png 456w, /hero-ice-cone-desktop-2x.2c93c4f9.png 912w" sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, 100vw" src="/hero-ice-cone-mobile-1x.ab508ff3.png" alt="three balls ice-cream in cone with fanny smile">
+    </div>
+</div></section>
+      <section class="products" id="products">
+  <div class="container products__container">
+    <p class="products__label"><span>100% natural</span></p>
+    <h2 class="products__titel"><span>products</span></h2>
+    <ul class="products__list">
+      <li class="products__item products__item--green">
+        <h3 class="products__name"><span>ice cream</span></h3>
+        <p class="products__descr">
+          Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+          natural stabilizer
+        </p>
+        <button type="button" class="products__btn js-open-modal" data-modal="products" aria-label="open modal screen">
+          <svg width="40" height="16">
+            <use class="products__icon" href="/icons-sprite.ac1cb2e2.svg#icon-arrow-products"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products__item products__item--coffee">
+        <h3 class="products__name"><span>ice coffee</span></h3>
+        <p class="products__descr">
+          Fragrant invigorating drink created from 100% natural ingredients
+          without the use of preservatives and flavor enhancers
+        </p>
+        <button type="button" class="products__btn js-open-modal" aria-label="open modal screen" data-modal="products 1">
+          <svg width="40" height="16">
+            <use class="products__icon" href="/icons-sprite.ac1cb2e2.svg#icon-arrow-products"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products__item products__item--milkshakes">
+        <h3 class="products__name"><span>milkshakes</span></h3>
+        <p class="products__descr">
+          Sweet drinks based on milk and ice cream, supplemented with syrups,
+          fruits, berries and other sweets of your choice
+        </p>
+        <button type="button" class="products__btn js-open-modal" aria-label="open modal screen" data-modal="products 2">
+          <svg width="40" height="16">
+            <use class="products__icon" href="/icons-sprite.ac1cb2e2.svg#icon-arrow-products"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <div class="modal products-modal" data-modal="products">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="modal__cross js-modal-close">
+    <svg width="24" height="24">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title product-modal__title">Chololate icecream</h2>
+  <div class="modal__pic">
+    <img class="modal__img" srcset="/products_modal_pic_1x.ab95cc05.png 132w, /products_modal_pic_2x.c67f308a.png 264w" sizes="(min-width: 1200px) 132px, 100vw " src="/products_modal_pic_1x.ab95cc05.png" alt="Chololate icecream" width="132" height="139">
+  </div>
+
+  <ul class="modal__features">
+    <li class="modal__list">
+      <p class="modal__item">320</p>
+      <p class="modal__items">kcal</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">4g</p>
+      <p class="modal__items">
+        <span class="modal__items-span">Prote...</span>
+        <span class="modal__items-span2">Protein...</span>
+      </p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">8,2g</p>
+      <p class="modal__items">Fats</p>
+    </li>
+    <li class="modal__list">
+      <p class="modal__item">40,4g</p>
+      <p class="modal__items">Carbs</p>
+    </li>
+  </ul>
+  <h3 class="modal__ingredients-title">Ingredients</h3>
+  <ul class="modal__ingregients-list">
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Milk</p>
+      <p class="modal__ingredients-text">100ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Belgian chocolate</p>
+      <p class="modal__ingredients-text">20g</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Cream</p>
+      <p class="modal__ingredients-text">150 ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Cocoa powder</p>
+      <p class="modal__ingredients-text">30g</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Sugar</p>
+      <p class="modal__ingredients-text">40g</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Vanilla sugar</p>
+      <p class="modal__ingredients-text">10g</p>
+    </li>
+  </ul>
+
+  <form class="form">
+
+    <ul class="form__list">
+
+      <li class="form__item">
+
+        <input type="text" required="" class="form__input products-green-js" placeholder="Name" pattern="^[a-zA-Z]+$" title="Name cannot contain numbers or symbols.">
+
+      </li>
+
+      <li class="form__item">
+
+        <input type="tel" required="" class="form__input products-green-js" placeholder="+61(0) _ _ ___" data-slots="_" title="+61(0) 000 000 000">
+
+      </li>
+
+      <li class="form__item">
+
+        <textarea name="comment" class="form__textarea" placeholder="Comment"></textarea>
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button close-btn products-button-green-js" disabled=""> Submit </button>
+
+  </form>
+
+</div>
+
+
+
+<div class="modal products-modal" data-modal="products 1">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="modal__cross js-modal-close">
+    <svg width="24" height="24">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title product-modal__title">Caramel Latte</h2>
+  <div class="modal__pic modal__pic--ice-coffee">
+    <img class="modal__img" srcset="/products_img_coffee_1x.9ff65e67.png 132w, /products_img_coffee_2x.c1268230.png 264w" sizes="(min-width: 1200px) 132px, 100vw " src="/products_img_coffee_1x.9ff65e67.png" alt="Caramel Latte" width="132" height="139">
+  </div>
+
+  <ul class="modal__features">
+    <li class="modal__list modal__list--ice-coffee">
+      <p class="modal__item modal__item--ice-coffee">280</p>
+      <p class="modal__items">kcal</p>
+    </li>
+    <li class="modal__list modal__list--ice-coffee">
+      <p class="modal__item modal__item--ice-coffee">12g</p>
+      <p class="modal__items">
+        <span class="modal__items-span">Prote...</span>
+        <span class="modal__items-span2">Protein...</span>
+        </p>
+        </li>
+        <li class="modal__list modal__list--ice-coffee">
+          <p class="modal__item modal__item--ice-coffee">6,5</p>
+          <p class="modal__items">Fats</p>
+        </li>
+        <li class="modal__list modal__list--ice-coffee">
+          <p class="modal__item modal__item--ice-coffee">25,2</p>
+          <p class="modal__items">Carbs</p>
+        </li>
+        </ul>
+        <h3 class="modal__ingredients-title">Ingredients</h3>
+        <ul class="modal__ingregients-list">
+          <li class="modal__ingredients-item">
+            <p class="modal__ingredients-text">Espresso</p>
+            <p class="modal__ingredients-text">60ml</p>
+          </li>
+          <li class="modal__ingredients-item">
+            <p class="modal__ingredients-text">Ice</p>
+            <p class="modal__ingredients-text">1/4 cup</p>
+          </li>
+          <li class="modal__ingredients-item">
+            <p class="modal__ingredients-text">Cream</p>
+            <p class="modal__ingredients-text">120ml</p>
+          </li>
+          <li class="modal__ingredients-item">
+            <p class="modal__ingredients-text">Caramel syrup</p>
+            <p class="modal__ingredients-text">2 tbsp.</p>
+          </li>
+          <li class="modal__ingredients-item">
+            <p class="modal__ingredients-text">Vanilla sugar</p>
+            <p class="modal__ingredients-text">1/2 tbsp.</p>
+          </li>
+        
+        
+          
+        </ul>
+        
+        <form class="form">
+        
+          <ul class="form__list">
+        
+            <li class="form__item">
+        
+              <input type="text" required="" class="form__input products-coffee-js" placeholder="Name" pattern="^[a-zA-Z]+$" title="Name cannot contain numbers or symbols.">
+        
+            </li>
+        
+            <li class="form__item">
+        
+              <input type="tel" required="" class="form__input products-coffee-js" placeholder="+61(0) _ _ ___" data-slots="_" title="+61(0) 000 000 000">
+        
+            </li>
+        
+            <li class="form__item">
+        
+              <textarea name="comment" class="form__textarea" placeholder="Comment"></textarea>
+        
+            </li>
+        
+          </ul>
+        
+          <button type="submit" class="button close-btn products-button-coffee-js" disabled=""> Submit </button>
+    
+        </form>
+        
+        </div>
+
+<div class="modal products-modal" data-modal="products 2">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="modal__cross js-modal-close">
+    <svg width="24" height="24">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title product-modal__title">Banana-chocolate milkshake </h2>
+  <div class="modal__pic modal__pic--milkshake">
+    <img class="modal__img" srcset="/products_img_milkshakes_1x.86fdc0ac.png 132w, /products_img_milkshakes_2x.de8151bf.png 264w" sizes="(min-width: 1200px) 132px, 100vw " src="/products_img_milkshakes_1x.86fdc0ac.png" alt="Chololate icecream" width="132" height="139">
+  </div>
+
+  <ul class="modal__features">
+    <li class="modal__list modal__list--milkshake">
+      <p class="modal__item modal__item--milkshake">210</p>
+      <p class="modal__items">kcal</p>
+    </li>
+    <li class="modal__list modal__list--milkshake">
+      <p class="modal__item modal__item--milkshake">8g</p>
+      <p class="modal__items">
+        <span class="modal__items-span">Prote...</span>
+        <span class="modal__items-span2">Protein...</span>
+      </p>
+    </li>
+    <li class="modal__list modal__list--milkshake">
+      <p class="modal__item modal__item--milkshake">5,5</p>
+      <p class="modal__items">Fats</p>
+    </li>
+    <li class="modal__list modal__list--milkshake">
+      <p class="modal__item modal__item--milkshake">20,2</p>
+      <p class="modal__items">Carbs</p>
+    </li>
+  </ul>
+  <h3 class="modal__ingredients-title">Ingredients</h3>
+  <ul class="modal__ingregients-list">
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Milk</p>
+      <p class="modal__ingredients-text">400ml</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Banana</p>
+      <p class="modal__ingredients-text">1 piece</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Chocolate ice cream</p>
+      <p class="modal__ingredients-text">80g</p>
+    </li>
+    <li class="modal__ingredients-item">
+      <p class="modal__ingredients-text">Black chocolate</p>
+      <p class="modal__ingredients-text">100g</p>
+    </li>
+  </ul>
+  <form class="form">
+    <ul class="form__list">
+      <li class="form__item">
+        <input type="text" required="" class="form__input products-milkshakes-js" placeholder="Name" pattern="^[a-zA-Z]+$" title="Name cannot contain numbers or symbols.">
+      </li>
+      <li class="form__item">
+        <input type="tel" required="" class="form__input products-milkshakes-js" placeholder="+61(0) ___ ___ ___" data-slots="_" title="+61(0) 000 000 000">
+      </li>
+      <li class="form__item">
+        <textarea name="comment" class="form__textarea" placeholder="Comment"></textarea>
+      </li>
+    </ul>
+
+    <button type="submit" class="close-btn button products-button-milkshakes-js">
+      Submit
+    </button>
+
+  </form>
+</div>
+
+
+
+      <section class="about section" id="how-its-made">
+  <div class="container">
+    <div class="about__title-container">
+      <p class="about__lable">tradition and love</p>
+      <h2 class="about__title">how it’s made?</h2>
+    </div>
+    <div class="about__content">
+      <div class="about__container-img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="/cow.9b06b936.png 1x, /cow-2x.a46e9764.png 2x">
+          <source media="(min-width:768px)" srcset="/cow-tab.24235d96.png    1x, /cow-tab-2x.a6099791.png 2x">
+          <source media="(min-width:480px)" srcset="/cow-mob.e65e82fb.png    1x, /cow-mob-2x.f89cbc18.png 2x">
+          <source media="(min-width:320px)" srcset="/cow-tel.411a1e14.png    1x, /cow-tel-2x.cef5674a.png 2x">
+          <img srcset="/cow.9b06b936.png 1x, /cow-2x.a46e9764.png 2x" src="/cow.9b06b936.png" alt="cow in the meadow" width="490" height="490" class="about__img">
+        </picture>
+      </div>
+      <div class="about__right-block">
+        <ul class="about__list">
+          <li class="about__item item">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </li>
+          <li class="about__item item">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </li>
+          <li class="about__item item">
+            This is enough to choose ice cream and coffee for any mood!
+          </li>
+        </ul>
+
+        <button type="button" class="button js-open-modal" data-modal="about">
+          Read more
+          <svg width="12" height="12" class="button__arrow">
+            <use href="/icons-sprite.ac1cb2e2.svg#icon-arrow-right-bold"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Модальное окно About -->
+
+<div class="modal about__modal" data-modal="about">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">How it’s made?</h2>
+
+  <iframe class="modal__frame modal__framе--height" width="448" height="205" src="https://www.youtube.com/embed/o5-MkuEnDoA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+  <p class="modal__text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  </p>
+</div>
+
+      <section class="section advantages">
+  <div class="container">
+    <h2 class="advantages__title" hidden="">Advantages</h2>
+    <ul class="advantages__list list">
+      <li class="advantages__item">
+        <div class="advantages__case">
+          <p class="advantages__numbers advantages__icon-cow">721</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__case">
+          <p class="advantages__numbers advantages__icon-weight">16kg</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__case">
+          <p class="advantages__numbers advantages__icon-ice-cream">84</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="gallery">
+  <div class="gallery__container container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="gallery__wrapper">
+      <picture class="mySlides fade">
+        <source srcset="/ice-cream-first-1x.bb6cbc8e.jpg 1x, /ice-cream-first-2x.120f8c16.jpg 2x">
+        <img class="gallery__img" src="/ice-cream-first-1x.bb6cbc8e.jpg" alt="ice cream foto1">
+      </picture>
+      <picture class="mySlides fade">
+        <source srcset="/ice-cream-second-1x.b5d3eaee.jpg 1x, /ice-cream-second-2x.01bc3544.jpg 2x">
+        <img class="gallery__img" src="/ice-cream-second-1x.b5d3eaee.jpg" alt="ice cream foto2">
+      </picture>
+      <picture class="mySlides fade">
+        <source srcset="/ice-cream-third-1x.5cb5f2b2.jpg 1x, /ice-cream-third-2x.ea471624.jpg 2x">
+        <img class="gallery__img" src="/ice-cream-third-1x.5cb5f2b2.jpg" alt="ice cream foto3">
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="customer-reviews" data-slider="team-slider">
+  <div class="customer-reviews__container container">
+    <h2 class="customer-reviews__title visually-hidden">Hidden Title</h2>
+    <!-- Slider main container -->
+    <div class="customer-reviews__swiper swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="customer-reviews__swiper-slide swiper-slide">
+          <div class="customer-reviews__wrapper">
+            <div class="customer-reviews__img-wrapp">
+              <img class="customer-reviews__img" srcset="/slider1-emily-1x.e648d95e.jpg 1x, /slider1-emily-2x.8572a584.jpg 2x" src="/slider1-emily-1x.e648d95e.jpg" alt="emily">
+            </div>
+            <div class="customer-reviews__wrapp">
+              <p class="customer-reviews__text">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+            </div>
+            <p class="customer-reviews__desc">Emily, Los Angeles</p>
+          </div>
+        </div>
+        <div class="customer-reviews__swiper-slide swiper-slide">
+          <div class="customer-reviews__img-wrapp">
+            <img class="customer-reviews__img" srcset="/slider2-bryan-1x.3278eb85.jpg 1x, /slider2-bryan-2x.06665ad4.jpg 2x" src="/slider2-bryan-1x.3278eb85.jpg" alt="bryan">
+          </div>
+          <div class="customer-reviews__wrapp">
+            <p class="customer-reviews__text">
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
+            </p>
+          </div>
+          <p class="customer-reviews__desc">Bryan, New-York</p>
+        </div>
+        <div class="customer-reviews__swiper-slide swiper-slide">
+          <div class="customer-reviews__wrapper">
+            <div class="customer-reviews__img-wrapp">
+              <img class="customer-reviews__img" srcset="/slider3-diana-1x.a12cfbf4.jpg 1x, /slider3-diana-2x.d9d3b970.jpg 2x" src="/slider3-diana-1x.a12cfbf4.jpg" alt="diana">
+            </div>
+            <div class="customer-reviews__wrapp">
+              <p class="customer-reviews__text">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+            </div>
+            <p class="customer-reviews__desc">Diana, Chicago</p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="customer-reviews__swiper-pagination swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </div>
+</section>
+
+      <section class="section section__contacts" id="contact">
+  <div class="container">
+    <h2 class="visually-hidden">Contact Us</h2>
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <ul class="contacts-details__list">
+          <li class="contacts-details__item">
+            <p class="contacts-details__text contacts-details__text--category">
+              Cafe
+            </p>
+            <p class="contacts-details__text contacts-details__text">Chicago</p>
+            <a href="https://goo.gl/maps/6dRyg5Ke7HNKM6Fy6" target="_blank" class="contacts-details__text contacts-details__text--adress" rel="nofollow noindex noopener">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul>
+              <li>
+                <p class="contacts-details__text">Monday - Friday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="contacts-details__text">Saturday - Sunday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul class="contacts-details__link">
+              <li>
+                <a class="contacts-details__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a class="contacts-details__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts__item">
+        <ul class="contacts-details__list">
+          <li class="contacts-details__item">
+            <p class="contacts-details__text contacts-details__text--category">
+              FOOD TRUCK
+            </p>
+            <p class="contacts-details__text contacts-details__text">
+              Los Angeles
+            </p>
+            <a href="https://goo.gl/maps/Ch63r1sCgTqwXFTq6" target="_blank" class="contacts-details__text contacts-details__text--adress" rel="nofollow noindex noopener">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul>
+              <li>
+                <p class="contacts-details__text">Monday - Friday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="contacts-details__text">Saturday - Sunday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul class="contacts-details__link">
+              <li>
+                <a class="contacts-details__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a class="contacts-details__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts__item">
+        <ul class="contacts-details__list">
+          <li class="contacts-details__item">
+            <p class="contacts-details__text contacts-details__text--category">
+              Cafe
+            </p>
+            <p class="contacts-details__text contacts-details__text">
+              New York
+            </p>
+            <a href="https://goo.gl/maps/wFvj1gobN42bo8kM6" target="_blank" class="contacts-details__text contacts-details__text--adress" rel="nofollow noindex noopener">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul>
+              <li>
+                <p class="contacts-details__text">Monday - Friday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="contacts-details__text">Saturday - Sunday</p>
+                <p class="contacts-details__time-work">
+                  <time>06:00</time> AM - <time>10:00</time>PM
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts-details__item">
+            <ul class="contacts-details__link">
+              <li>
+                <a class="contacts-details__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a class="contacts-details__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- BUTTONS -->
+    <ul class="contacts-buttons__list">
+      <li class="contacts-buttons__item">
+        <button type="button" class="contacts-buttons__button button js-open-modal" data-modal="locations">
+          Our Locations
+          <svg class="button__arrow" width="8" height="18">
+            <use href="/icons-sprite.ac1cb2e2.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts-buttons__item">
+        <button type="button" class="contacts-buttons__button button button--bg-transperent js-open-modal" data-modal="franchise">
+          Franchise
+          <svg class="button__arrow" width="8" height="18">
+            <use href="/icons-sprite.ac1cb2e2.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- Элементы для вызова модальных окон, могут быть любые -->
+
+<!-- <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
+<a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
+
+ Несколько модальных окон -->
+
+<div class="modal modal-franchise" data-modal="franchise">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <form class="contacts-modal__form">
+    <input type="text" class="contacts-modal__input franchise-js" placeholder="Name" pattern="[a-zA-Z]+" title="Name">
+    <input class="contacts-modal__input franchise-js" type="tel" name="phone number" placeholder="+61(0) ___ ___ ___" data-slots="_" title="+61(0) 000 000 000" required="">
+    <input type="email" class="contacts-modal__input franchise-js" placeholder="Email" name="email" required="">
+
+    <textarea class="contacts-modal__input contacts-modal__comment" name="comment" placeholder="Comment" cols="30" rows="10"></textarea>
+    <button class="submit-btn button franchise-button-js" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
+
+<!-- Модалка локація -->
+
+<div class="modal modal-locations" data-modal="locations">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="/icons-sprite.ac1cb2e2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">Our Locations</h2>
+  <iframe class="modal__frame modal__frame--contacts" width="448" height="260" src="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" title="GOOGLE map" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+  <a href="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" target="_blank" rel="nofollow noindex noopener" class="button__contacts button" data-modal="Open map">
+    Open map
+  </a>
+</div>
+
+    </main>
+    <footer class="footer">
+
+    <div class="container footer__container footer--line">
+        <div class="footer__slogan">
+            <p class="footer__slogan-text">homemade ice cream made</p>
+            <p class="footer__slogan-title">with passion</p>
+        </div>
+
+        <div class="footer__content">
+            <ul class="footer__social">
+                <li class="footer__social-list footer__glow">
+                    <a href="https://github.com/" aria-label="Read more about Ice cream github" target="_blank" rel="noopener noreferrer nofollow" class="footer__social-link"><svg class="footer__social-icon" width="20" height="20">
+                            <use href="/icons-sprite.ac1cb2e2.svg#icon-social-github"></use>
+                        </svg></a>
+                </li>
+                <li class="footer__social-list footer__glow">
+                    <a href="https://telegram.org/" aria-label="Read more about Ice cream telegram" target="_blank" rel="noopener noreferrer nofollow" class="footer__social-link"><svg class="footer__social-icon" width="20.4" height="15.87">
+                            <use href="/icons-sprite.ac1cb2e2.svg#icon-social-telegram"></use>
+                        </svg></a>
+                </li>
+                <li class="footer__social-list footer__glow">
+                    <a href="https://www.facebook.com/" aria-label="Read more about Ice cream facebook" target="_blank" rel="noopener noreferrer nofollow" class="footer__social-link"><svg class="footer__social-icon" width="9.35" height="20.4">
+                            <use href="/icons-sprite.ac1cb2e2.svg#icon-social-facebook"></use>
+                        </svg></a>
+                </li>
+            </ul>
+
+            <div class="footer__phone">
+                <a href="tel:+610383766284" aria-label="For more information about ice cream call +610383766284" class="footer__phone-number"><span class="footer__phone-text">Feel free to
+                        contact</span>
+                    +61
+                    (0)
+                    383
+                    766 284</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copyright">
+        <p class="footer__copyright-text">© 2022 - IceCream. All Rights Reserved.</p>
+    </div>
+</footer>
+    <!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+
+    <button class="scrollToTopBtn" type="button">
+    <svg class="header__scroii-icon" aria-label="top-up" width="50" height="50">
+       <use class="header__icon-crema" href="/icons-sprite.ac1cb2e2.svg#icon-swipe-up2"></use>
+    </svg></button>
+
+    <!-- aria-controls="scroll-To-Top-Btn" aria-expanded="false"  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="//web-ptica.ru/VRV-files/jquery-2.1.3.min.js"></script>
+  </body>
+</html>
