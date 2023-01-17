@@ -1,6 +1,5 @@
 .products {
   background-position-x: center;
-  background-size: 1300px;
   background-repeat: repeat-y;
 
   background-image: url(../images/background-mobile-1x.png);
@@ -8,11 +7,9 @@
   @include retina {
     background-image: url(../images/background-mobile-2x.png);
   }
-   
 
   @include mobile {
     background-image: url(../images/background-mobile-1x.png);
-   
 
     @include retina {
       background-image: url(../images/background-mobile-2x.png);
