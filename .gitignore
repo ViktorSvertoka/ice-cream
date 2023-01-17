@@ -107,4 +107,4 @@ dist
 
 # TernJS port file
 .tern-port
-src/sass/layout/_products-modal.scss
+
