@@ -8,7 +8,7 @@
   padding-top: 50px;
   height: 454px;
   overflow: hidden;
- 
+
   & .container {
     height: 100%;
     position: relative;
@@ -17,24 +17,28 @@
   &__dots {
     background-image: url(../images/hero-dots-tel.svg);
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    // background-position: 100% 100%;
+    background-position: bottom;
 
     @include mobile {
       height: 349px;
-      background-position: 95% 100%;
       background-image: url(../images/hero-dots-mobile.svg);
+      // background-position: 95% 100%;
+      background-position: bottom right 30%;
     }
 
     @include tablet {
       height: 349px;
       padding-top: 14px;
       background-image: url(../images/hero-dots-tablet.svg);
+      background-position: bottom;
     }
 
     @include desktop {
       height: 591px;
       padding-top: 45px;
       background-image: url(../images/hero-dots-desktop.svg);
+      background-position: bottom;
     }
   }
 
