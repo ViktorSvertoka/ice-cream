@@ -54,6 +54,14 @@
 
 .gallery__container img {
   border-radius: 8px;
+
+  @include tablet {
+    border-radius: 18px;
+  }
+
+  @include desktop {
+    border-radius: 24px;
+  }
 }
 
 .gallery__container {
