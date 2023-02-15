@@ -25,6 +25,17 @@
 - Look at
   [**Layout (Figma)**](https://www.figma.com/file/g8Av5GC8AqLyf4wqJblnJn/ice-cream?node-id=0%3A1&t=d4aS7PV3AfgJtxmH-1)
 
+### On this project, our team learned:
+
+- HTML (tags, attributes, semantics, clean structure, code style)
+
+- CSS selector specificity, pseudo-class, css variables, pseudo-elements, font
+  properties, box model, element geometry, element types, image types, gradient,
+  shadow, raster/vector graphics, svg sprites positioned elements, animations,
+  transitions, forms, link js
+
+- BEM SASS adaptive and responsive layout (markup, graphics)
+
 ---
 
 # Parcel template
