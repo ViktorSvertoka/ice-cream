@@ -6,7 +6,7 @@
       e.webkitMatchesSelector ||
       function (e) {
         for (
-          var t = this,
+          let t = this,
             o = (t.document || t.ownerDocument).querySelectorAll(e),
             n = 0;
           o[n] && o[n] !== t;
@@ -17,7 +17,7 @@
       }),
     'function' != typeof e.closest &&
       (e.closest = function (e) {
-        for (var t = this; t && 1 === t.nodeType; ) {
+        for (let t = this; t && 1 === t.nodeType; ) {
           if (t.matches(e)) return t;
           t = t.parentNode;
         }
@@ -28,7 +28,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-  var modalButtons = document.querySelectorAll('.js-open-modal'),
+  let modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-      var modalId = this.getAttribute('data-modal'),
+      let modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.modal');
+      let parentModal = this.closest('.modal');
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.addEventListener(
     'keyup',
     function (e) {
-      var key = e.keyCode;
+      let key = e.keyCode;
 
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');

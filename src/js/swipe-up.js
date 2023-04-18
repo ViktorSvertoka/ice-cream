@@ -1,12 +1,12 @@
 document.addEventListener('scroll', handleScroll);
 // get a reference to our predefined button
-var scrollToTopBtn = document.querySelector('.scrollToTopBtn');
+let scrollToTopBtn = document.querySelector('.scrollToTopBtn');
 
 function handleScroll() {
-  var scrollableHeight =
+  let scrollableHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var GOLDEN_RATIO = 0.1;
+  let GOLDEN_RATIO = 0.1;
 
   if (document.documentElement.scrollTop / scrollableHeight > GOLDEN_RATIO) {
     //show button
