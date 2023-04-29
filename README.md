@@ -1,29 +1,35 @@
 # Website - "Ice Cream"
 
-## Командний проєкт
+## Team project
 
-- Віктор Свертока **Team Lead** розробка та оформлення секції **"Customer
-  Reviews"**
-- Сергій Євчишен **Scrum Master** розробка та оформлення секції **"Header"**
-- Володимир Живун **Web-developer** розробка та оформлення секції **"Hero"**
-- Дмитро Самусь **Web-developer** розробка та оформлення секції **"Products"**
-- Віталій Бащенко **Web-developer** розробка та оформлення секції **"About"**
-- Евгеній Батанов **Web-developer** розробка та оформлення секції
-  **"Аdvantages"**
-- Олександр Пуговський **Web-developer** розробка та оформлення секції
-  **"Gallery"**
-- Василь Епов **Web-developer** розробка та оформлення секції **"Contacts"**
-- Євгеній Лукашов **Web-developer** розробка та оформлення секції **"Footer"**
-- Ольга Ільєнко **Web-developer** розробка та оформлення модального вікна кнопки
-  **"Bay now"**
-- Марія Іванова **Web-developer** розробка та оформлення модального вікна секції
+- Viktor Svertoka **Team Lead** development and design of the section
+  **"Customer Reviews"**
+- Сергій Євчишен **Scrum Master** development and design of the section
+  **"Header"**
+- Володимир Живун **Web-developer** development and design of the section
+  **"Hero"**
+- Dmytro Samus **Web-developer** development and design of the section
   **"Products"**
+- Віталій Бащенко **Web-developer** development and design of the section
+  **"About"**
+- Евгеній Батанов **Web-developer** development and design of the section
+  **"Аdvantages"**
+- Олександр Пуговський **Web-developer** development and design of the section
+  **"Gallery"**
+- Василь Епов **Web-developer** development and design of the section
+  **"Contacts"**
+- Yevhenii Lukashov **Web-developer** development and design of the section
+  **"Footer"**
+- Ольга Ільєнко **Web-developer** development and design of a button modal
+  window **"Bay now"**
+- Марія Іванова **Web-developer** development and design of the section's modal
+  window **"Products"**
 
-### Презентація до проєкту
+### Project presentation
 
 ![Demonstration](./assets/ice-cream-team.gif)
 
-## STACK - HTML/CSS (BEM, SASS) and few JavaScript
+## STACK - HTML, CSS, BEM, SASS, and few JavaScript
 
 - Look at
   [**Layout (Figma)**](https://www.figma.com/file/g8Av5GC8AqLyf4wqJblnJn/ice-cream?node-id=0%3A1&t=d4aS7PV3AfgJtxmH-1)
@@ -37,4 +43,4 @@
   shadow, raster/vector graphics, svg sprites positioned elements, animations,
   transitions, forms, link js
 
-- BEM SASS adaptive and responsive layout (markup, graphics)
+- BEM & SASS adaptive and responsive layout (markup, graphics)
