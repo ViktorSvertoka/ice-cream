@@ -43,4 +43,8 @@
   shadow, raster/vector graphics, svg sprites positioned elements, animations,
   transitions, forms, link js
 
-- BEM & SASS adaptive and responsive layout (markup, graphics)
+- BEM
+
+- SASS
+
+- adaptive and responsive layout (markup, graphics)
