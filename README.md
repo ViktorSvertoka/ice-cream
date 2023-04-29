@@ -12,9 +12,9 @@
   **"Products"**
 - Віталій Бащенко **Web-developer** development and design of the section
   **"About"**
-- Евгеній Батанов **Web-developer** development and design of the section
+- Yevhen Batanov **Web-developer** development and design of the section
   **"Аdvantages"**
-- Олександр Пуговський **Web-developer** development and design of the section
+- Oleksandr Puhovskyi **Web-developer** development and design of the section
   **"Gallery"**
 - Василь Епов **Web-developer** development and design of the section
   **"Contacts"**
@@ -22,7 +22,7 @@
   **"Footer"**
 - Ольга Ільєнко **Web-developer** development and design of a button modal
   window **"Bay now"**
-- Марія Іванова **Web-developer** development and design of the section's modal
+- Mariia Ivanova **Web-developer** development and design of the section's modal
   window **"Products"**
 
 ### Project presentation
