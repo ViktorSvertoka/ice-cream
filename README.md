@@ -50,3 +50,5 @@
 - **SASS**
 
 - adaptive and responsive layout (markup, graphics)
+
+- and few **JavaScript**
