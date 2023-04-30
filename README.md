@@ -2,6 +2,8 @@
 
 ## Team project
 
+### Development team :
+
 - Viktor Svertoka **Team Lead** development and design of the section
   **"Customer Reviews"**
 - Sergiy Yevchihen **Scrum Master** development and design of the section
@@ -29,7 +31,7 @@
 
 ![Demonstration](./assets/ice-cream-team.gif)
 
-## STACK - HTML, CSS, BEM, SASS, and few JavaScript
+### **STACK** - HTML, CSS, BEM, SASS, and JavaScript
 
 - `Look at`
   [**Layout (Figma)**](https://www.figma.com/file/g8Av5GC8AqLyf4wqJblnJn/ice-cream?node-id=0%3A1&t=d4aS7PV3AfgJtxmH-1)
