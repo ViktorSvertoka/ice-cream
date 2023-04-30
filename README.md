@@ -4,24 +4,24 @@
 
 - Viktor Svertoka **Team Lead** development and design of the section
   **"Customer Reviews"**
-- Сергій Євчишен **Scrum Master** development and design of the section
+- Sergiy Yevchihen **Scrum Master** development and design of the section
   **"Header"**
-- Володимир Живун **Web-developer** development and design of the section
+- Volodymyr Zhyvun **Web-developer** development and design of the section
   **"Hero"**
 - Dmytro Samus **Web-developer** development and design of the section
   **"Products"**
-- Віталій Бащенко **Web-developer** development and design of the section
+- Vitalii Bashchenko **Web-developer** development and design of the section
   **"About"**
 - Yevhen Batanov **Web-developer** development and design of the section
   **"Аdvantages"**
 - Oleksandr Puhovskyi **Web-developer** development and design of the section
   **"Gallery"**
-- Василь Епов **Web-developer** development and design of the section
+- Vasyl Epov **Web-developer** development and design of the section
   **"Contacts"**
 - Yevhenii Lukashov **Web-developer** development and design of the section
   **"Footer"**
-- Ольга Ільєнко **Web-developer** development and design of a button modal
-  window **"Bay now"**
+- Olha Ilienko **Web-developer** development and design of a button modal window
+  **"Bay now"**
 - Mariia Ivanova **Web-developer** development and design of the section's modal
   window **"Products"**
 
