@@ -1,0 +1,12 @@
+import './gallery';
+import './modal';
+import './slider';
+import './franchise';
+import './header-modal';
+import './swipe-up';
+import './products-modal-green';
+import './products-modal-coffee';
+import './products-modal-milkshakes';
+import './products';
+import './tel-validator';
+import './anchor';
