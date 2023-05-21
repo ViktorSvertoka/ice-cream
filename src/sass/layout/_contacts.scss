@@ -61,7 +61,6 @@
     &:last-child {
       margin-top: 24px;
     }
-
   }
   .contacts-details__text {
     @include font(500, 12px, 1.84, 0.04em);
@@ -89,15 +88,11 @@
     &--category {
       display: inline-block;
       padding: 4px 14px;
-
       background-color: $link-bg-color;
-
       align-items: center;
       justify-content: center;
       margin-bottom: 20px;
-
       text-transform: uppercase;
-
       border-radius: 4px;
 
       @include tablet {

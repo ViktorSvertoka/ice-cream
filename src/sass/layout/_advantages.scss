@@ -24,7 +24,6 @@
   }
 
   @include mobile {
-    
     &__item + &__item {
       margin-top: 32px;
     }
@@ -45,7 +44,6 @@
   }
 
   @include desktop {
- 
     padding-bottom: 80px;
 
     &__item {
@@ -60,7 +58,6 @@
   display: inline-flex;
   padding-top: 16px;
   margin-bottom: 16px;
-
   font-family: $primary-fonts;
   font-style: normal;
   @include font(700, 58px, 1.22, 0.04em);
