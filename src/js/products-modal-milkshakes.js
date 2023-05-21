@@ -6,6 +6,7 @@ let inputs = [].slice.call(
 inputs.forEach(function (el) {
   el.addEventListener('input', checkInputs, false);
 });
+
 function checkInputs() {
   let empty = inputs.filter(function (el) {
     return el.value.trim() === '';
