@@ -3,18 +3,6 @@
   align-items: center;
 }
 
-// .header__logo-destop {
-//   @media (max-width: 767px) {
-//     display: none;
-//   }
-// }
-
-// .header__logo-tablet {
-//   @media (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
 .header__nav {
   display: flex;
 
@@ -39,24 +27,19 @@
   line-height: 1.25;
 }
 
-// .mobil-icon {
-//     fill: #000000;
-
-// }
-
 .header__menu-button {
   width: 32px;
   height: 32px;
   display: inline-block;
-   justify-content: center;
-   align-items: center;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   padding: 0;
   margin-left: auto;
   margin-right: 32px;
   background-color: $main-bg-color;
-  
+
   @media (max-width: 480px) {
     margin-right: 0px;
   }
@@ -65,12 +48,6 @@
     display: none;
   }
 }
-
-// .header__menu-button.button__mobil-menu {
-//   @media (min-width: 768px) {
-//       display: none;
-//     }
-// }
 
 .header-tab-desk__button {
   font-weight: 600;
@@ -86,20 +63,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-top: 10px;
-  
 }
-
 
 //  buy nav в навігації
 .header-tab-desk__button {
   @media (max-width: 767px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .header-tab-desk__in-menu {
-
   justify-content: center;
   align-items: center;
 
@@ -137,9 +110,7 @@
 }
 
 .header-nav__link {
-  // text-decoration: none;
   color: #fcfcfc;
-  // background-color: #F8D24E;
 }
 
 .header-nav__link:hover {
@@ -160,8 +131,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 1.23;
-  background-color: #84A178;
-  // z-index: 999;
+  background-color: #84a178;
   transform: translateX(100%);
   top: 0;
   left: 0;
@@ -169,17 +139,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   border: none;
   border-radius: 0;
 
-  
   @media (max-width: 480px) {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    
   }
 }
 
@@ -190,33 +157,30 @@
 .header__mobil-menu-list {
   padding-top: 76px;
   @media (max-width: 480px) {
-      font-weight: 700;
-        font-size: 32px;
-        line-height: 39px;
-      padding-top: 100px;
-      padding-bottom: 110px;
-    }
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
 
-        @media (min-width: 480px) {
-          padding-top: 100px;
-          padding-bottom: 110px;
-        }
-  
+  @media (min-width: 480px) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
 }
 
 .header__mobil-menu-item {
   display: flex;
-  // align-items: center;
   justify-content: center;
   white-space: nowrap;
-
 }
 
 .header__mobil-menu-item + .header__mobil-menu-item {
   margin-top: 40px;
   @media (max-width: 480px) {
-      margin-top: 32px;
-    }
+    margin-top: 32px;
+  }
 }
 
 .header__mobil-menu-link {
@@ -227,9 +191,3 @@
   }
 }
 // cкрол сторінки
-
- 
-
-
-
-

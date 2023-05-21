@@ -17,13 +17,11 @@
   &__dots {
     background-image: url(../images/hero-dots-tel.svg);
     background-repeat: no-repeat;
-    // background-position: 100% 100%;
     background-position: bottom;
 
     @include mobile {
       height: 349px;
       background-image: url(../images/hero-dots-mobile.svg);
-      // background-position: 95% 100%;
       background-position: bottom right 10%;
     }
 
@@ -44,14 +42,12 @@
 
   &__description {
     @include flex-align;
-
     justify-content: space-between;
   }
 
   &__title {
     max-width: 247px;
     margin-bottom: 32px;
-
     font-family: $title-fonts;
     @include font(400, 26px, 1.27, 0.04em);
     text-transform: uppercase;
