@@ -3,15 +3,12 @@
 
   &::before {
     content: '';
-
     background-position-x: center;
     background-repeat: repeat;
     position: absolute;
     width: 100%;
-
     height: 1037px;
     top: 32px;
-
     background-image: url(../images/background-mobile-1x.png);
 
     @include retina {
@@ -31,7 +28,6 @@
     @include tablet {
       top: 144px;
       height: 990px;
-
       background-image: url(../images/background-tablet-1x.png);
 
       @include retina {
@@ -42,7 +38,6 @@
     @include desktop {
       top: 98px;
       height: 1054px;
-
       background-image: url(../images/background-desc2.jpg);
 
       @include retina {
