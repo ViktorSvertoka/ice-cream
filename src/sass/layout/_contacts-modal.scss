@@ -10,16 +10,12 @@
   margin-bottom: 12px;
   padding: 8px 12px;
   outline: none;
-
   background-color: rgba(248, 210, 78, 0.1);
   border: solid 1px $main-bg-color;
   border-radius: 10px;
-
-  font-size: 12px;
-  line-height: 1.4;
+  @include font(null, 12px, 1.4, null);
   text-align: left;
   color: $title-color-black;
-
   &:not(:placeholder-shown):invalid {
     border-color: red;
   }
@@ -37,14 +33,12 @@
   max-height: 674px;
   padding: 28px 28px;
 
-
   @include tablet {
     width: 568px;
     max-height: 668px;
     padding: 32px 60px;
   }
 }
-
 
 .button__contacts {
   width: 134px;
@@ -58,10 +52,7 @@
     width: 145px;
     padding: 12px 34px;
   }
-
 }
-
-
 
 .modal__frame--contacts {
   height: 199px;
@@ -71,7 +62,7 @@
   }
 }
 
-.modal-locations{
+.modal-locations {
   width: 280px;
   height: 100%;
   max-height: 365px;
@@ -82,8 +73,6 @@
     max-height: 458px;
     padding: 32px 60px;
   }
-
-
 }
 .modal.modal-locations {
   text-align: center;
