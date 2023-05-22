@@ -49,7 +49,7 @@
 
 .header-tab-desk__button {
   @include font(600, 14px, 1.21, null);
-  background-color: #f8d24e;
+  background-color: $link-bg-color;
   width: 152px;
   height: 42px;
   padding: 0px;
@@ -60,7 +60,6 @@
   align-items: center;
 }
 
-//  buy nav в навігації
 .header-tab-desk__button {
   @media (max-width: 767px) {
     display: none;
@@ -77,12 +76,12 @@
 }
 
 .header-tab-desk__button:hover {
-  background: #0a8817;
+  background: $button-border-color;
 }
 
 .header-tab-desk__button:focus {
-  background: #0a8817;
-  color: #ffff;
+  background: $button-border-color;
+  color: $accent-bg-color;
 }
 
 .header__icon-arrow {
@@ -91,7 +90,7 @@
 }
 
 .modal__cross.header__modal-cros {
-  fill: #ffff;
+  fill: $accent-bg-color;
   width: 20px;
   height: 20px;
 }
@@ -105,15 +104,15 @@
 }
 
 .header-nav__link {
-  color: #fcfcfc;
+  color: $main-text-color;
 }
 
 .header-nav__link:hover {
-  color: #f8d24e;
+  color: $link-bg-color;
 }
 
 .header-nav__link:focus {
-  color: #f8d24e;
+  color: $link-bg-color;
 }
 
 .header__logo-mobil.header__ise-logo {
@@ -124,7 +123,7 @@
 
 .header__mobil-menu.modal {
   @include font(700, 48px, 1.23, null);
-  background-color: #84a178;
+  background-color: $main-bg-color;
   transform: translateX(100%);
   top: 0;
   left: 0;
@@ -173,9 +172,9 @@
 }
 
 .header__mobil-menu-link {
-  color: #ffff;
+  color: $accent-bg-color;
   &:hover,
   &:focus {
-    color: #131313;
+    color: $secondary-text-color;
   }
 }

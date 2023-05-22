@@ -32,7 +32,6 @@
     @include font(700, 18px, 1.22, 0);
     text-transform: uppercase;
     color: $title-color-white;
-
     margin-bottom: 12px;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -50,7 +49,7 @@
   }
 
   &__title {
-    font-family: 'Seymour One';
+    font-family: $title-fonts;
     @include font(400, 30px, 1.27, 0.04em);
     text-transform: uppercase;
     color: $title-color-white;

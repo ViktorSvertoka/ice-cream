@@ -172,7 +172,6 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   @include font(500, 10px, 2.8, null);
   color: $secondary-text-color;
-  // @include animation(transform);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin-bottom: 8px;
@@ -198,7 +197,6 @@
   display: flex;
   justify-content: center;
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  // @include animation (transform);
 
   @include font(null, 10px, 1.2, 0);
 
@@ -262,7 +260,6 @@
   line-height: 140%;
   color: $title-color-black;
   background: rgba(248, 210, 78, 0.1);
-
   width: 368px;
   height: 42px;
   margin-bottom: 16px;

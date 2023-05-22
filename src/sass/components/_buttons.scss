@@ -1,14 +1,11 @@
 .button {
   @include font(600, 14px, 1.29, null);
-
   border-radius: 10px;
   padding: 12px 34px;
   display: inline-flex;
   align-items: center;
-
   color: $button-text-color;
   background-color: $link-bg-color;
-  cursor: pointer;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   &:focus {
@@ -26,7 +23,7 @@
   }
 
   &:focus {
-    filter: drop-shadow(0 0 0 #fff);
+    filter: drop-shadow(0 0 0 $accent-bg-color);
   }
 
   &:disabled {

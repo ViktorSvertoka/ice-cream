@@ -5,7 +5,6 @@
   z-index: 100;
   display: none;
   padding: 8px 4px;
-  cursor: pointer;
   display: flex;
   border: none;
   background: no-repeat scroll $link-bg-color;
@@ -15,10 +14,9 @@
   line-height: 1.5;
   opacity: 0.8;
   @media (max-width: 768px) {
-      bottom: 20px;
-      right: 20px;
-    }
-
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 .header__scroii-icon {
@@ -30,5 +28,4 @@
 
 .header__scroii-icon:hover {
   fill: antiquewhite;
-
 }
