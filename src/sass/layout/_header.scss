@@ -22,9 +22,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(700, 16px, 1.25, null);
 }
 
 .header__menu-button {
@@ -50,13 +48,10 @@
 }
 
 .header-tab-desk__button {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
+  @include font(600, 14px, 1.21, null);
   background-color: #f8d24e;
   width: 152px;
   height: 42px;
-  cursor: pointer;
   padding: 0px;
   border-radius: 10px;
   border: none;
@@ -128,9 +123,7 @@
 }
 
 .header__mobil-menu.modal {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.23;
+  @include font(700, 48px, 1.23, null);
   background-color: #84a178;
   transform: translateX(100%);
   top: 0;
@@ -144,9 +137,7 @@
   border-radius: 0;
 
   @media (max-width: 480px) {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    @include font(700, 32px, 1.21, null);
   }
 }
 
@@ -157,9 +148,7 @@
 .header__mobil-menu-list {
   padding-top: 76px;
   @media (max-width: 480px) {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    @include font(700, 32px, 1.21, null);
     padding-top: 100px;
     padding-bottom: 110px;
   }
@@ -190,4 +179,3 @@
     color: #131313;
   }
 }
-// cкрол сторінки
