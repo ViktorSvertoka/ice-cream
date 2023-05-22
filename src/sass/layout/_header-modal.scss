@@ -1,234 +1,225 @@
 .header-modal {
-    padding: 28px 29px 28px 28px;
-    background-color: $title-color-white;
+  padding: 28px 29px 28px 28px;
+  background-color: $title-color-white;
+
+  @include tablet {
+    padding: 32px 54px;
+  }
+
+  &__title {
+    margin-bottom: 83px;
+    text-align: center;
+    color: $title-color-black;
+    font-family: $title-fonts;
+    @include font(400, 16px, 1.5, null);
 
     @include tablet {
-        padding: 32px 54px;
+      @include font(null, 20px, 1.4, null);
+
+      margin-bottom: 103px;
     }
+  }
 
-    &__title {
-        margin-bottom: 83px;
-        text-align: center;
-        color: $title-color-black;
-        font-family: $title-fonts; 
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        
-        @include tablet {
-            font-size: 20;
-            line-height: 1.4;
-            margin-bottom: 103px;
-        }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 84px;
+    margin-bottom: 31px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 40px;
     }
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 84px;
-        margin-bottom: 31px;
+  &__product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 21px;
+    width: 132px;
+    height: 136px;
+    border: solid 2px;
+    border-radius: 10px;
+    color: $title-color-black;
+    font-family: $primary-fonts;
+    @include font(700, 16px, 1.25, null);
+    font-style: bold;
+    text-transform: uppercase;
+    text-align: center;
 
-        @include tablet {
-            flex-direction: row;
-            justify-content: center;
-            gap: 32px;
-            margin-bottom: 40px;
-        }
+    @include tablet {
+      height: 135px;
     }
+  }
 
-    &__product {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 21px;
-        width: 132px;
-        height: 136px;
-        border: solid 2px;
-        border-radius: 10px;
-        color: $title-color-black;
+  &__checkbox {
+    appearance: none;
+    position: absolute;
+  }
 
-        font-family: $primary-fonts;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        font-style: bold;
-        text-transform: uppercase;
-        text-align: center; 
+  &__checkbox:checked + .header-modal__product--icecream {
+    background-color: #96af8c;
+  }
 
-        @include tablet {
-            height: 135px;
-        }
-    }
+  &__checkbox:checked + .header-modal__product--icecoffee {
+    background-color: #efd478;
+  }
 
-    &__checkbox {
-        appearance: none;
-        position: absolute;
-    }
-
-    &__checkbox:checked + .header-modal__product--icecream {
-        background-color: #96AF8C;
-    }
-
-    &__checkbox:checked + .header-modal__product--icecoffee {
-        background-color: #EFD478;
-    }
-
-    &__checkbox:checked + .header-modal__product--milkshake {
-        background-color: #D6936D;
-    }
+  &__checkbox:checked + .header-modal__product--milkshake {
+    background-color: #d6936d;
+  }
 }
 
 .header-modal.modal {
-    height: 100%;
-    max-height: 991px;
+  height: 100%;
+  max-height: 991px;
 
-    @include tablet {
-        max-width: 568px;
-        max-height: 644px;
-    }
+  @include tablet {
+    max-width: 568px;
+    max-height: 644px;
+  }
 }
 
 .icon-close {
-    width: 24px;
-    height: 20px;
+  width: 24px;
+  height: 20px;
 
-    @include tablet {
-        width: 24px;
-        height: 24px;
-    }
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .product-img {
-    position: absolute;
-    background-size: cover;
-    max-width: 132px;
-    max-height: 132px;
-    top: -7px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  background-size: cover;
+  max-width: 132px;
+  max-height: 132px;
+  top: -7px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-modal__product:focus .product-img,
 .header-modal__product:hover .product-img {
-    transform: translate(-50%, -45%);
-    @include animation(transform);
+  transform: translate(-50%, -45%);
+  @include animation(transform);
 }
 
 .header-modal__product:before {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    width: 132px;
-    height: 132px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+  content: '';
+  position: absolute;
+  background-size: cover;
+  width: 132px;
+  height: 132px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .header-modal__product--icecream {
-    border-color: #96AF8C;
+  border-color: #96af8c;
 }
 
 .header-modal__product--icecream:before {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
 .header-modal__product--icecoffee {
-    border-color: $products-bg-color-yellow;
+  border-color: $products-bg-color-yellow;
 }
 
 .header-modal__product--icecoffee:before {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .header-modal__product--milkshake {
-    border-color: $products-bg-color-coffee;
+  border-color: $products-bg-color-coffee;
 }
 
 .header-modal__product--milkshake:before {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 .header-modal__form {
-    color: $title-color-black;
+  color: $title-color-black;
 }
 
 .header-modal__input {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 32px;
-    margin-bottom: 12px;
-    padding: 8px 12px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  outline: none;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: solid 1px $main-bg-color;
+  border-radius: 10px;
+  @include font(null, 12px, 1.4, null);
+  text-align: left;
+  color: $title-color-black;
 
-    outline: none;
-    background-color: rgba(248, 210, 78, 0.1);
-    border: solid 1px $main-bg-color;
-    border-radius: 10px;
-
-    font-size: 12px;
-    line-height: 1.4;
-    text-align: left;
-    color: $title-color-black;
-
-    @include tablet {
-        width: 368px;
-        height: 42px;
-        padding: 11px 16px;
-        margin-bottom: 16px;
-    }
+  @include tablet {
+    width: 368px;
+    height: 42px;
+    padding: 11px 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .header-modal__input::placeholder {
-    color: $title-color-black;
+  color: $title-color-black;
 }
 
 .header-modal__input:not(:placeholder-shown):invalid {
-    border-color: red;
+  border-color: red;
 }
 
 .header-modal__comment {
-    resize: none;
-    height: 65px;
-    margin-bottom: 26px;
+  resize: none;
+  height: 65px;
+  margin-bottom: 26px;
 
-    @include tablet {
-        height: 84px;
-        margin-bottom: 32px;
-    }
+  @include tablet {
+    height: 84px;
+    margin-bottom: 32px;
+  }
 }
 
 .submit-btn {
-    display: flex;
-    width: 114px;
-    height: 42px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 12px;
-    line-height: 1.17;
-    border: none;
+  display: flex;
+  width: 114px;
+  height: 42px;
+  margin-right: auto;
+  margin-left: auto;
+  @include font(null, 12px, 1.17, null);
+  border: none;
 }
