@@ -34,7 +34,7 @@
 ### **STACK** - HTML, CSS, BEM, SASS, and JavaScript
 
 - `Look at`
-  [**Layout (Figma)**](https://www.figma.com/file/g8Av5GC8AqLyf4wqJblnJn/ice-cream?node-id=0%3A1&t=d4aS7PV3AfgJtxmH-1)
+  [**Layout Figma**](https://www.figma.com/file/g8Av5GC8AqLyf4wqJblnJn/ice-cream?node-id=0%3A1&t=d4aS7PV3AfgJtxmH-1)
 
 ### On this project, our team learned:
 
