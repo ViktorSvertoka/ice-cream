@@ -53,7 +53,6 @@
     font-family: 'Seymour One';
     @include font(400, 30px, 1.27, 0.04em);
     text-transform: uppercase;
-
     color: $title-color-white;
 
     @include tablet {
@@ -133,7 +132,6 @@
       border-radius: 250px;
 
       transform: translateY(0);
-
     }
   }
 
