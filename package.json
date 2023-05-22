@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "ice-cream",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://ViktorSvertoka.github.io/ice-cream",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/ViktorSvertoka/ice-cream.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Viktor Svertoka <victor.svertoka@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/ViktorSvertoka/ice-cream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
