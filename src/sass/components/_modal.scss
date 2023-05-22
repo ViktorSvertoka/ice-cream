@@ -1,10 +1,6 @@
-/* Стили для подложки */
-
 .overlay {
-  /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
- 
   position: fixed;
   top: 0;
   left: 0;
@@ -13,37 +9,26 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
- }
-
-/* Стили для модальных окон */
+}
 
 .modal {
-  /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  
-  /*  Установаем ширину окна  */
   width: 100%;
-   max-width: 280px;
+  max-width: 280px;
 
   @include tablet {
     max-width: 568px;
   }
 
-  // давать свои размеры
-
-  /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-
-  /*  Побочные стили   */
+  z-index: 30;
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  // text-align: center;
   border-radius: 10px;
-  background-color: #fcfcfc;
+  background-color: $main-text-color;
   transition: 0.3s all;
   padding: 28px;
   border: 2px solid $link-bg-color;
@@ -52,15 +37,11 @@
     padding: 32px 60px;
   }
 
-
-
-  // Заголовок модалки
   &__title {
-    font-family: 'Seymour One';
+    font-family: $title-fonts;
     text-align: center;
     @include font(400, 16px, 1.5, null);
-    color: #131313;
-
+    color: $secondary-text-color;
     margin-bottom: 20px;
 
     @include tablet {
@@ -69,13 +50,10 @@
     }
   }
 
-  // Iframe
   &__frame {
-    background-color: #000000;
+    background-color: $button-text-color;
     border-radius: 10px;
     max-width: 224px;
-    
-
     border: 0;
     overflow: hidden;
 
@@ -84,20 +62,16 @@
     }
   }
 
-  // Текст можального окна
-    &__text {
-      text-align: left;
-      @include font(400, 14px, 1.4, 0);
-  
-      color: #131313;
-  
-      @include tablet {
-        @include font(null, 16px, null, null);
-      }
-    }
-}
+  &__text {
+    text-align: left;
+    @include font(400, 14px, 1.4, 0);
+    color: $secondary-text-color;
 
-/* Стили для активных классов подложки и окна */
+    @include tablet {
+      @include font(null, 16px, null, null);
+    }
+  }
+}
 
 .modal.active,
 .overlay.active {
@@ -106,17 +80,12 @@
   overflow-y: scroll;
 }
 
-// выше не трогать
-
-/* Стили для кнопки закрытия */
-
 .modal__cross {
   width: 20px;
   height: 20px;
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
 
   &:hover {
     fill: $main-bg-color;
@@ -126,17 +95,4 @@
     width: 24px;
     height: 24px;
   }
-
 }
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-// a {
-//   padding: 20px;
-//   display: inline-block;
-//   text-decoration: none;
-//   background-color: #414b52;
-//   margin: 10px;
-//   color: #fff;
-//   border-radius: 3px;
-// }
