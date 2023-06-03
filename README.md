@@ -1,5 +1,7 @@
 # Website - "Ice Cream"
 
+![Demonstration](./assets/ice-cream.png)
+
 ## Team project
 
 ### Development team :
